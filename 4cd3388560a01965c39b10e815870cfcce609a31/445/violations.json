@@ -1,0 +1,43 @@
+[
+    {
+        "line": "74",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"
+    },
+    {
+        "line": "78",
+        "column": "9",
+        "severity": "error",
+        "message": "Redundant 'public' modifier.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"
+    },
+    {
+        "line": "94",
+        "column": "9",
+        "severity": "error",
+        "message": "Definition of 'equals()' without corresponding definition of 'hashCode()'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.EqualsHashCodeCheck"
+    },
+    {
+        "line": "183",
+        "column": "38",
+        "severity": "error",
+        "message": "Expected @throws tag for 'CloneNotSupportedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "206",
+        "column": "44",
+        "severity": "error",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "206",
+        "column": "57",
+        "severity": "error",
+        "message": "Expected @throws tag for 'ClassNotFoundException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    }
+]
