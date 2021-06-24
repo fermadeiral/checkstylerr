@@ -1,0 +1,370 @@
+package me.reddev.osucelebrity.osu;
+
+import org.pircbotx.output.OutputIRC;
+import me.reddev.osucelebrity.osu.Osu.PollStatusConsumer;
+import me.reddev.osucelebrity.osu.PlayerStatus.PlayerStatusType;
+import org.tillerino.osuApiModel.GameModes;
+import static org.mockito.Matchers.any;
+import static org.mockito.Matchers.eq;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+import me.reddev.osucelebrity.core.QueuedPlayer.QueueSource;
+import org.pircbotx.snapshot.UserSnapshot;
+import org.pircbotx.snapshot.UserChannelDaoSnapshot;
+import org.pircbotx.hooks.events.QuitEvent;
+import org.pircbotx.hooks.events.JoinEvent;
+import com.google.common.collect.ImmutableList;
+
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.HashSet;
+
+import org.pircbotx.hooks.events.ServerResponseEvent;
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
+
+import me.reddev.osucelebrity.AbstractJDOTest;
+import me.reddev.osucelebrity.Privilege;
+import me.reddev.osucelebrity.Responses;
+import me.reddev.osucelebrity.core.EnqueueResult;
+import me.reddev.osucelebrity.core.QueuedPlayer;
+import me.reddev.osucelebrity.core.Spectator;
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.ArgumentCaptor;
+import org.mockito.Mock;
+import org.pircbotx.Channel;
+import org.pircbotx.Configuration;
+import org.pircbotx.PircBotX;
+import org.pircbotx.User;
+import org.pircbotx.hooks.events.PrivateMessageEvent;
+import org.pircbotx.hooks.managers.ListenerManager;
+import org.pircbotx.output.OutputUser;
+
+
+public class OsuIrcBotTest extends AbstractJDOTest {
+  @Mock
+  Spectator spectator;
+
+  @Mock
+  User user;
+  @Mock
+  OutputUser outputUser;
+  @Mock
+  Channel channel;
+  @Mock
+  PircBotX bot;
+  @Mock
+  Configuration<PircBotX> configuration;
+  @Mock
+  ListenerManager<PircBotX> listenerManager;
+  @Mock
+  OsuIrcSettings settings;
+  @Mock
+  PircBotX pircBotX;
+  @Mock
+  OutputIRC ourputIrc;
+  @Mock
+  Osu osu;
+  
+  OsuIrcBot ircBot;
+  
+  OsuUser osuIrcUser;
+
+  @Before
+  public void initMocks() throws Exception {
+    when(bot.getConfiguration()).thenReturn(configuration);
+    when(configuration.getListenerManager()).thenReturn(listenerManager);
+    when(user.getNick()).thenReturn("osuIrcUser");
+    
+    osuIrcUser = osuApi.getUser(user.getNick(), pm, 0);
+
+    when(settings.getOsuIrcCommand()).thenReturn("!");
+    when(settings.getOsuCommandUser()).thenReturn("BanchoBot");
+    when(user.send()).thenReturn(outputUser);
+    
+    when(pircBotX.sendIRC()).thenReturn(ourputIrc);
+
+    ircBot = new OsuIrcBot(osu, osuApi, settings, pmf, spectator, clock, new Pinger() {
+      @Override
+      void ping(PircBotX bot) throws IOException, InterruptedException {
+        // do nothing
+      }
+    });
+    
+    ircBot.bot = pircBotX;
+  }
+
+  @Test
+  public void testSelfQueue() throws Exception {
+    when(spectator.enqueue(any(), any(), eq(true), eq(null), eq(true))).thenReturn(EnqueueResult.SUCCESS);
+
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user, "!spec"));
+
+    ArgumentCaptor<QueuedPlayer> captor = ArgumentCaptor.forClass(QueuedPlayer.class);
+
+    verify(spectator, only()).enqueue(any(), captor.capture(), eq(true), eq(null), eq(true));
+
+    QueuedPlayer request = captor.getValue();
+    assertEquals("osuIrcUser", request.getPlayer().getUserName());
+    assertEquals(true, request.isNotify());
+
+    verify(outputUser, only()).message(Responses.SELF_QUEUE_SUCCESSFUL);
+  }
+
+  @Test
+  public void testSkip() throws Exception {
+    osuApi.getUser("osuIrcUser", pm, 0).setPrivilege(Privilege.MOD);
+
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user, "!forceskip x"));
+
+    verify(spectator, only()).advanceConditional(any(),
+        eq("x"));
+
+    verify(outputUser, only()).message(any());
+  }
+
+  @Test
+  public void testSkipUnauthorized() throws Exception {
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user, "!forceskip x"));
+
+    verifyZeroInteractions(spectator);
+
+    verify(outputUser, only()).message(any());
+  }
+
+  @Test
+  public void testMuting() throws Exception {
+    assertTrue(osuApi.getUser("osuIrcUser", pmf.getPersistenceManager(), 0).isAllowsNotifications());
+
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user, "!mute"));
+
+    assertFalse(osuApi.getUser("osuIrcUser", pmf.getPersistenceManager(), 0)
+        .isAllowsNotifications());
+
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user, "!unmute"));
+
+    assertTrue(osuApi.getUser("osuIrcUser", pmf.getPersistenceManager(), 0).isAllowsNotifications());
+  }
+
+  @Test
+  public void testOpting() throws Exception {
+    assertTrue(osuApi.getUser("osuIrcUser", pmf.getPersistenceManager(), 0).isAllowsSpectating());
+
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user, "!optout"));
+
+    assertFalse(osuApi.getUser("osuIrcUser", pmf.getPersistenceManager(), 0).isAllowsSpectating());
+    verify(spectator).removeFromQueue(any(),
+        eq(osuApi.getUser("osuIrcUser", pmf.getPersistenceManager(), 0)));
+
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user, "!optin"));
+
+    assertTrue(osuApi.getUser("osuIrcUser", pmf.getPersistenceManager(), 0).isAllowsSpectating());
+  }
+
+  @Test
+  public void testUserNamesParser() throws Exception {
+    ircBot.onServerResponse(new ServerResponseEvent<PircBotX>(bot, 353,
+        ":irc.server.net 353 Phyre = #SomeChannel :@me +you them", ImmutableList
+            .copyOf(new String[] {"#SomeChannel", "+me @you them"})));
+
+    assertEquals(new HashSet<>(Arrays.asList("me", "you", "them")), ircBot.getOnlineUsers());
+  }
+  
+  @Test
+  public void testJoinQuit() throws Exception {
+    ircBot.onJoin(new JoinEvent<PircBotX>(bot, channel, user));
+
+    assertTrue(ircBot.getOnlineUsers().contains("osuIrcUser"));
+
+    ircBot.onQuit(new QuitEvent<PircBotX>(bot, new UserChannelDaoSnapshot(bot, null, null, null,
+        null, null, null), new UserSnapshot(user), "no reason"));
+
+    assertFalse(ircBot.getOnlineUsers().contains("osuIrcUser"));
+  }
+
+  @Test
+  public void testQueue() throws Exception {
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user, "!spec thatguy"));
+
+    OsuUser requestedUser = osuApi.getUser("thatguy", pmf.getPersistenceManager(), 0);
+
+    verify(spectator).performEnqueue(any(),
+        eq(new QueuedPlayer(requestedUser, QueueSource.OSU, 0)),
+        eq("osu:" + osuIrcUser.getUserId()), any(), any(), any());
+  }
+  
+  @Test
+  public void testQueueWithComment() throws Exception {
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user,
+        "!spec FrenzyLi: because I want to"));
+
+    OsuUser requestedUser = osuApi.getUser("FrenzyLi", pmf.getPersistenceManager(), 0);
+
+    verify(spectator).performEnqueue(any(),
+        eq(new QueuedPlayer(requestedUser, QueueSource.OSU, 0)),
+        eq("osu:" + osuIrcUser.getUserId()), any(), any(), any());
+  }
+
+  @Test
+  public void testQueueAlias() throws Exception {
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user, "!vote thatguy"));
+
+    OsuUser requestedUser = osuApi.getUser("thatguy", pmf.getPersistenceManager(), 0);
+
+    verify(spectator).performEnqueue(any(),
+        eq(new QueuedPlayer(requestedUser, QueueSource.OSU, 0)),
+        eq("osu:" + osuIrcUser.getUserId()), any(), any(), any());
+  }
+  
+  @Test
+  public void testForceSpec() throws Exception {
+    osuApi.getUser("osuIrcUser", pm, 0).setPrivilege(Privilege.MOD);
+
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user, "!forcespec x"));
+    
+    verify(spectator).promote(any(), 
+        eq(osuApi.getUser("x", pmf.getPersistenceManagerProxy(), 0)));
+  }
+  
+  @Test
+  public void testForceSpecUnauthorized() throws Exception {
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user, "!forcespec x"));
+    
+    verify(spectator, times(0)).promote(any(), 
+        eq(osuApi.getUser("x", pmf.getPersistenceManagerProxy(), 0)));
+  }
+  
+  @Test
+  public void testFixClient() throws Exception {
+    osuApi.getUser("osuIrcUser", pm, 0).setPrivilege(Privilege.MOD);
+
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user, "!fix"));
+    
+    verify(osu).restartClient();
+  }
+  
+  @Test
+  public void testFixClientUnauthorized() throws Exception {
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user, "!fix"));
+    
+    verify(osu, times(0)).restartClient();
+  }
+  
+  @Test
+  public void testGameMode() throws Exception {
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user, "!gamemode ctb"));
+
+    assertEquals(GameModes.CTB, osuApi.getUser("osuIrcUser", pmf.getPersistenceManager(), 0)
+        .getGameMode());
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user, "!gamemode taiko"));
+
+    assertEquals(GameModes.TAIKO, osuApi.getUser("osuIrcUser", pmf.getPersistenceManager(), 0)
+        .getGameMode());
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user, "!gamemode mania"));
+
+    assertEquals(GameModes.MANIA, osuApi.getUser("osuIrcUser", pmf.getPersistenceManager(), 0)
+        .getGameMode());
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user, "!gamemode osu"));
+
+    assertEquals(GameModes.OSU, osuApi.getUser("osuIrcUser", pmf.getPersistenceManager(), 0)
+        .getGameMode());
+  }
+
+  @Test
+  public void testParseStatus() throws Exception {
+    OsuUser tillerino = osuApi.getUser("Tillerino", pm, 0);
+    OsuUser thelewa = osuApi.getUser("thelewa", pm, 0);
+    OsuUser agus2001 = osuApi.getUser("agus2001", pm, 0);
+    clock.sleepUntil(2);
+    
+    assertEquals(new PlayerStatus(thelewa, PlayerStatusType.OFFLINE, 2),
+        ircBot.parseStatus(pm, "Stats for (thelewa)[https://osu.ppy.sh/u/" + thelewa.getUserId() + "]:").get());
+
+    assertEquals(new PlayerStatus(agus2001, PlayerStatusType.AFK, 2),
+        ircBot.parseStatus(pm, "Stats for (agus2001)[https://osu.ppy.sh/u/" + agus2001.getUserId() + "] is Afk:").get());
+
+    assertEquals(new PlayerStatus(tillerino, PlayerStatusType.IDLE, 2),
+        ircBot.parseStatus(pm, "Stats for (Tillerino)[https://osu.ppy.sh/u/" + tillerino.getUserId() + "] is Idle:").get());
+
+    assertEquals(new PlayerStatus(tillerino, PlayerStatusType.MODDING, 2),
+        ircBot.parseStatus(pm, "Stats for (Tillerino)[https://osu.ppy.sh/u/" + tillerino.getUserId() + "] is Modding:").get());
+
+    assertEquals(new PlayerStatus(tillerino, PlayerStatusType.PLAYING, 2),
+        ircBot.parseStatus(pm, "Stats for (Tillerino)[https://osu.ppy.sh/u/" + tillerino.getUserId() + "] is Playing:").get());
+
+    assertEquals(new PlayerStatus(tillerino, PlayerStatusType.WATCHING, 2),
+        ircBot.parseStatus(pm, "Stats for (Tillerino)[https://osu.ppy.sh/u/" + tillerino.getUserId() + "] is Watching:").get());
+
+    assertEquals(new PlayerStatus(tillerino, PlayerStatusType.MULTIPLAYING, 2),
+        ircBot.parseStatus(pm, "Stats for (Tillerino)[https://osu.ppy.sh/u/" + tillerino.getUserId() + "] is Multiplaying:").get());
+  }
+  
+  @Test
+  public void testBanchoBotStatus() throws Exception {
+    OsuUser tillerino = osuApi.getUser("Tillerino", pm, 0);
+
+    String osuCommandUser = settings.getOsuCommandUser();
+    when(user.getNick()).thenReturn(osuCommandUser);
+
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user,
+        "Stats for (Tillerino)[https://osu.ppy.sh/u/" + tillerino.getUserId() + "] is Playing:"));
+
+    verify(spectator).reportStatus(any(),
+        eq(new PlayerStatus(tillerino, PlayerStatusType.PLAYING, 0)));
+  }
+  
+  @Test
+  public void testMod() throws Exception {
+    OsuUser admin = osuApi.getUser("admin", pm, 0);
+    admin.setPrivilege(Privilege.ADMIN);
+    {
+      OsuUser mod = osuApi.getUser("newmod", pm, 0);
+    }
+    
+    when(user.getNick()).thenReturn("admin");
+    
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user,
+        "!mod newmod"));
+    
+    OsuUser mod = osuApi.getUser("newmod", pmf.getPersistenceManager(), 0);
+    assertEquals(Privilege.MOD, mod.getPrivilege());
+  }
+  
+  @Test
+  public void testModFail() throws Exception {
+    OsuUser admin = osuApi.getUser("notadmin", pm, 0);
+    {
+      OsuUser mod = osuApi.getUser("newmod", pm, 0);
+    }
+    
+    when(user.getNick()).thenReturn("notadmin");
+    
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user,
+        "!mod newmod"));
+    
+    OsuUser mod = osuApi.getUser("newmod", pmf.getPersistenceManager(), 0);
+    assertEquals(Privilege.PLAYER, mod.getPrivilege());
+  }
+  
+  @Test
+  public void testBanchoBotStatusHandler() throws Exception {
+    OsuUser tillerino = osuApi.getUser("Tillerino", pm, 0);
+
+    PollStatusConsumer consumer = mock(PollStatusConsumer.class);
+    ircBot.pollIngameStatus(tillerino, consumer);
+    
+    assertEquals(consumer, ircBot.statusConsumers.get(tillerino.getUserId()).peek());
+    
+    String osuCommandUser = settings.getOsuCommandUser();
+    when(user.getNick()).thenReturn(osuCommandUser);
+
+    ircBot.onPrivateMessage(new PrivateMessageEvent<PircBotX>(bot, user,
+        "Stats for (Tillerino)[https://osu.ppy.sh/u/" + tillerino.getUserId() + "] is Playing:"));
+
+    verifyNoMoreInteractions(spectator);
+    verify(consumer).accept(any(), any());
+    
+    assertTrue(ircBot.statusConsumers.get(tillerino.getUserId()).isEmpty());
+  }
+}
