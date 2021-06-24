@@ -1,0 +1,34 @@
+[
+    {
+        "line": "1",
+        "severity": "warning",
+        "message": "missing copyright header",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "12",
+        "column": "9",
+        "severity": "warning",
+        "message": "Variable 'm_numReceived' explicitly initialized to '0' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "14",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'firstMessageReceived' explicitly initialized to 'false' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "41",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 162).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "61",
+        "severity": "warning",
+        "message": "IDE-generated comment",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    }
+]
