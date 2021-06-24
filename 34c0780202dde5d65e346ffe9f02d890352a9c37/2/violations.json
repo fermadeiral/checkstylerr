@@ -1,0 +1,58 @@
+[
+    {
+        "line": "43",
+        "column": "25",
+        "severity": "warning",
+        "message": "Name 'SKIP' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"
+    },
+    {
+        "line": "57",
+        "column": "18",
+        "severity": "warning",
+        "message": "Name 'TEST_TIME_NOW' must match pattern '^[a-z][a-zA-Z0-9$]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "60",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'originalDateTimeZone' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "61",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'originalTimeZone' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "62",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'originalLocale' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "108",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testFactory_Zone' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "579",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testLeap_5_13' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "588",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testLeap_6_13' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

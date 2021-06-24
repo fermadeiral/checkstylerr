@@ -1,0 +1,408 @@
+[
+    {
+        "line": "40",
+        "column": "14",
+        "severity": "warning",
+        "message": "Name 'TestInterval_Basics' must match pattern '^[A-Z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"
+    },
+    {
+        "line": "61",
+        "column": "18",
+        "severity": "warning",
+        "message": "Name 'TEST_TIME_NOW' must match pattern '^[a-z][a-zA-Z0-9$]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "65",
+        "column": "18",
+        "severity": "warning",
+        "message": "Name 'TEST_TIME1' must match pattern '^[a-z][a-zA-Z0-9$]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "71",
+        "column": "18",
+        "severity": "warning",
+        "message": "Name 'TEST_TIME2' must match pattern '^[a-z][a-zA-Z0-9$]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "76",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'originalDateTimeZone' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "77",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'originalTimeZone' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "78",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'originalLocale' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "193",
+        "column": "9",
+        "severity": "warning",
+        "message": "Redundant 'public' modifier.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"
+    },
+    {
+        "line": "240",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'test_useCase_ContainsOverlapAbutGap' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "343",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'test_useCase_ContainsOverlapAbutGap_zeroDuration' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "408",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'test_useCase_ContainsOverlapAbutGap_bothZeroDuration' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "434",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testContains_long' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "444",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testContains_long_zeroDuration' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "474",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testContains_RI' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "484",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testContains_RI_null' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "499",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testContains_RI_zeroDuration' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "506",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testContains_RInterval' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "542",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testContains_RInterval_null' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "557",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testContains_RInterval_zeroDuration' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "574",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testOverlaps_RInterval' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "610",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testOverlaps_RInterval_null' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "628",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testOverlaps_RInterval_zeroDuration' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "638",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testOverlap_RInterval' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "665",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testOverlap_RInterval_null' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "683",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testOverlap_RInterval_zone' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "697",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testOverlap_RInterval_zoneUTC' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "709",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testGap_RInterval' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "732",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testGap_RInterval_null' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "747",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testGap_RInterval_zone' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "761",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testGap_RInterval_zoneUTC' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "773",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testAbuts_RInterval' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "809",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testAbuts_RInterval_null' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "825",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testIsEqual_RI' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "831",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testIsBefore_long' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "856",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testIsBefore_RI' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "866",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testIsBefore_RI_null' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "881",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testIsBefore_RInterval' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "891",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testIsBefore_RInterval_null' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "907",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testIsAfter_long' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "932",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testIsAfter_RI' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "942",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testIsAfter_RI_null' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "957",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testIsAfter_RInterval' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "967",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testIsAfter_RInterval_null' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1008",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testToPeriod_PeriodType1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1018",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testToPeriod_PeriodType2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1054",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testToString_reparse' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1081",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testWithStartMillis_long1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1087",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testWithStartMillis_long2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1095",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testWithStartMillis_long3' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1102",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testWithStartInstant_RI1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1108",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testWithStartInstant_RI2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1116",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testWithStartInstant_RI3' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1123",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testWithEndMillis_long1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1129",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testWithEndMillis_long2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1137",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testWithEndMillis_long3' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1144",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testWithEndInstant_RI1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1150",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testWithEndInstant_RI2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1158",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testWithEndInstant_RI3' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

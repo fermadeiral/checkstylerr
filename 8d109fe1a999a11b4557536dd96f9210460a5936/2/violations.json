@@ -1,0 +1,485 @@
+[
+    {
+        "line": "33",
+        "column": "14",
+        "severity": "warning",
+        "message": "Name 'TestMutableDateTime_Sets' must match pattern '^[A-Z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"
+    },
+    {
+        "line": "50",
+        "column": "18",
+        "severity": "warning",
+        "message": "Name 'TEST_TIME_NOW' must match pattern '^[a-z][a-zA-Z0-9$]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "54",
+        "column": "18",
+        "severity": "warning",
+        "message": "Name 'TEST_TIME1' must match pattern '^[a-z][a-zA-Z0-9$]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "60",
+        "column": "18",
+        "severity": "warning",
+        "message": "Name 'TEST_TIME2' must match pattern '^[a-z][a-zA-Z0-9$]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "65",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'originalDateTimeZone' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "66",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'originalTimeZone' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "67",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'originalLocale' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "109",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetMillis_long1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "117",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetChronology_Chronology1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "124",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetChronology_Chronology2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "132",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetZone_DateTimeZone1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "139",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetZone_DateTimeZone2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "147",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetZoneRetainFields_DateTimeZone1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "154",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetZoneRetainFields_DateTimeZone2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "161",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetZoneRetainFields_DateTimeZone3' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "168",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetZoneRetainFields_DateTimeZone4' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "177",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetMillis_RI1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "184",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetMillis_RI2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "192",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSet_DateTimeFieldType_int1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "198",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSet_DateTimeFieldType_int2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "207",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSet_DateTimeFieldType_int3' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "217",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDate_int_int_int1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "229",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDate_int_int_int2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "239",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDate_long1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "253",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDate_RI1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "266",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDate_RI2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "278",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDate_RI_same' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "291",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDate_RI_different1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "304",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDate_RI_different2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "318",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetTime_int_int_int_int1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "330",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetTime_int_int_int2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "340",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetTime_long1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "354",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetTime_RI1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "367",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetTime_RI2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "379",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetTime_Object3' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "394",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDateTime_int_int_int_int_int_int_int1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "406",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDateTime_int_int_int_int_int_int_int2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "417",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetYear_int1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "424",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetMonthOfYear_int1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "430",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetMonthOfYear_int_dstOverlapSummer_addZero' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "437",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetMonthOfYear_int_dstOverlapWinter_addZero' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "445",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetMonthOfYear_int2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "455",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDayOfMonth_int1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "461",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDayOfMonth_int2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "470",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDayOfMonth_int_dstOverlapSummer_addZero' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "477",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDayOfMonth_int_dstOverlapWinter_addZero' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "486",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDayOfYear_int1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "492",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDayOfYear_int_dstOverlapSummer_addZero' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "499",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDayOfYear_int_dstOverlapWinter_addZero' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "507",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDayOfYear_int2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "517",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetWeekyear_int1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "524",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetWeekOfWeekyear_int1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "530",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetWeekOfWeekyear_int2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "540",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDayOfWeek_int1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "546",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetDayOfWeek_int2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "556",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetHourOfDay_int1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "562",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetHourOfDay_int2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "572",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetMinuteOfHour_int1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "578",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetMinuteOfHour_int2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "588",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetMinuteOfDay_int1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "594",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetMinuteOfDay_int2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "604",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetSecondOfMinute_int1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "610",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetSecondOfMinute_int2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "620",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetSecondOfDay_int1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "626",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetSecondOfDay_int2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "636",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetMilliOfSecond_int1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "642",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetMilliOfSecond_int2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "652",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetMilliOfDay_int1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "658",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSetMilliOfDay_int2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

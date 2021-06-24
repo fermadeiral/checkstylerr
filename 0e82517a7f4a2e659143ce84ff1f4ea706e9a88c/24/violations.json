@@ -1,0 +1,191 @@
+[
+    {
+        "line": "41",
+        "column": "14",
+        "severity": "warning",
+        "message": "Name 'TestTimeOfDay_Basics' must match pattern '^[A-Z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"
+    },
+    {
+        "line": "55",
+        "column": "18",
+        "severity": "warning",
+        "message": "Name 'TEST_TIME_NOW' must match pattern '^[a-z][a-zA-Z0-9$]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "61",
+        "column": "18",
+        "severity": "warning",
+        "message": "Name 'TEST_TIME2' must match pattern '^[a-z][a-zA-Z0-9$]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "68",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'zone' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "276",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testIsEqual_TOD' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "300",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testIsBefore_TOD' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "324",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testIsAfter_TOD' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "348",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testWithChronologyRetainFields_Chrono' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "357",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testWithChronologyRetainFields_sameChrono' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "363",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testWithChronologyRetainFields_nullChrono' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "487",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testPlus_RP' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "497",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testPlusHours_int' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "507",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testPlusMinutes_int' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "517",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testPlusSeconds_int' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "527",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testPlusMillis_int' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "538",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testMinus_RP' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "548",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testMinusHours_int' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "558",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testMinusMinutes_int' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "568",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testMinusSeconds_int' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "578",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testMinusMillis_int' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "612",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testToDateTimeToday_Zone' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "627",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testToDateTimeToday_nullZone' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "795",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testToDateTime_RI' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "806",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testToDateTime_nullRI' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "877",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testToString_String' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "884",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testToString_String_Locale' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "893",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testToString_DTFormatter' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]
