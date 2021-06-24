@@ -1,0 +1,528 @@
+[
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "35",
+        "severity": "warning",
+        "message": "'java.awt.BorderLayout' should be separated from previous import group by one line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "45",
+        "severity": "warning",
+        "message": "Import statement for 'org.jdesktop.swingx.decorator.HighlighterFactory' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "46",
+        "severity": "warning",
+        "message": "Import statement for 'org.netbeans.spi.wizard.*' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "48",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "54",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 167).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "57",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 224).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "58",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 119).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "61",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 105).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "62",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 170).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "68",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "75",
+        "severity": "warning",
+        "message": "First sentence of Javadoc is incomplete (period is missing) or not present.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "83",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 122).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "112",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "117",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "120",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "129",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 101).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "145",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 134).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "151",
+        "severity": "warning",
+        "message": "Distance between variable 'gridBagConstraints' declaration and its first usage is 39, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "188",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 632).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "205",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "229",
+        "column": "34",
+        "severity": "warning",
+        "message": "'{' at column 34 should have line break after.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"
+    },
+    {
+        "line": "229",
+        "column": "59",
+        "severity": "warning",
+        "message": "'}' at column 59 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "230",
+        "severity": "warning",
+        "message": "'METHOD_DEF' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "230",
+        "column": "47",
+        "severity": "warning",
+        "message": "'{' at column 47 should have line break after.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"
+    },
+    {
+        "line": "230",
+        "column": "68",
+        "severity": "warning",
+        "message": "'}' at column 68 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "285",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 142).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "295",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "323",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 105).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "326",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "355",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "409",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "412",
+        "severity": "warning",
+        "message": "'new' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "418",
+        "severity": "warning",
+        "message": "'new' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "444",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 111).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "462",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 112).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "477",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 124).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "493",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 114).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "524",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "526",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "526",
+        "column": "68",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "534",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "536",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 136).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "536",
+        "column": "85",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "538",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "540",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "540",
+        "column": "72",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "542",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "544",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 116).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "544",
+        "column": "75",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "552",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "554",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 115).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "554",
+        "column": "74",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "570",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "572",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 128).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "572",
+        "column": "81",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "581",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "583",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 131).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "583",
+        "column": "82",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "588",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "590",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 128).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "590",
+        "column": "81",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "595",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "648",
+        "column": "66",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "650",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 160).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "651",
+        "column": "52",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "652",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 132).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "652",
+        "column": "84",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "653",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 123).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "654",
+        "column": "33",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "655",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 118).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "657",
+        "column": "29",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "658",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 128).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "658",
+        "column": "84",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "660",
+        "column": "33",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "670",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 105).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "686",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 163).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "714",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 163).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "751",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "763",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "772",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "781",
+        "severity": "warning",
+        "message": "'VARIABLE_DEF' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    }
+]

@@ -1,0 +1,245 @@
+[
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "31",
+        "severity": "warning",
+        "message": "'java.awt.BorderLayout' should be separated from previous import group by one line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "51",
+        "severity": "warning",
+        "message": "Import statement for 'org.jdesktop.swingx.decorator.HighlighterFactory' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "52",
+        "severity": "warning",
+        "message": "Import statement for 'org.netbeans.spi.wizard.*' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "54",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "60",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 149).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "61",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 147).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "66",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "73",
+        "severity": "warning",
+        "message": "First sentence of Javadoc is incomplete (period is missing) or not present.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "80",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 130).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "83",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 117).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "91",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 122).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "94",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "95",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 107).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "113",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 123).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "114",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 125).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "147",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "150",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 113).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "155",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 134).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "161",
+        "severity": "warning",
+        "message": "Distance between variable 'gridBagConstraints' declaration and its first usage is 21, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "181",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 632).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "197",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "226",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "231",
+        "severity": "warning",
+        "message": "'new' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "237",
+        "severity": "warning",
+        "message": "'new' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "265",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 111).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "308",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "310",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "310",
+        "column": "68",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "318",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "320",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 115).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "320",
+        "column": "74",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "336",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "342",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "357",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 143).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "362",
+        "severity": "warning",
+        "message": "Empty catch block.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheck"
+    },
+    {
+        "line": "390",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 165).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "395",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "404",
+        "severity": "warning",
+        "message": "'VARIABLE_DEF' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    }
+]

@@ -1,0 +1,3418 @@
+[
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "39",
+        "severity": "warning",
+        "message": "'java.awt.*' should be separated from previous import group by one line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "49",
+        "severity": "warning",
+        "message": "Import statement for 'org.apache.logging.log4j.LogManager' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "50",
+        "severity": "warning",
+        "message": "Import statement for 'org.apache.logging.log4j.Logger' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "53",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "56",
+        "severity": "warning",
+        "message": "Abbreviation in name 'DSWorkbenchSettingsDialog' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "62",
+        "severity": "warning",
+        "message": "Abbreviation in name 'INITIALIZED' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "62",
+        "column": "21",
+        "severity": "warning",
+        "message": "Member name 'INITIALIZED' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "65",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "73",
+        "severity": "warning",
+        "message": "First sentence of Javadoc is incomplete (period is missing) or not present.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "111",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 117).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "127",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "138",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 152).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "139",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 133).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "140",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 139).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "141",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 141).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "142",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 143).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "143",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 135).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "144",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 133).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "149",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "152",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "154",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 107).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "158",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "159",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "160",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 114).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "162",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "164",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 116).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "170",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 119).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "172",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "176",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 101).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "180",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "184",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 118).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "188",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "189",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 114).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "213",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "220",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "246",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 105).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "291",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "303",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "309",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 113).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "312",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "335",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 101).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "365",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "383",
+        "severity": "warning",
+        "message": "Distance between variable 'gridBagConstraints' declaration and its first usage is 141, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "536",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 101).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "552",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 101).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "572",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 125).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "573",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 111).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "581",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "594",
+        "severity": "warning",
+        "message": "'jPanel9Layout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "595",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "597",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "598",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 140).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "600",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "607",
+        "severity": "warning",
+        "message": "'jPanel9Layout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "608",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "630",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 119).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "639",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 123).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "648",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 125).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "659",
+        "severity": "warning",
+        "message": "'jPanel10Layout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "660",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "662",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "673",
+        "severity": "warning",
+        "message": "'jPanel10Layout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "674",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "676",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 160).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "678",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "696",
+        "severity": "warning",
+        "message": "'jPanel11Layout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "697",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "699",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "703",
+        "severity": "warning",
+        "message": "'jPanel11Layout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "704",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "705",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "709",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 113).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "712",
+        "severity": "warning",
+        "message": "'jPlayerServerSettingsLayout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "712",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "713",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "713",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 117).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "715",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 117).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "716",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 179).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "718",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 139).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "720",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 142).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "724",
+        "severity": "warning",
+        "message": "'jPlayerServerSettingsLayout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "724",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "725",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "727",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 117).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "728",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 160).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "729",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 162).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "731",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 132).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "735",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 154).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "775",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 114).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "860",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 113).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "879",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "886",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 115).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "921",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 128).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "931",
+        "severity": "warning",
+        "message": "'jMapSettingsLayout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "932",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "934",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 107).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "935",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 135).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "936",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 135).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "937",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 136).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "939",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 107).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "940",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "942",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "946",
+        "severity": "warning",
+        "message": "'jMapSettingsLayout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "947",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "949",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 114).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "950",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 135).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "951",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 136).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "952",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 141).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "953",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "954",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 160).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "955",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 169).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "957",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 107).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "958",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 160).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "959",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 161).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "963",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 139).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "985",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1006",
+        "severity": "warning",
+        "message": "'new' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "1009",
+        "severity": "warning",
+        "message": "'new' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "1052",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 107).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1081",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 204).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1104",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 265).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1116",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 101).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1119",
+        "severity": "warning",
+        "message": "'jAttackSettingsLayout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "1120",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "1126",
+        "severity": "warning",
+        "message": "'jAttackSettingsLayout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "1127",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "1133",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 146).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1138",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 130).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1184",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 120).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1206",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1232",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1260",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 123).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1293",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 147).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1306",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 130).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1307",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 273).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1366",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 245).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1502",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 107).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1564",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1567",
+        "severity": "warning",
+        "message": "'jNetworkSettingsLayout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "1568",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "1570",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 111).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1571",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 146).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1572",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 147).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1576",
+        "severity": "warning",
+        "message": "'jNetworkSettingsLayout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "1577",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "1579",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 156).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1581",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 131).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1585",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 144).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1590",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 107).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1705",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 118).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1724",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 117).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1742",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 118).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1759",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 105).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1762",
+        "severity": "warning",
+        "message": "'jTemplateSettingsLayout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "1763",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "1769",
+        "severity": "warning",
+        "message": "'jTemplateSettingsLayout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "1770",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "1772",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 156).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1776",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 153).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1784",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 132).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1822",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 150).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1824",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 143).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1839",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1916",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 213).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1945",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 147).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1974",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 134).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2003",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 176).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2044",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2059",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2071",
+        "severity": "warning",
+        "message": "'jMiscSettingsLayout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2072",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2072",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2074",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2075",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 136).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2076",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2080",
+        "severity": "warning",
+        "message": "'jMiscSettingsLayout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2081",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2083",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 156).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2089",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 145).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2118",
+        "severity": "warning",
+        "message": "'layout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2119",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2124",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 170).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2126",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 133).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2127",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 115).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2131",
+        "severity": "warning",
+        "message": "'layout' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2132",
+        "severity": "warning",
+        "message": "'.' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2134",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 112).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2137",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 166).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2138",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 163).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2143",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2144",
+        "severity": "warning",
+        "message": "'METHOD_DEF' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "2144",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 124).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2144",
+        "column": "79",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2151",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 113).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2155",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 117).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2171",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2197",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 113).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2200",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2209",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2210",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2233",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2235",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 119).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2235",
+        "column": "76",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2241",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2243",
+        "column": "65",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2254",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2256",
+        "column": "62",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2267",
+        "severity": "warning",
+        "message": "Empty catch block.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheck"
+    },
+    {
+        "line": "2271",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 111).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2277",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 164).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2281",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 148).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2289",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 113).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2296",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 113).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2300",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 141).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2322",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 114).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2323",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2324",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2325",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 112).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2326",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2327",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 115).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2330",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 112).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2331",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 124).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2335",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 115).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2350",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2352",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2352",
+        "column": "64",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2353",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2354",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2354",
+        "column": "2",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2356",
+        "severity": "warning",
+        "message": "Comment has incorrect indentation level 4, expected is 0, indentation should be the same level as line 2,357.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"
+    },
+    {
+        "line": "2357",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2357",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 136).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2357",
+        "column": "85",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2358",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2359",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2360",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2361",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2361",
+        "column": "2",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2363",
+        "severity": "warning",
+        "message": "Comment has incorrect indentation level 4, expected is 0, indentation should be the same level as line 2,364.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"
+    },
+    {
+        "line": "2364",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2364",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 131).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2364",
+        "column": "81",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2365",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2365",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2366",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2366",
+        "column": "2",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2368",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2368",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 143).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2368",
+        "column": "87",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2369",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2369",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 119).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2370",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2371",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2372",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2372",
+        "column": "2",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2374",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2374",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 119).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2374",
+        "column": "74",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2375",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2376",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2377",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2378",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2379",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2380",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2381",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2382",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2382",
+        "column": "2",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2384",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2384",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 137).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2384",
+        "column": "84",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2385",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2385",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 114).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2386",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2386",
+        "column": "2",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2388",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2388",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 116).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2388",
+        "column": "75",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2389",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2389",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2390",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2390",
+        "column": "2",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2392",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2392",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 120).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2392",
+        "column": "77",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2393",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2394",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2394",
+        "column": "2",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2396",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2396",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 123).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2396",
+        "column": "77",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2397",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2398",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2398",
+        "column": "2",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2400",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2400",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 118).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2400",
+        "column": "74",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2401",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2402",
+        "severity": "warning",
+        "message": "'try' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2403",
+        "severity": "warning",
+        "message": "'try' child has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2404",
+        "severity": "warning",
+        "message": "'try' child has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2405",
+        "severity": "warning",
+        "message": "'try' child has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2406",
+        "severity": "warning",
+        "message": "'try' child has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2407",
+        "severity": "warning",
+        "message": "'try rcurly' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2408",
+        "severity": "warning",
+        "message": "'catch' child has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2408",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 118).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2409",
+        "severity": "warning",
+        "message": "'catch' child has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2410",
+        "severity": "warning",
+        "message": "'catch rcurly' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2411",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2413",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2414",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2414",
+        "column": "2",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2416",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2416",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 120).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2416",
+        "column": "75",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2417",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2418",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2419",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2419",
+        "column": "2",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2421",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2421",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2421",
+        "column": "69",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2422",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2423",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2424",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2425",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2427",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2428",
+        "severity": "warning",
+        "message": "'try' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2429",
+        "severity": "warning",
+        "message": "'try' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2430",
+        "severity": "warning",
+        "message": "'try rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2431",
+        "severity": "warning",
+        "message": "'catch' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2431",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 227).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2432",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 134).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2433",
+        "severity": "warning",
+        "message": "'catch' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2434",
+        "severity": "warning",
+        "message": "'catch rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2435",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2437",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2449",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2450",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2451",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2453",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2454",
+        "severity": "warning",
+        "message": "'try' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2455",
+        "severity": "warning",
+        "message": "'try' child has incorrect indentation level 16, expected level should be 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2456",
+        "severity": "warning",
+        "message": "'try rcurly' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2457",
+        "severity": "warning",
+        "message": "'catch' child has incorrect indentation level 16, expected level should be 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2458",
+        "severity": "warning",
+        "message": "'catch rcurly' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2459",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2460",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2460",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 187).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2461",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 16, expected level should be 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2462",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 20, expected level should be 24.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2462",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 145).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2463",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 16, expected level should be 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2464",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2465",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2466",
+        "severity": "warning",
+        "message": "'else' child has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2466",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 124).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2467",
+        "severity": "warning",
+        "message": "'else rcurly' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2468",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2470",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2470",
+        "column": "2",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2472",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2472",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 121).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2472",
+        "column": "75",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2473",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2474",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2475",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2476",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2477",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2478",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2478",
+        "column": "2",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2480",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2480",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2480",
+        "column": "70",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2481",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2482",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2482",
+        "severity": "warning",
+        "message": "Abbreviation in name 'templateID' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "2483",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2484",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2485",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2486",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2487",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2488",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2489",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2490",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2491",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2492",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2493",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2495",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2496",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2497",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2498",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2499",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2501",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2502",
+        "severity": "warning",
+        "message": "'try' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2503",
+        "severity": "warning",
+        "message": "'try' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2504",
+        "severity": "warning",
+        "message": "'try rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2505",
+        "severity": "warning",
+        "message": "'catch' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2505",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 227).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2506",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 134).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2507",
+        "severity": "warning",
+        "message": "'catch' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2508",
+        "severity": "warning",
+        "message": "'catch rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2509",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2511",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2523",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2524",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2525",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2526",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2527",
+        "severity": "warning",
+        "message": "'switch' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2528",
+        "severity": "warning",
+        "message": "'case' child has incorrect indentation level 16, expected level should be 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2529",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 20, expected level should be 24.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2530",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 20, expected level should be 24.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2531",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 20, expected level should be 24.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2532",
+        "severity": "warning",
+        "message": "'block rcurly' has incorrect indentation level 16, expected level should be 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2533",
+        "severity": "warning",
+        "message": "'case' child has incorrect indentation level 16, expected level should be 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2534",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 20, expected level should be 24.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2535",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 20, expected level should be 24.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2536",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 20, expected level should be 24.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2537",
+        "severity": "warning",
+        "message": "'block rcurly' has incorrect indentation level 16, expected level should be 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2538",
+        "severity": "warning",
+        "message": "'case' child has incorrect indentation level 16, expected level should be 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2539",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 20, expected level should be 24.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2540",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 20, expected level should be 24.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2541",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 20, expected level should be 24.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2542",
+        "severity": "warning",
+        "message": "'block rcurly' has incorrect indentation level 16, expected level should be 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2543",
+        "severity": "warning",
+        "message": "'switch rcurly' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2544",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2545",
+        "severity": "warning",
+        "message": "'else' child has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2545",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 121).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2546",
+        "severity": "warning",
+        "message": "'else rcurly' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2547",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2548",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2549",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2549",
+        "column": "2",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2551",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2551",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 112).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2551",
+        "column": "71",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2553",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2554",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2555",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2556",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2557",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2558",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2559",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2560",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2561",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2562",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2563",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2564",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2564",
+        "column": "2",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2566",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2566",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 115).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2566",
+        "column": "73",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2567",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2568",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2569",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2572",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2573",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2576",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2577",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2581",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2585",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2586",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2587",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2588",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2590",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2591",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2592",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2593",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2594",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2595",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2596",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2597",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2599",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2613",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2614",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2615",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2616",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2616",
+        "column": "2",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2618",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2618",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2618",
+        "column": "69",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2619",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2620",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2621",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2622",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2623",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2624",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2625",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2626",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2627",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2628",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2629",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2630",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2631",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2632",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2632",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 237).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2633",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2634",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2635",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 16, expected level should be 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2635",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 205).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2636",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2637",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2639",
+        "severity": "warning",
+        "message": "'else' child has incorrect indentation level 12, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2640",
+        "severity": "warning",
+        "message": "'else rcurly' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2641",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2642",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 4, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2643",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 0, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "2643",
+        "column": "2",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2645",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 127).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2645",
+        "column": "81",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2646",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2647",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 191).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2648",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2650",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 141).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2650",
+        "column": "88",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2651",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2652",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2654",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 113).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2654",
+        "column": "74",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2656",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2658",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 133).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2658",
+        "column": "84",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2659",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 122).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2660",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2662",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2662",
+        "column": "69",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2664",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2666",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2666",
+        "column": "69",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2668",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2670",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 124).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2670",
+        "column": "79",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2679",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 122).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2681",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 153).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2682",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2684",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 122).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2687",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 122).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2689",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2691",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 129).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2691",
+        "column": "82",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2695",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 115).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2699",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 118).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2709",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2711",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2711",
+        "column": "69",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2716",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 129).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2744",
+        "column": "6",
+        "severity": "warning",
+        "message": "WhitespaceAround: '}' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "2747",
+        "severity": "warning",
+        "message": "First sentence of Javadoc is incomplete (period is missing) or not present.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "2796",
+        "severity": "warning",
+        "message": "Empty catch block.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheck"
+    },
+    {
+        "line": "2837",
+        "severity": "warning",
+        "message": "First sentence of Javadoc is incomplete (period is missing) or not present.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "2842",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 121).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2846",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 136).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2847",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2859",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 142).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2880",
+        "severity": "warning",
+        "message": "Empty catch block.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheck"
+    },
+    {
+        "line": "2892",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 111).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2951",
+        "severity": "warning",
+        "message": "Abbreviation in name 'jDeffStrengthOKButton' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "3007",
+        "severity": "warning",
+        "message": "Abbreviation in name 'jOKButton' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    }
+]
