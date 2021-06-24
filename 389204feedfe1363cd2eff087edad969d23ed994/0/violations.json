@@ -1,0 +1,698 @@
+[
+    {
+        "line": "85",
+        "column": "26",
+        "severity": "error",
+        "message": "Name 'NUM_VARIANTS' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"
+    },
+    {
+        "line": "86",
+        "column": "34",
+        "severity": "error",
+        "message": "Name 'FORMAT' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"
+    },
+    {
+        "line": "140",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 157).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "177",
+        "column": "40",
+        "severity": "error",
+        "message": "';' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    },
+    {
+        "line": "282",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_limit_skip' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "287",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_limit_skip_sorted' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "292",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_limit_skip_filters' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "297",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_limit_skip_sorted_filters' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "331",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 148).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "331",
+        "column": "22",
+        "severity": "error",
+        "message": "Name 'not_snv' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "335",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 174).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "335",
+        "column": "22",
+        "severity": "error",
+        "message": "Name 'snv_snp' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "344",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 143).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "348",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 171).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "348",
+        "column": "22",
+        "severity": "error",
+        "message": "Name 'indels_snp' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "353",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 171).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "353",
+        "column": "22",
+        "severity": "error",
+        "message": "Name 'indels_snv' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "354",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 143).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "360",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_populationFrequencyRef' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "369",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_populationFrequency' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "384",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 155).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "394",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 151).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "405",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 151).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "410",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_population_maf' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "462",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 158).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "521",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_id' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "526",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_variantId' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "555",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_xref' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "556",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 146).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "581",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_xref_rs' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "585",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_rs' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "601",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_ct' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "798",
+        "column": "24",
+        "severity": "error",
+        "message": "',' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    },
+    {
+        "line": "884",
+        "column": "24",
+        "severity": "error",
+        "message": "',' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    },
+    {
+        "line": "903",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_transcriptionAnnotationFlags' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "938",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_geneTrait' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "997",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 162).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1005",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 166).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1006",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 159).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1015",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 154).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1115",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_proteinKeywords' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1126",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 151).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1170",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_drugs' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1202",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_polyphenSift' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1254",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_polyphenSiftMalformed' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1261",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAlVariants_polyphenSiftDescription' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1278",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_functionalScore' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1282",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 163).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1319",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_functionalScore_wrongSource' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1328",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_functionalScore_wrongValue' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1337",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_conservationScore' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1349",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 145).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1350",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 173).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1353",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 145).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1378",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_conservationScoreWrongSource' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1386",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_conservationScoreWrongValue' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1402",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 165).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1409",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 160).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1411",
+        "column": "28",
+        "severity": "error",
+        "message": "'!=' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "1411",
+        "column": "30",
+        "severity": "error",
+        "message": "'!=' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "1429",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 169).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1430",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 185).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1433",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 153).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1437",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 171).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1438",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 162).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1497",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_region' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1564",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_genes' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1583",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_studies' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1596",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_Negatedstudies' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1608",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_files' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1625",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_fileNotFound' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1634",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_filterNoFile' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1654",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_filter' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1676",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_include_samples' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1705",
+        "column": "27",
+        "severity": "error",
+        "message": "Name 'it_1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "1706",
+        "column": "27",
+        "severity": "error",
+        "message": "Name 'it_2' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "1740",
+        "column": "99",
+        "severity": "error",
+        "message": "';' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyForIteratorPadCheck"
+    },
+    {
+        "line": "1752",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_genotypes' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1791",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 160).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1817",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_negatedGenotypes' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1834",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 153).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "1847",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_negatedGenotypesMixed' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1858",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_samples' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1890",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_samples_gt' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1901",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_genotypes_wrong_values' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1908",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_clinicalSignificance' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1930",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'groupBy_gene_limit_0' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1936",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'groupBy_gene' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1938",
+        "column": "42",
+        "severity": "error",
+        "message": "Name 'queryResult_count' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "1941",
+        "column": "17",
+        "severity": "error",
+        "message": "'(' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"
+    },
+    {
+        "line": "1942",
+        "column": "42",
+        "severity": "error",
+        "message": "Name 'queryResult_group' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "1964",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'rank_gene' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1965",
+        "column": "42",
+        "severity": "error",
+        "message": "Name 'queryResult_rank' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "1976",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'rank_ct' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "1978",
+        "column": "42",
+        "severity": "error",
+        "message": "Name 'queryResult_rank' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "1989",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_Freqs' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "2010",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_maf' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "2020",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 144).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "2052",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_maf_cohortNotFound' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "2060",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_mgf' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "2071",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_cohorts' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "2094",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_cohorts_fail1' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "2103",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testGetAllVariants_missingAllele' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "2231",
+        "severity": "error",
+        "message": "Line is longer than 140 characters (found 144).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]
