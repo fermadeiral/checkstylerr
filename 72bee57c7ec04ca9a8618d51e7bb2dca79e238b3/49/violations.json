@@ -1,0 +1,30 @@
+[
+    {
+        "line": "20",
+        "column": "49",
+        "severity": "error",
+        "message": "Name 'PROPERTY_DOWNLOADS_DIRECTORY' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "22",
+        "column": "49",
+        "severity": "error",
+        "message": "Name 'PROPERTY_VERIFICATION_DIRECTORY' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "24",
+        "column": "49",
+        "severity": "error",
+        "message": "Name 'PROPERTY_HOOK_ASSOCIATIONS' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "33",
+        "column": "20",
+        "severity": "error",
+        "message": "'downloadsDirectory' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    }
+]
