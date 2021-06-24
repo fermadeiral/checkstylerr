@@ -1,0 +1,28 @@
+[
+    {
+        "line": "58",
+        "severity": "warning",
+        "message": "Abbreviation in name 'DEFAULT_VALUE' must contain no more than '5' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "58",
+        "column": "26",
+        "severity": "warning",
+        "message": "Member name 'DEFAULT_VALUE' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "67",
+        "severity": "warning",
+        "message": "Abbreviation in name 'PERF_LATENCY_PERCENTILE' must contain no more than '5' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "67",
+        "column": "31",
+        "severity": "warning",
+        "message": "Method name 'PERF_LATENCY_PERCENTILE' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

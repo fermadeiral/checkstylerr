@@ -1,0 +1,153 @@
+[
+    {
+        "line": "17",
+        "column": "26",
+        "severity": "warning",
+        "message": "Member name 'sessions_uri' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "18",
+        "column": "26",
+        "severity": "warning",
+        "message": "Member name 'tests_uri' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "19",
+        "severity": "warning",
+        "message": "Abbreviation in name 'HDR_CONTENT_TYPE' must contain no more than '5' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "19",
+        "column": "20",
+        "severity": "warning",
+        "message": "Member name 'HDR_CONTENT_TYPE' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "20",
+        "severity": "warning",
+        "message": "Abbreviation in name 'HDR_CONTENT_TYPE_VALUE_APP_JSON' must contain no more than '5' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "20",
+        "column": "20",
+        "severity": "warning",
+        "message": "Member name 'HDR_CONTENT_TYPE_VALUE_APP_JSON' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "22",
+        "column": "20",
+        "severity": "warning",
+        "message": "Member name 'executions_uri' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "35",
+        "column": "21",
+        "severity": "warning",
+        "message": "Method name 'GET_SessionsList' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "39",
+        "column": "21",
+        "severity": "warning",
+        "message": "Method name 'GET_SessionIds' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "48",
+        "column": "21",
+        "severity": "warning",
+        "message": "Method name 'GET_TestsList' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "55",
+        "column": "21",
+        "severity": "warning",
+        "message": "Method name 'GET_TestNames' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "63",
+        "column": "21",
+        "severity": "warning",
+        "message": "Method name 'GET_TestMetrics' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "69",
+        "column": "21",
+        "severity": "warning",
+        "message": "Method name 'GET_MetricSummary' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "76",
+        "column": "21",
+        "severity": "warning",
+        "message": "Method name 'GET_MetricPlotData' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "93",
+        "column": "21",
+        "severity": "warning",
+        "message": "Method name 'POST_execution' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "103",
+        "column": "21",
+        "severity": "warning",
+        "message": "Method name 'GET_ExList' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "109",
+        "column": "21",
+        "severity": "warning",
+        "message": "Method name 'GET_ExId' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "117",
+        "column": "21",
+        "severity": "warning",
+        "message": "Method name 'GET_NonNumeric_ExId' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "124",
+        "column": "21",
+        "severity": "warning",
+        "message": "Method name 'GET_NonExisting_ExId' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "131",
+        "severity": "warning",
+        "message": "Abbreviation in name 'DELETE_Execution' must contain no more than '5' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "131",
+        "column": "21",
+        "severity": "warning",
+        "message": "Method name 'DELETE_Execution' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "138",
+        "column": "21",
+        "severity": "warning",
+        "message": "Method name 'GET_Deleted_Ex' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

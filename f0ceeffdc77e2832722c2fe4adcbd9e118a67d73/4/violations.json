@@ -1,0 +1,39 @@
+[
+    {
+        "line": "23",
+        "severity": "warning",
+        "message": "Line is longer than 150 characters (found 188).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "88",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 16, expected level should be one of the following: 20, 24, 28.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "89",
+        "severity": "warning",
+        "message": "'block rcurly' has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "89",
+        "column": "13",
+        "severity": "warning",
+        "message": "'}' at column 13 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "168",
+        "severity": "warning",
+        "message": "Javadoc comment at column 101 has parse error. Missed HTML close tag 'InvocationListener'. Sometimes it means that close tag missed for one of previous tags.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"
+    },
+    {
+        "line": "185",
+        "severity": "warning",
+        "message": "Javadoc comment at column 98 has parse error. Missed HTML close tag 'InvocationListener'. Sometimes it means that close tag missed for one of previous tags.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"
+    }
+]
