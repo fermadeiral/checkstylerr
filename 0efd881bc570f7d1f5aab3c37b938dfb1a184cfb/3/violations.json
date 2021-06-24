@@ -1,0 +1,43 @@
+[
+    {
+        "line": "58",
+        "column": "42",
+        "severity": "warning",
+        "message": "Member name 'environment' must match pattern '^[A-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "128",
+        "column": "16",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'catch' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "130",
+        "column": "16",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'catch' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "148",
+        "column": "16",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'catch' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "150",
+        "column": "16",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'catch' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "158",
+        "severity": "warning",
+        "message": "Distance between variable 'loader' declaration and its first usage is 4, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    }
+]

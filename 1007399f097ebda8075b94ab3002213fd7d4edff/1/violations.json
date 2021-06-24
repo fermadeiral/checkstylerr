@@ -1,0 +1,48 @@
+[
+    {
+        "line": "59",
+        "severity": "warning",
+        "message": "Type Javadoc comment is missing an @author tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"
+    },
+    {
+        "line": "61",
+        "column": "42",
+        "severity": "warning",
+        "message": "Member name 'environment' must match pattern '^[A-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "62",
+        "column": "38",
+        "severity": "warning",
+        "message": "Member name 'ctx' must match pattern '^[A-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "63",
+        "column": "52",
+        "severity": "warning",
+        "message": "Member name 'configObservable' must match pattern '^[A-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "257",
+        "severity": "warning",
+        "message": "Abbreviation in name 'LOCATOR' must contain no more than '4' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "257",
+        "column": "25",
+        "severity": "warning",
+        "message": "Member name 'LOCATOR' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "273",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"
+    }
+]

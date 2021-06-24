@@ -1,0 +1,28 @@
+[
+    {
+        "line": "60",
+        "severity": "warning",
+        "message": "Type Javadoc comment is missing an @author tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"
+    },
+    {
+        "line": "62",
+        "column": "42",
+        "severity": "warning",
+        "message": "Member name 'environment' must match pattern '^[A-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "63",
+        "column": "38",
+        "severity": "warning",
+        "message": "Member name 'ctx' must match pattern '^[A-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "339",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 7, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    }
+]
