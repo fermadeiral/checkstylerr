@@ -1,0 +1,583 @@
+[
+    {
+        "line": "1",
+        "column": "9",
+        "severity": "warning",
+        "message": "Package name 'com.github.jjYBdx4IL.maven.examples.server.chat' must match pattern '^[a-z]+(\\.[a-z][a-z0-9]*)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"
+    },
+    {
+        "line": "13",
+        "severity": "warning",
+        "message": "Import statement for 'org.eclipse.jetty.server.Server' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "14",
+        "severity": "warning",
+        "message": "Import statement for 'org.eclipse.jetty.server.ServerConnector' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "15",
+        "severity": "warning",
+        "message": "Import statement for 'org.eclipse.jetty.websocket.api.Session' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "Import statement for 'org.eclipse.jetty.websocket.client.WebSocketClient' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "17",
+        "severity": "warning",
+        "message": "Import statement for 'org.junit.After' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "'import' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "Import statement for 'org.junit.Assert.assertEquals' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "20",
+        "severity": "warning",
+        "message": "Import statement for 'com.github.jjYBdx4IL.maven.examples.server.chat.ChatHandler' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "22",
+        "severity": "warning",
+        "message": "Import statement for 'org.junit.Ignore' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "23",
+        "severity": "warning",
+        "message": "Import statement for 'org.junit.Test' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "24",
+        "severity": "warning",
+        "message": "Import statement for 'org.slf4j.Logger' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "25",
+        "severity": "warning",
+        "message": "Import statement for 'org.slf4j.LoggerFactory' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "27",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "33",
+        "severity": "warning",
+        "message": "'member def modifier' has incorrect indentation level 4, expected level should be 2.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "35",
+        "severity": "warning",
+        "message": "'member def modifier' has incorrect indentation level 4, expected level should be 2.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "36",
+        "severity": "warning",
+        "message": "'member def modifier' has incorrect indentation level 4, expected level should be 2.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "37",
+        "severity": "warning",
+        "message": "'member def modifier' has incorrect indentation level 4, expected level should be 2.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "38",
+        "severity": "warning",
+        "message": "'member def modifier' has incorrect indentation level 4, expected level should be 2.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "39",
+        "severity": "warning",
+        "message": "'member def modifier' has incorrect indentation level 4, expected level should be 2.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "40",
+        "severity": "warning",
+        "message": "'member def modifier' has incorrect indentation level 4, expected level should be 2.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "41",
+        "severity": "warning",
+        "message": "'member def modifier' has incorrect indentation level 4, expected level should be 2.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "41",
+        "column": "21",
+        "severity": "warning",
+        "message": "'static' modifier out of order with the JLS suggestions.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"
+    },
+    {
+        "line": "43",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 4, expected level should be 2.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "43",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "45",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "46",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 12, expected level should be 6.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "47",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "48",
+        "severity": "warning",
+        "message": "'for' has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "49",
+        "severity": "warning",
+        "message": "'for' child has incorrect indentation level 12, expected level should be 6.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "50",
+        "severity": "warning",
+        "message": "'for rcurly' has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "51",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 4, expected level should be 2.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "53",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 4, expected level should be 2.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "57",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 4, expected level should be 2.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "60",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "61",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "63",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "64",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "66",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "67",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "69",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "69",
+        "column": "13",
+        "severity": "warning",
+        "message": "Local variable name 'nExpextedReceivedByServer' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "70",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "70",
+        "column": "13",
+        "severity": "warning",
+        "message": "Local variable name 'nExpectedSentByServer' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "72",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "72",
+        "column": "13",
+        "severity": "warning",
+        "message": "Local variable name 'nExpectedReceivedByClient' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "73",
+        "severity": "warning",
+        "message": "'for' has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "74",
+        "severity": "warning",
+        "message": "'for' child has incorrect indentation level 12, expected level should be 6.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "75",
+        "severity": "warning",
+        "message": "'for' child has incorrect indentation level 12, expected level should be 6.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "76",
+        "severity": "warning",
+        "message": "'for' child has incorrect indentation level 12, expected level should be 6.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "78",
+        "severity": "warning",
+        "message": "'for' child has incorrect indentation level 12, expected level should be 6.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "80",
+        "severity": "warning",
+        "message": "'for' child has incorrect indentation level 12, expected level should be 6.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "82",
+        "severity": "warning",
+        "message": "'for' child has incorrect indentation level 12, expected level should be 6.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "84",
+        "severity": "warning",
+        "message": "'for' child has incorrect indentation level 12, expected level should be 6.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "85",
+        "severity": "warning",
+        "message": "'for' child has incorrect indentation level 12, expected level should be 6.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "86",
+        "severity": "warning",
+        "message": "'for' child has incorrect indentation level 12, expected level should be 6.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "87",
+        "severity": "warning",
+        "message": "'for rcurly' has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "89",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "94",
+        "severity": "warning",
+        "message": "'do..while' has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "96",
+        "severity": "warning",
+        "message": "'for' has incorrect indentation level 12, expected level should be 6.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "97",
+        "severity": "warning",
+        "message": "'for' child has incorrect indentation level 16, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "98",
+        "severity": "warning",
+        "message": "'for' child has incorrect indentation level 16, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "99",
+        "severity": "warning",
+        "message": "'for' child has incorrect indentation level 16, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "100",
+        "severity": "warning",
+        "message": "'for' child has incorrect indentation level 16, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "101",
+        "severity": "warning",
+        "message": "'for rcurly' has incorrect indentation level 12, expected level should be 6.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "104",
+        "severity": "warning",
+        "message": "'do..while' child has incorrect indentation level 12, expected level should be 6.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "105",
+        "severity": "warning",
+        "message": "'do..while' child has incorrect indentation level 12, expected level should be 6.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "107",
+        "severity": "warning",
+        "message": "'do..while' child has incorrect indentation level 12, expected level should be 6.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "108",
+        "severity": "warning",
+        "message": "'do..while' child has incorrect indentation level 12, expected level should be 6.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "109",
+        "severity": "warning",
+        "message": "'do..while' child has incorrect indentation level 12, expected level should be 6.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "110",
+        "severity": "warning",
+        "message": "'do..while rcurly' has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "110",
+        "column": "9",
+        "severity": "warning",
+        "message": "'}' at column 9 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "112",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "116",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "118",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "121",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "121",
+        "column": "14",
+        "severity": "warning",
+        "message": "Local variable name 'nActiveSessionsOnServer' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "122",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "122",
+        "column": "14",
+        "severity": "warning",
+        "message": "Local variable name 'nReceivedByServer' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "123",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "123",
+        "column": "14",
+        "severity": "warning",
+        "message": "Local variable name 'nSentByServer' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "124",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "125",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "126",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "127",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "128",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "129",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "130",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 4, expected level should be 2.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "132",
+        "severity": "warning",
+        "message": "'method def modifier' has incorrect indentation level 4, expected level should be 2.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "132",
+        "severity": "warning",
+        "message": "Abbreviation in name 'getURI' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "132",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "133",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "134",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "135",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "137",
+        "severity": "warning",
+        "message": "'method def rcurly' has incorrect indentation level 4, expected level should be 2.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    }
+]
