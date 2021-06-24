@@ -1,0 +1,39 @@
+[
+    {
+        "line": "17",
+        "severity": "error",
+        "message": "'io.grpc.ManagedChannel' should be separated from previous imports.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "23",
+        "severity": "error",
+        "message": "Wrong order for 'org.joda.time.LocalTime' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "27",
+        "severity": "error",
+        "message": "Wrong order for 'java.io.File' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "32",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - java.time.format.DateTimeParseException.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "61",
+        "severity": "error",
+        "message": "Comment has incorrect indentation level 0, expected is 8, indentation should be the same level as line 63.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"
+    },
+    {
+        "line": "91",
+        "severity": "error",
+        "message": "Line is longer than 120 characters (found 126).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

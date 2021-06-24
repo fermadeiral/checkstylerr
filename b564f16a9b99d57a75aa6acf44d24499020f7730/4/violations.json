@@ -1,0 +1,38 @@
+[
+    {
+        "line": "1",
+        "severity": "error",
+        "message": "Line does not match expected header line of '^// Copyright (\\(C\\) )?\\d{4} Baidu Inc\\. All rights reserved\\.$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"
+    },
+    {
+        "line": "5",
+        "severity": "error",
+        "message": "'lombok.extern.slf4j.Slf4j' should be separated from previous imports.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "6",
+        "severity": "error",
+        "message": "Wrong order for 'org.joda.time.DateTime' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "8",
+        "severity": "error",
+        "message": "Wrong order for 'javax.websocket.ContainerProvider' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "11",
+        "severity": "error",
+        "message": "Wrong order for 'java.io.InputStream' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "48",
+        "severity": "error",
+        "message": "Line is longer than 120 characters (found 121).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "line": "10",
+        "severity": "error",
+        "message": "Extra separation in import group before 'java.util.List'",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "14",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - com.baidu.acu.pie.util.Base64.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "15",
+        "severity": "error",
+        "message": "Wrong order for 'org.junit.Ignore' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "93",
+        "severity": "error",
+        "message": "'method call' child has incorrect indentation level 0, expected level should be one of the following: 24, 28, 32.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "94",
+        "severity": "error",
+        "message": "Comment has incorrect indentation level 0, expected is 28, indentation should be the same level as line 95.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"
+    }
+]

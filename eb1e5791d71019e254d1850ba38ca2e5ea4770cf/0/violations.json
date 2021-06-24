@@ -1,0 +1,39 @@
+[
+    {
+        "line": "13",
+        "severity": "error",
+        "message": "'io.grpc.stub.StreamObserver' should be separated from previous imports.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "14",
+        "severity": "error",
+        "message": "Wrong order for 'org.joda.time.DateTime' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "16",
+        "severity": "error",
+        "message": "Wrong order for 'java.io.IOException' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "87",
+        "severity": "error",
+        "message": "Comment has incorrect indentation level 0, expected is 24, indentation should be the same level as line 88.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"
+    },
+    {
+        "line": "87",
+        "severity": "error",
+        "message": "Line is longer than 120 characters (found 121).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "102",
+        "column": "26",
+        "severity": "error",
+        "message": "WhitespaceAround: '+' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    }
+]
