@@ -1,0 +1,659 @@
+[
+    {
+        "line": "27",
+        "severity": "error",
+        "message": "Import statement for 'com.twilio.TwilioTest.serialize' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "28",
+        "severity": "error",
+        "message": "Import statement for 'org.junit.Assert.*' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "28",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - org.junit.Assert.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "41",
+        "severity": "error",
+        "message": "'method def' child has incorrect indentation level 20, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "42",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 24, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "44",
+        "severity": "error",
+        "message": "Line is longer than 130 characters (found 131).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "45",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 24, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "46",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 8, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "47",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 8, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "48",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 8, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "49",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 24, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "50",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 24, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "51",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 24, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "52",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 24, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "53",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 24, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "54",
+        "severity": "error",
+        "message": "'block rcurly' has incorrect indentation level 20, expected level should be one of the following: 12, 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "54",
+        "column": "21",
+        "severity": "error",
+        "message": "'}' at column 21 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "57",
+        "severity": "error",
+        "message": "Line is longer than 130 characters (found 149).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "59",
+        "severity": "error",
+        "message": "Empty catch block.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheck"
+    },
+    {
+        "line": "59",
+        "column": "38",
+        "severity": "error",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "59",
+        "column": "38",
+        "severity": "error",
+        "message": "WhitespaceAround: '}' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "65",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "66",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "67",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "68",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "69",
+        "severity": "error",
+        "message": "'block rcurly' has incorrect indentation level 8, expected level should be one of the following: 12, 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "69",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' at column 9 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "71",
+        "severity": "error",
+        "message": "Line is longer than 130 characters (found 145).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "77",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "79",
+        "severity": "error",
+        "message": "Line is longer than 130 characters (found 154).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "81",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "82",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "83",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "84",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "85",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "86",
+        "severity": "error",
+        "message": "'block rcurly' has incorrect indentation level 8, expected level should be one of the following: 12, 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "86",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' at column 9 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "91",
+        "severity": "error",
+        "message": "Empty catch block.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheck"
+    },
+    {
+        "line": "91",
+        "column": "38",
+        "severity": "error",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "91",
+        "column": "38",
+        "severity": "error",
+        "message": "WhitespaceAround: '}' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "97",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "98",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "99",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "100",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "101",
+        "severity": "error",
+        "message": "'block rcurly' has incorrect indentation level 8, expected level should be one of the following: 12, 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "101",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' at column 9 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "109",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "111",
+        "severity": "error",
+        "message": "Line is longer than 130 characters (found 154).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "113",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "114",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "115",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "116",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "117",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "118",
+        "severity": "error",
+        "message": "'block rcurly' has incorrect indentation level 8, expected level should be one of the following: 12, 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "118",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' at column 9 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "123",
+        "severity": "error",
+        "message": "Empty catch block.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheck"
+    },
+    {
+        "line": "123",
+        "column": "38",
+        "severity": "error",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "123",
+        "column": "38",
+        "severity": "error",
+        "message": "WhitespaceAround: '}' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "129",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "130",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "131",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "132",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "133",
+        "severity": "error",
+        "message": "'block rcurly' has incorrect indentation level 8, expected level should be one of the following: 12, 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "133",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' at column 9 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "135",
+        "severity": "error",
+        "message": "Line is longer than 130 characters (found 134).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "141",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "145",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "146",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "147",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "148",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "149",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "150",
+        "severity": "error",
+        "message": "'block rcurly' has incorrect indentation level 8, expected level should be one of the following: 12, 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "150",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' at column 9 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "155",
+        "severity": "error",
+        "message": "Empty catch block.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheck"
+    },
+    {
+        "line": "155",
+        "column": "38",
+        "severity": "error",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "155",
+        "column": "38",
+        "severity": "error",
+        "message": "WhitespaceAround: '}' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "161",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "162",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "163",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "164",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "165",
+        "severity": "error",
+        "message": "'block rcurly' has incorrect indentation level 8, expected level should be one of the following: 12, 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "165",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' at column 9 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "173",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "174",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "175",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "176",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "177",
+        "severity": "error",
+        "message": "'block rcurly' has incorrect indentation level 8, expected level should be one of the following: 12, 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "177",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' at column 9 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "185",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "187",
+        "severity": "error",
+        "message": "Line is longer than 130 characters (found 154).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "189",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "190",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "191",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "192",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "193",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "194",
+        "severity": "error",
+        "message": "'block rcurly' has incorrect indentation level 8, expected level should be one of the following: 12, 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "194",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' at column 9 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "199",
+        "severity": "error",
+        "message": "Empty catch block.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheck"
+    },
+    {
+        "line": "199",
+        "column": "38",
+        "severity": "error",
+        "message": "WhitespaceAround: '{' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "199",
+        "column": "38",
+        "severity": "error",
+        "message": "WhitespaceAround: '}' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "205",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "206",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "207",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "208",
+        "severity": "error",
+        "message": "'block' child has incorrect indentation level 12, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "209",
+        "severity": "error",
+        "message": "'block rcurly' has incorrect indentation level 8, expected level should be one of the following: 12, 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "209",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' at column 9 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    }
+]
