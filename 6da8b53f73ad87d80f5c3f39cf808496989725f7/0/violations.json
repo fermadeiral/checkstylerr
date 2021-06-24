@@ -1,0 +1,23 @@
+[
+    {
+        "line": "37",
+        "column": "19",
+        "severity": "error",
+        "message": "'static' modifier out of order with the JLS suggestions.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"
+    },
+    {
+        "line": "63",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testOnOutboxMessageCreate_it_should_throw_validation_exception_when_any_field_of_event_is_empty' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "72",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'testOnOutboxMessageCreate_it_should_save_and_publish_meta_event_message_when_event_is_valid' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]
