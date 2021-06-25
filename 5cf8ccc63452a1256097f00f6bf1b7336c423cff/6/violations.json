@@ -1,0 +1,63 @@
+[
+    {
+        "line": "1",
+        "severity": "warning",
+        "message": "Line does not match expected header line of '/**'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.header.HeaderCheck"
+    },
+    {
+        "line": "19",
+        "severity": "warning",
+        "message": "Class should define a constructor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"
+    },
+    {
+        "line": "25",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "25",
+        "column": "33",
+        "severity": "warning",
+        "message": "Name 'queueName' must match pattern '^[A-Z](_?[A-Z0-9]+)*$|^logger$|^[a-z][a-zA-Z0-9]*Logger$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "36",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testDoInRabbit_\u5b58\u5728\u3057\u306a\u3044\u30ad\u30e5\u30fc' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "36",
+        "column": "50",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'Exception'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "59",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testDoInRabbit_\u6b63\u5e38\u7cfb' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "59",
+        "column": "45",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'Exception'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "63",
+        "column": "22",
+        "severity": "warning",
+        "message": "'10' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    }
+]

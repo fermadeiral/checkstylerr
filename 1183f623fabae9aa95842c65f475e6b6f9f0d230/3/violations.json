@@ -1,0 +1,28 @@
+[
+    {
+        "line": "1",
+        "severity": "warning",
+        "message": "Line does not match expected header line of '/**'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.header.HeaderCheck"
+    },
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "Class should define a constructor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"
+    },
+    {
+        "line": "18",
+        "column": "1",
+        "severity": "warning",
+        "message": "Utility classes should not have a public or default constructor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"
+    },
+    {
+        "line": "51",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused @param tag for 'clazz'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    }
+]
