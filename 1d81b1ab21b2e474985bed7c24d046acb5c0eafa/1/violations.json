@@ -1,0 +1,29 @@
+[
+    {
+        "line": "15",
+        "column": "17",
+        "severity": "error",
+        "message": "Method name 'AliasRequestFilterOneAlias' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "32",
+        "column": "17",
+        "severity": "error",
+        "message": "Method name 'AliasRequestFilterTwoAliases' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "34",
+        "severity": "error",
+        "message": "Distance between variable 'strFilteredRequest' declaration and its first usage is 4, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "50",
+        "column": "17",
+        "severity": "error",
+        "message": "Method name 'AliasRequestFilterNullAliases' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9_]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]
