@@ -1,0 +1,32 @@
+[
+    {
+        "line": "28",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.io.File' import. Should be before 'org.junit.rules.TemporaryFolder'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "29",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.nio.charset.StandardCharsets' import. Should be before 'org.junit.rules.TemporaryFolder'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "31",
+        "severity": "warning",
+        "message": "Import statement for 'org.hamcrest.CoreMatchers.equalTo' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "32",
+        "severity": "warning",
+        "message": "Import statement for 'org.hamcrest.MatcherAssert.assertThat' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "35",
+        "severity": "warning",
+        "message": "Abbreviation in name 'HDFSUtilsTest' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    }
+]

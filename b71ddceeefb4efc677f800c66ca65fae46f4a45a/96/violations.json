@@ -1,0 +1,386 @@
+[
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "44",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.io.File' import. Should be before 'org.springframework.security.core.context.SecurityContextHolder'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "45",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.io.FileOutputStream' import. Should be before 'org.springframework.security.core.context.SecurityContextHolder'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "46",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.io.OutputStreamWriter' import. Should be before 'org.springframework.security.core.context.SecurityContextHolder'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "47",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.io.Writer' import. Should be before 'org.springframework.security.core.context.SecurityContextHolder'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "48",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.nio.charset.StandardCharsets' import. Should be before 'org.springframework.security.core.context.SecurityContextHolder'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "49",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.ArrayList' import. Should be before 'org.springframework.security.core.context.SecurityContextHolder'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "50",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.HashMap' import. Should be before 'org.springframework.security.core.context.SecurityContextHolder'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "51",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.Map' import. Should be before 'org.springframework.security.core.context.SecurityContextHolder'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "53",
+        "severity": "warning",
+        "message": "Import statement for 'org.apache.metron.rest.MetronRestConstants.GROK_TEMP_PATH_SPRING_PROPERTY' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "54",
+        "severity": "warning",
+        "message": "Import statement for 'org.junit.jupiter.api.Assertions.*' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "54",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - org.junit.jupiter.api.Assertions.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "55",
+        "severity": "warning",
+        "message": "Import statement for 'org.mockito.Mockito.*' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "55",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - org.mockito.Mockito.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "92",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "101",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 111).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "103",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 118).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "112",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 129).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "122",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 107).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "140",
+        "column": "62",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "157",
+        "column": "62",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "161",
+        "column": "31",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "165",
+        "column": "20",
+        "severity": "warning",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "169",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 6, expected level should be one of the following: 8, 10, 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "170",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 6, expected level should be one of the following: 8, 10, 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "171",
+        "severity": "warning",
+        "message": "'block rcurly' has incorrect indentation level 4, expected level should be one of the following: 6, 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "171",
+        "column": "5",
+        "severity": "warning",
+        "message": "'}' at column 5 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "178",
+        "column": "62",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "182",
+        "column": "31",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "186",
+        "column": "20",
+        "severity": "warning",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "190",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 6, expected level should be one of the following: 8, 10, 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "191",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 6, expected level should be one of the following: 8, 10, 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "192",
+        "severity": "warning",
+        "message": "'block rcurly' has incorrect indentation level 4, expected level should be one of the following: 6, 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "192",
+        "column": "5",
+        "severity": "warning",
+        "message": "'}' at column 5 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "198",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 156).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "204",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "214",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 152).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "217",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "218",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 139).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "232",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 208).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "242",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "247",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 6, expected level should be one of the following: 8, 10, 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "248",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 6, expected level should be one of the following: 8, 10, 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "249",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 6, expected level should be one of the following: 8, 10, 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "250",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 6, expected level should be one of the following: 8, 10, 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "251",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 6, expected level should be one of the following: 8, 10, 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "252",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 6, expected level should be one of the following: 8, 10, 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "253",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 6, expected level should be one of the following: 8, 10, 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "254",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 6, expected level should be one of the following: 8, 10, 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "255",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 6, expected level should be one of the following: 8, 10, 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "256",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 6, expected level should be one of the following: 8, 10, 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "257",
+        "severity": "warning",
+        "message": "'block rcurly' has incorrect indentation level 4, expected level should be one of the following: 6, 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "257",
+        "column": "5",
+        "severity": "warning",
+        "message": "'}' at column 5 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "264",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 105).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "273",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 105).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "283",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 105).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "298",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 6, expected level should be one of the following: 8, 10, 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "299",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 6, expected level should be one of the following: 8, 10, 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "300",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 6, expected level should be one of the following: 8, 10, 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "301",
+        "severity": "warning",
+        "message": "'block rcurly' has incorrect indentation level 4, expected level should be one of the following: 6, 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "301",
+        "column": "5",
+        "severity": "warning",
+        "message": "'}' at column 5 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "305",
+        "severity": "warning",
+        "message": "'class def rcurly' has incorrect indentation level 1, expected level should be 0.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    }
+]

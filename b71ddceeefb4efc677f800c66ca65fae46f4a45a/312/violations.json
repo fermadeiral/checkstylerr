@@ -1,0 +1,28 @@
+[
+    {
+        "line": "42",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'org.junit.jupiter.api.AfterAll' import. Should be before 'org.junit.jupiter.api.AfterEach'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "44",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'org.junit.jupiter.api.BeforeAll' import. Should be before 'org.junit.jupiter.api.BeforeEach'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "63",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "171",
+        "column": "29",
+        "severity": "warning",
+        "message": "WhitespaceAround: '=' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    }
+]

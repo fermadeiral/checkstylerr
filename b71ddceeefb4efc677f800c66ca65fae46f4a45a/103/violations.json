@@ -1,0 +1,28 @@
+[
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "23",
+        "severity": "warning",
+        "message": "'java.util.HashSet' should be separated from previous import group by one line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "32",
+        "column": "77",
+        "severity": "warning",
+        "message": "'}' at column 77 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "32",
+        "column": "80",
+        "severity": "warning",
+        "message": "Only one statement per line allowed.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck"
+    }
+]
