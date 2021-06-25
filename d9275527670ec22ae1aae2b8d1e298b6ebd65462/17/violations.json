@@ -1,0 +1,32 @@
+[
+    {
+        "line": "15",
+        "severity": "warning",
+        "message": "Import statement for 'com.google.common.base.Joiner' is in the wrong order. Should be in the 'SPECIAL_IMPORTS' group, expecting group 'STANDARD_JAVA_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "Import statement for 'com.google.gson.Gson' is in the wrong order. Should be in the 'SPECIAL_IMPORTS' group, expecting group 'STANDARD_JAVA_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "33",
+        "severity": "warning",
+        "message": "Import statement for 'org.mockito.Mockito.*' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "33",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - org.mockito.Mockito.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "109",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 131).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

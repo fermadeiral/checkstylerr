@@ -1,0 +1,51 @@
+[
+    {
+        "line": "4",
+        "severity": "warning",
+        "message": "Import statement for 'com.google.common.collect.Lists' is in the wrong order. Should be in the 'SPECIAL_IMPORTS' group, expecting group 'STANDARD_JAVA_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "5",
+        "severity": "warning",
+        "message": "Import statement for 'com.google.common.util.concurrent.SettableFuture' is in the wrong order. Should be in the 'SPECIAL_IMPORTS' group, expecting group 'STANDARD_JAVA_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "7",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.biz.AbstractUnitTest' import. Should be before 'com.ctrip.framework.apollo.biz.config.BizConfig'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "Import statement for 'org.junit.Assert.assertEquals' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "19",
+        "severity": "warning",
+        "message": "Import statement for 'org.mockito.Mockito.when' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "21",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "32",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "63",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

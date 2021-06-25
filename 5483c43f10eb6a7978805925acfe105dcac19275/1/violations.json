@@ -1,0 +1,39 @@
+[
+    {
+        "line": "9",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.dianping.cat.message.Message' import. Should be before 'org.unidal.lookup.ContainerHolder'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "10",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.dianping.cat.message.Transaction' import. Should be before 'org.unidal.lookup.ContainerHolder'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "11",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.dianping.cat.message.spi.MessageManager' import. Should be before 'org.unidal.lookup.ContainerHolder'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "12",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.dianping.cat.message.spi.MessageTree' import. Should be before 'org.unidal.lookup.ContainerHolder'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "14",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "14",
+        "column": "109",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    }
+]

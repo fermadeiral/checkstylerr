@@ -1,0 +1,117 @@
+[
+    {
+        "line": "17",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "26",
+        "severity": "warning",
+        "message": "Import statement for 'com.ctrip.framework.apollo.enums.ConfigSourceType' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting group 'SPECIAL_IMPORTS' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "27",
+        "severity": "warning",
+        "message": "Import statement for 'com.ctrip.framework.apollo.util.factory.PropertiesFactory' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting group 'SPECIAL_IMPORTS' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "28",
+        "severity": "warning",
+        "message": "Import statement for 'java.io.File' is in the wrong order. Should be in the 'STANDARD_JAVA_PACKAGE' group, expecting group 'SPECIAL_IMPORTS' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "29",
+        "severity": "warning",
+        "message": "Import statement for 'java.io.FileOutputStream' is in the wrong order. Should be in the 'STANDARD_JAVA_PACKAGE' group, expecting group 'SPECIAL_IMPORTS' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "30",
+        "severity": "warning",
+        "message": "Import statement for 'java.io.IOException' is in the wrong order. Should be in the 'STANDARD_JAVA_PACKAGE' group, expecting group 'SPECIAL_IMPORTS' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "31",
+        "severity": "warning",
+        "message": "Import statement for 'java.util.Properties' is in the wrong order. Should be in the 'STANDARD_JAVA_PACKAGE' group, expecting group 'SPECIAL_IMPORTS' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "33",
+        "severity": "warning",
+        "message": "Import statement for 'org.junit.After' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting group 'SPECIAL_IMPORTS' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "34",
+        "severity": "warning",
+        "message": "Import statement for 'org.junit.Before' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting group 'SPECIAL_IMPORTS' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "35",
+        "severity": "warning",
+        "message": "Import statement for 'org.junit.Test' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting group 'SPECIAL_IMPORTS' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "36",
+        "severity": "warning",
+        "message": "Import statement for 'org.mockito.ArgumentCaptor' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting group 'SPECIAL_IMPORTS' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "38",
+        "severity": "warning",
+        "message": "Import statement for 'com.ctrip.framework.apollo.build.MockInjector' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting group 'SPECIAL_IMPORTS' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "39",
+        "severity": "warning",
+        "message": "Import statement for 'com.ctrip.framework.apollo.core.ConfigConsts' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting group 'SPECIAL_IMPORTS' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "40",
+        "severity": "warning",
+        "message": "Import statement for 'com.ctrip.framework.apollo.util.ConfigUtil' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting group 'SPECIAL_IMPORTS' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "41",
+        "severity": "warning",
+        "message": "'com.google.common.base.Charsets' should be separated from previous import group by one line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "44",
+        "severity": "warning",
+        "message": "'org.mockito.invocation.InvocationOnMock' should be separated from previous import group by one line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "61",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "138",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 101).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "156",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 116).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

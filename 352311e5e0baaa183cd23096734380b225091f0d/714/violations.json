@@ -1,0 +1,46 @@
+[
+    {
+        "line": "17",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "26",
+        "severity": "warning",
+        "message": "'import' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "26",
+        "severity": "warning",
+        "message": "Import statement for 'org.hamcrest.core.StringContains.containsString' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "27",
+        "severity": "warning",
+        "message": "Import statement for 'org.junit.Assert.assertEquals' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "28",
+        "severity": "warning",
+        "message": "Import statement for 'org.junit.Assert.assertThat' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "59",
+        "column": "45",
+        "severity": "warning",
+        "message": "Catch parameter name 'e' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.CatchParameterNameCheck"
+    },
+    {
+        "line": "72",
+        "column": "45",
+        "severity": "warning",
+        "message": "Catch parameter name 'e' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.CatchParameterNameCheck"
+    }
+]

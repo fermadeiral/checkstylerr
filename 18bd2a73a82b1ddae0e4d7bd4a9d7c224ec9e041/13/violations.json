@@ -1,0 +1,57 @@
+[
+    {
+        "line": "15",
+        "severity": "warning",
+        "message": "Import statement for 'org.junit.Assert.assertEquals' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "Import statement for 'org.mockito.Mockito.mock' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "17",
+        "severity": "warning",
+        "message": "Import statement for 'org.mockito.Mockito.when' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "19",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "28",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "59",
+        "severity": "warning",
+        "message": "Distance between variable 'anotherKey' declaration and its first usage is 4, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "62",
+        "severity": "warning",
+        "message": "Distance between variable 'lastKey' declaration and its first usage is 10, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "63",
+        "severity": "warning",
+        "message": "Distance between variable 'someResourceValue' declaration and its first usage is 6, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "88",
+        "severity": "warning",
+        "message": "Distance between variable 'lastKeyValue' declaration and its first usage is 4, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    }
+]

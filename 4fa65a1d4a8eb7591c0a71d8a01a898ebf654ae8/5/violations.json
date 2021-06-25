@@ -1,0 +1,110 @@
+[
+    {
+        "line": "13",
+        "severity": "warning",
+        "message": "Import statement for 'java.util.List' is in the wrong order. Should be in the 'STANDARD_JAVA_PACKAGE' group, expecting group 'THIRD_PARTY_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "15",
+        "severity": "warning",
+        "message": "Import statement for 'java.util.Set' is in the wrong order. Should be in the 'STANDARD_JAVA_PACKAGE' group, expecting group 'THIRD_PARTY_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "'org.junit.Test' should be separated from previous import group by one line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "23",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.Config' import. Should be before 'org.springframework.context.support.ClassPathXmlApplicationContext'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "24",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.ConfigChangeListener' import. Should be before 'org.springframework.context.support.ClassPathXmlApplicationContext'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "25",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.core.ConfigConsts' import. Should be before 'org.springframework.context.support.ClassPathXmlApplicationContext'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "26",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.model.ConfigChangeEvent' import. Should be before 'org.springframework.context.support.ClassPathXmlApplicationContext'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "27",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.spring.annotation.ApolloConfig' import. Should be before 'org.springframework.context.support.ClassPathXmlApplicationContext'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "28",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.spring.annotation.ApolloConfigChangeListener' import. Should be before 'org.springframework.context.support.ClassPathXmlApplicationContext'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "29",
+        "severity": "warning",
+        "message": "Import statement for 'com.google.common.collect.Lists' is in the wrong order. Should be in the 'SPECIAL_IMPORTS' group, expecting group 'STANDARD_JAVA_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "31",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "34",
+        "severity": "warning",
+        "message": "Abbreviation in name 'XMLConfigAnnotationTest' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "45",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "93",
+        "severity": "warning",
+        "message": "Distance between variable 'bean' declaration and its first usage is 4, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "144",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 107).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "150",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 127).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "153",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 124).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "165",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 101).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

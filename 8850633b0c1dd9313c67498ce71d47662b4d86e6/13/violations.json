@@ -1,0 +1,239 @@
+[
+    {
+        "line": "1",
+        "column": "9",
+        "severity": "warning",
+        "message": "Package name 'com.ctrip.framework.apollo.portal.spi.defaultImpl' must match pattern '^[a-z]+(\\.[a-z][a-z0-9]*)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"
+    },
+    {
+        "line": "13",
+        "severity": "warning",
+        "message": "Import statement for 'com.google.common.collect.Sets' is in the wrong order. Should be in the 'SPECIAL_IMPORTS' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "Import statement for 'org.mockito.Matchers.any' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "19",
+        "severity": "warning",
+        "message": "Import statement for 'org.mockito.Matchers.anySetOf' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "20",
+        "severity": "warning",
+        "message": "Import statement for 'org.mockito.Matchers.anyString' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "21",
+        "severity": "warning",
+        "message": "Import statement for 'org.mockito.Mockito.*' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "21",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - org.mockito.Mockito.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "25",
+        "severity": "warning",
+        "message": "Abbreviation in name 'APP_ID' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "25",
+        "column": "24",
+        "severity": "warning",
+        "message": "Member name 'APP_ID' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "26",
+        "severity": "warning",
+        "message": "Abbreviation in name 'APP_NAME' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "26",
+        "column": "24",
+        "severity": "warning",
+        "message": "Member name 'APP_NAME' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "27",
+        "severity": "warning",
+        "message": "Abbreviation in name 'CLUSTER' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "27",
+        "column": "24",
+        "severity": "warning",
+        "message": "Member name 'CLUSTER' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "28",
+        "severity": "warning",
+        "message": "Abbreviation in name 'NAMESPACE' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "28",
+        "column": "24",
+        "severity": "warning",
+        "message": "Member name 'NAMESPACE' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "29",
+        "severity": "warning",
+        "message": "Abbreviation in name 'CURRENT_USER' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "29",
+        "column": "24",
+        "severity": "warning",
+        "message": "Member name 'CURRENT_USER' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "40",
+        "column": "45",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "42",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 127).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "46",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 105).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "47",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 112).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "51",
+        "column": "32",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "67",
+        "column": "48",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "70",
+        "column": "76",
+        "severity": "warning",
+        "message": "'.' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "74",
+        "column": "77",
+        "severity": "warning",
+        "message": "'.' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "85",
+        "column": "48",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "88",
+        "column": "76",
+        "severity": "warning",
+        "message": "'.' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "92",
+        "column": "77",
+        "severity": "warning",
+        "message": "'.' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "106",
+        "severity": "warning",
+        "message": "Abbreviation in name 'testInitNamespaceRoleModifyNSExisted' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "106",
+        "column": "53",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "109",
+        "column": "76",
+        "severity": "warning",
+        "message": "'.' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "113",
+        "column": "77",
+        "severity": "warning",
+        "message": "'.' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "126",
+        "column": "24",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "137",
+        "column": "41",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "143",
+        "column": "30",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "149",
+        "column": "38",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    }
+]

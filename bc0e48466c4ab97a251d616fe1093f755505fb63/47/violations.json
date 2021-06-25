@@ -1,0 +1,147 @@
+[
+    {
+        "line": "13",
+        "severity": "warning",
+        "message": "Import statement for 'java.util.Properties' is in the wrong order. Should be in the 'STANDARD_JAVA_PACKAGE' group, expecting group 'THIRD_PARTY_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "19",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.Config' import. Should be before 'org.springframework.test.util.ReflectionTestUtils'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "20",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.ConfigFile' import. Should be before 'org.springframework.test.util.ReflectionTestUtils'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "21",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.build.MockInjector' import. Should be before 'org.springframework.test.util.ReflectionTestUtils'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "22",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.core.enums.ConfigFileFormat' import. Should be before 'org.springframework.test.util.ReflectionTestUtils'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "23",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.core.enums.Env' import. Should be before 'org.springframework.test.util.ReflectionTestUtils'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "24",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.internals.DefaultConfig' import. Should be before 'org.springframework.test.util.ReflectionTestUtils'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "25",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.internals.JsonConfigFile' import. Should be before 'org.springframework.test.util.ReflectionTestUtils'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "26",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.internals.LocalFileConfigRepository' import. Should be before 'org.springframework.test.util.ReflectionTestUtils'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "27",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.internals.PropertiesConfigFile' import. Should be before 'org.springframework.test.util.ReflectionTestUtils'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "28",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.internals.XmlConfigFile' import. Should be before 'org.springframework.test.util.ReflectionTestUtils'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "29",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.internals.YamlConfigFile' import. Should be before 'org.springframework.test.util.ReflectionTestUtils'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "30",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.internals.YmlConfigFile' import. Should be before 'org.springframework.test.util.ReflectionTestUtils'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "31",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.util.ConfigUtil' import. Should be before 'org.springframework.test.util.ReflectionTestUtils'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "33",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "41",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "61",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "91",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "92",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 107).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "93",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "99",
+        "severity": "warning",
+        "message": "Distance between variable 'jsonConfigFile' declaration and its first usage is 5, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "101",
+        "severity": "warning",
+        "message": "Distance between variable 'ymlConfigFile' declaration and its first usage is 7, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "103",
+        "severity": "warning",
+        "message": "Distance between variable 'yamlConfigFile' declaration and its first usage is 9, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "106",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

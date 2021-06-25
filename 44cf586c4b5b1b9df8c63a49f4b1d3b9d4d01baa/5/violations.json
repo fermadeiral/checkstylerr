@@ -1,0 +1,110 @@
+[
+    {
+        "line": "17",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "24",
+        "severity": "warning",
+        "message": "Import statement for 'com.ctrip.framework.apollo.ConfigChangeListener' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting group 'SPECIAL_IMPORTS' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "25",
+        "severity": "warning",
+        "message": "Import statement for 'com.ctrip.framework.apollo.enums.ConfigSourceType' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting group 'SPECIAL_IMPORTS' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "26",
+        "severity": "warning",
+        "message": "Import statement for 'com.ctrip.framework.apollo.enums.PropertyChangeType' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting group 'SPECIAL_IMPORTS' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "27",
+        "severity": "warning",
+        "message": "Import statement for 'com.ctrip.framework.apollo.model.ConfigChange' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting group 'SPECIAL_IMPORTS' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "28",
+        "severity": "warning",
+        "message": "Import statement for 'com.ctrip.framework.apollo.model.ConfigChangeEvent' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting group 'SPECIAL_IMPORTS' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "29",
+        "severity": "warning",
+        "message": "'com.google.common.util.concurrent.SettableFuture' should be separated from previous import group by one line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "30",
+        "severity": "warning",
+        "message": "Import statement for 'java.util.Collections' is in the wrong order. Should be in the 'STANDARD_JAVA_PACKAGE' group, expecting group 'THIRD_PARTY_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "31",
+        "severity": "warning",
+        "message": "Import statement for 'java.util.HashMap' is in the wrong order. Should be in the 'STANDARD_JAVA_PACKAGE' group, expecting group 'THIRD_PARTY_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "32",
+        "severity": "warning",
+        "message": "Import statement for 'java.util.Map' is in the wrong order. Should be in the 'STANDARD_JAVA_PACKAGE' group, expecting group 'THIRD_PARTY_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "33",
+        "severity": "warning",
+        "message": "Import statement for 'java.util.Set' is in the wrong order. Should be in the 'STANDARD_JAVA_PACKAGE' group, expecting group 'THIRD_PARTY_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "34",
+        "severity": "warning",
+        "message": "Import statement for 'java.util.concurrent.ExecutionException' is in the wrong order. Should be in the 'STANDARD_JAVA_PACKAGE' group, expecting group 'THIRD_PARTY_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "35",
+        "severity": "warning",
+        "message": "Import statement for 'java.util.concurrent.TimeUnit' is in the wrong order. Should be in the 'STANDARD_JAVA_PACKAGE' group, expecting group 'THIRD_PARTY_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "36",
+        "severity": "warning",
+        "message": "Import statement for 'java.util.concurrent.TimeoutException' is in the wrong order. Should be in the 'STANDARD_JAVA_PACKAGE' group, expecting group 'THIRD_PARTY_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "37",
+        "severity": "warning",
+        "message": "Import statement for 'java.util.concurrent.atomic.AtomicInteger' is in the wrong order. Should be in the 'STANDARD_JAVA_PACKAGE' group, expecting group 'THIRD_PARTY_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "38",
+        "severity": "warning",
+        "message": "'org.junit.Test' should be separated from previous import group by one line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "41",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "46",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    }
+]

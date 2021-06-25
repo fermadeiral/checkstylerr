@@ -1,0 +1,372 @@
+[
+    {
+        "line": "13",
+        "severity": "warning",
+        "message": "'java.util.List' should be separated from previous import group by one line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "14",
+        "severity": "warning",
+        "message": "Import statement for 'org.junit.Test' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "15",
+        "severity": "warning",
+        "message": "Import statement for 'org.springframework.beans.factory.BeanCreationException' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "Import statement for 'org.springframework.beans.factory.annotation.Autowired' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "17",
+        "severity": "warning",
+        "message": "Import statement for 'org.springframework.beans.factory.annotation.Value' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "Import statement for 'org.springframework.context.annotation.AnnotationConfigApplicationContext' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "19",
+        "severity": "warning",
+        "message": "Import statement for 'org.springframework.context.annotation.Bean' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "20",
+        "severity": "warning",
+        "message": "Import statement for 'org.springframework.context.annotation.ComponentScan' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "21",
+        "severity": "warning",
+        "message": "Import statement for 'org.springframework.context.annotation.ComponentScan.Filter' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "22",
+        "severity": "warning",
+        "message": "Import statement for 'org.springframework.context.annotation.Configuration' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "23",
+        "severity": "warning",
+        "message": "Import statement for 'org.springframework.context.annotation.FilterType' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "24",
+        "severity": "warning",
+        "message": "Import statement for 'org.springframework.stereotype.Component' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "26",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "44",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "65",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "79",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "83",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 105).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "92",
+        "severity": "warning",
+        "message": "Distance between variable 'anotherTimeout' declaration and its first usage is 4, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "96",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "97",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 105).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "101",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "112",
+        "severity": "warning",
+        "message": "Distance between variable 'anotherTimeout' declaration and its first usage is 4, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "116",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "117",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "121",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 112).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "130",
+        "severity": "warning",
+        "message": "Distance between variable 'anotherTimeout' declaration and its first usage is 4, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "134",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "135",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 105).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "139",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "151",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "156",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "170",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "175",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "185",
+        "column": "12",
+        "severity": "warning",
+        "message": "Local variable name 'a' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "186",
+        "column": "12",
+        "severity": "warning",
+        "message": "Local variable name 'b' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "197",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 117).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "206",
+        "column": "12",
+        "severity": "warning",
+        "message": "Local variable name 'a' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "207",
+        "column": "12",
+        "severity": "warning",
+        "message": "Local variable name 'b' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "208",
+        "column": "12",
+        "severity": "warning",
+        "message": "Local variable name 'c' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "218",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 117).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "227",
+        "column": "12",
+        "severity": "warning",
+        "message": "Local variable name 'a' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "228",
+        "column": "12",
+        "severity": "warning",
+        "message": "Local variable name 'b' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "236",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 117).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "245",
+        "column": "12",
+        "severity": "warning",
+        "message": "Local variable name 'a' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "246",
+        "column": "12",
+        "severity": "warning",
+        "message": "Local variable name 'b' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "254",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "259",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 117).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "268",
+        "column": "12",
+        "severity": "warning",
+        "message": "Local variable name 'a' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "269",
+        "column": "12",
+        "severity": "warning",
+        "message": "Local variable name 'b' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "277",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "281",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 117).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "308",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 105).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "337",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "381",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 117).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "532",
+        "column": "20",
+        "severity": "warning",
+        "message": "Member name 'a' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "533",
+        "column": "17",
+        "severity": "warning",
+        "message": "Member name 'b' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "539",
+        "column": "29",
+        "severity": "warning",
+        "message": "Parameter name 'a' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "547",
+        "column": "26",
+        "severity": "warning",
+        "message": "Parameter name 'b' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "552",
+        "column": "34",
+        "severity": "warning",
+        "message": "Parameter name 'o' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    }
+]

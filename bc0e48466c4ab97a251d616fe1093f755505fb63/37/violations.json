@@ -1,0 +1,75 @@
+[
+    {
+        "line": "8",
+        "severity": "warning",
+        "message": "Import statement for 'java.util.Set' is in the wrong order. Should be in the 'STANDARD_JAVA_PACKAGE' group, expecting group 'THIRD_PARTY_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "13",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.Config' import. Should be before 'org.junit.Test'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "14",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.ConfigFile' import. Should be before 'org.junit.Test'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "15",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.build.MockInjector' import. Should be before 'org.junit.Test'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.core.enums.ConfigFileFormat' import. Should be before 'org.junit.Test'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "17",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.spi.ConfigFactory' import. Should be before 'org.junit.Test'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.spi.ConfigFactoryManager' import. Should be before 'org.junit.Test'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "19",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.util.ConfigUtil' import. Should be before 'org.junit.Test'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "21",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "28",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "83",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "109",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

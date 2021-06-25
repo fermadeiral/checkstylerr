@@ -1,0 +1,111 @@
+[
+    {
+        "line": "1",
+        "column": "9",
+        "severity": "warning",
+        "message": "Package name 'com.ctrip.framework.apollo.biz.grayReleaseRule' must match pattern '^[a-z]+(\\.[a-z][a-z0-9]*)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"
+    },
+    {
+        "line": "28",
+        "severity": "warning",
+        "message": "Import statement for 'org.junit.Assert.assertEquals' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "29",
+        "severity": "warning",
+        "message": "Import statement for 'org.junit.Assert.assertFalse' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "30",
+        "severity": "warning",
+        "message": "Import statement for 'org.junit.Assert.assertNull' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "31",
+        "severity": "warning",
+        "message": "Import statement for 'org.junit.Assert.assertTrue' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "32",
+        "severity": "warning",
+        "message": "Import statement for 'org.mockito.Mockito.spy' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "33",
+        "severity": "warning",
+        "message": "Import statement for 'org.mockito.Mockito.when' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "35",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "49",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "64",
+        "severity": "warning",
+        "message": "Distance between variable 'anotherNamespaceName' declaration and its first usage is 9, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "71",
+        "severity": "warning",
+        "message": "Distance between variable 'anotherClientAppId' declaration and its first usage is 5, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "72",
+        "severity": "warning",
+        "message": "Distance between variable 'anotherClientIp' declaration and its first usage is 4, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "76",
+        "column": "13",
+        "severity": "warning",
+        "message": "'(' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"
+    },
+    {
+        "line": "85",
+        "column": "9",
+        "severity": "warning",
+        "message": "'(' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"
+    },
+    {
+        "line": "108",
+        "column": "13",
+        "severity": "warning",
+        "message": "'(' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"
+    },
+    {
+        "line": "118",
+        "column": "9",
+        "severity": "warning",
+        "message": "'(' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"
+    },
+    {
+        "line": "120",
+        "column": "9",
+        "severity": "warning",
+        "message": "'(' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"
+    }
+]

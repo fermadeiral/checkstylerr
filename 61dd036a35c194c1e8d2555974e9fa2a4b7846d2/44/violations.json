@@ -1,0 +1,153 @@
+[
+    {
+        "line": "17",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.apollo.Apollo.Env' import. Should be before 'org.springframework.web.client.RestTemplate'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.apollo.core.ConfigConsts' import. Should be before 'org.springframework.web.client.RestTemplate'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "19",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.apollo.core.dto.AppConfigVO' import. Should be before 'org.springframework.web.client.RestTemplate'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "20",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.apollo.core.dto.ClusterDTO' import. Should be before 'org.springframework.web.client.RestTemplate'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "21",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.apollo.core.dto.ItemDTO' import. Should be before 'org.springframework.web.client.RestTemplate'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "22",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.apollo.core.dto.ReleaseDTO' import. Should be before 'org.springframework.web.client.RestTemplate'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "23",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.apollo.core.dto.ServiceDTO' import. Should be before 'org.springframework.web.client.RestTemplate'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "24",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.apollo.core.exception.ServiceException' import. Should be before 'org.springframework.web.client.RestTemplate'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "25",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.apollo.portal.api.AdminServiceAPI' import. Should be before 'org.springframework.web.client.RestTemplate'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "26",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.apollo.portal.constants.PortalConstants' import. Should be before 'org.springframework.web.client.RestTemplate'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "42",
+        "severity": "warning",
+        "message": "Abbreviation in name 'clusterAPI' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "44",
+        "severity": "warning",
+        "message": "Abbreviation in name 'configAPI' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "48",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "91",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "113",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 150).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "135",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "137",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "176",
+        "severity": "warning",
+        "message": "Comment has incorrect indentation level 0, expected is 2, indentation should be the same level as line 178.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"
+    },
+    {
+        "line": "181",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 147).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "190",
+        "severity": "warning",
+        "message": "Comment has incorrect indentation level 0, expected is 4, indentation should be the same level as line 191.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"
+    },
+    {
+        "line": "213",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "214",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "215",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "216",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "226",
+        "severity": "warning",
+        "message": "Comment has incorrect indentation level 0, expected is 4, indentation should be the same level as line 227.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"
+    }
+]

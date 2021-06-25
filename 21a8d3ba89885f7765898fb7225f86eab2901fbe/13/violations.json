@@ -1,0 +1,46 @@
+[
+    {
+        "line": "7",
+        "severity": "warning",
+        "message": "Import statement for 'java.io.File' is in the wrong order. Should be in the 'STANDARD_JAVA_PACKAGE' group, expecting group 'THIRD_PARTY_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "8",
+        "severity": "warning",
+        "message": "Import statement for 'java.io.FileInputStream' is in the wrong order. Should be in the 'STANDARD_JAVA_PACKAGE' group, expecting group 'THIRD_PARTY_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "13",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.foundation.internals.provider.DefaultApplicationProvider' import. Should be before 'org.junit.Test'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "17",
+        "severity": "warning",
+        "message": "Abbreviation in name 'PREDEFINED_APP_ID' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "17",
+        "column": "10",
+        "severity": "warning",
+        "message": "Member name 'PREDEFINED_APP_ID' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "33",
+        "severity": "warning",
+        "message": "Abbreviation in name 'testLoadAppPropertiesWithUTF8Bom' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "66",
+        "column": "59",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    }
+]

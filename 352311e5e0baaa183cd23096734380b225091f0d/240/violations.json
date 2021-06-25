@@ -1,0 +1,32 @@
+[
+    {
+        "line": "17",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "26",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.Config' import. Should be before 'org.junit.Test'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "27",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.ConfigFile' import. Should be before 'org.junit.Test'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "28",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.ctrip.framework.apollo.core.enums.ConfigFileFormat' import. Should be before 'org.junit.Test'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "30",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    }
+]
