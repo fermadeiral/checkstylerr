@@ -1,0 +1,74 @@
+[
+    {
+        "line": "28",
+        "severity": "warning",
+        "message": "Import statement for 'java.util.Arrays' is in the wrong order. Should be in the 'STANDARD_JAVA_PACKAGE' group, expecting group 'THIRD_PARTY_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "29",
+        "severity": "warning",
+        "message": "'org.junit.Test' should be separated from previous import group by one line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "68",
+        "severity": "warning",
+        "message": "Unicode escape(s) usage should be avoided.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.AvoidEscapedUnicodeCharactersCheck"
+    },
+    {
+        "line": "73",
+        "severity": "warning",
+        "message": "Unicode escape(s) usage should be avoided.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.AvoidEscapedUnicodeCharactersCheck"
+    },
+    {
+        "line": "76",
+        "severity": "warning",
+        "message": "Unicode escape(s) usage should be avoided.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.AvoidEscapedUnicodeCharactersCheck"
+    },
+    {
+        "line": "141",
+        "column": "38",
+        "severity": "warning",
+        "message": "Parameter name 'b' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "145",
+        "column": "36",
+        "severity": "warning",
+        "message": "Parameter name 'd' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "149",
+        "column": "31",
+        "severity": "warning",
+        "message": "Parameter name 'l' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "153",
+        "column": "36",
+        "severity": "warning",
+        "message": "Parameter name 's' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "157",
+        "column": "39",
+        "severity": "warning",
+        "message": "Parameter name 'r' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "161",
+        "column": "34",
+        "severity": "warning",
+        "message": "Parameter name 'b' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    }
+]

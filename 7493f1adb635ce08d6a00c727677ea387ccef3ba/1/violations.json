@@ -1,0 +1,14 @@
+[
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "21",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'org.junit.Assert.assertNotEquals' import. Should be before 'org.junit.Assert.fail'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    }
+]

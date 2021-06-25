@@ -1,0 +1,20 @@
+[
+    {
+        "line": "71",
+        "severity": "warning",
+        "message": "Abbreviation in name 'ITComputeTest' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "978",
+        "severity": "warning",
+        "message": "Distance between variable 'snapshotDiskId' declaration and its first usage is 26, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "1243",
+        "severity": "warning",
+        "message": "Distance between variable 'remoteDisk' declaration and its first usage is 31, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    }
+]

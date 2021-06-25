@@ -1,0 +1,27 @@
+[
+    {
+        "line": "36",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.google.cloud.bigquery.spi.BigQueryRpcFactory' import. Should be before 'com.google.cloud.bigquery.spi.v2.BigQueryRpc'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "84",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "203",
+        "severity": "warning",
+        "message": "Distance between variable 'buffer' declaration and its first usage is 5, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "246",
+        "severity": "warning",
+        "message": "Distance between variable 'buffer2' declaration and its first usage is 6, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    }
+]

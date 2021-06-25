@@ -1,0 +1,26 @@
+[
+    {
+        "line": "25",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.google.cloud.compute.deprecated.ComputeOptions' import. Should be before 'com.google.cloud.http.HttpTransportOptions'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "26",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.google.cloud.compute.deprecated.testing.RemoteComputeHelper.ComputeHelperException' import. Should be before 'com.google.cloud.http.HttpTransportOptions'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "29",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'org.junit.Test' import. Should be before 'org.threeten.bp.Duration'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "35",
+        "severity": "warning",
+        "message": "Import statement for 'org.junit.Test' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    }
+]

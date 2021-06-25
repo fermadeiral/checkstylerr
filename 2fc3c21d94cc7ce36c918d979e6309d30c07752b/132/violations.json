@@ -1,0 +1,51 @@
+[
+    {
+        "line": "34",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.google.cloud.RestorableState' import. Should be before 'com.google.common.collect.ImmutableMap'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "35",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.google.cloud.RetryParams' import. Should be before 'com.google.common.collect.ImmutableMap'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "36",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.google.cloud.WriteChannel' import. Should be before 'com.google.common.collect.ImmutableMap'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "37",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.google.cloud.storage.spi.StorageRpc' import. Should be before 'com.google.common.collect.ImmutableMap'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "38",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.google.cloud.storage.spi.StorageRpcFactory' import. Should be before 'com.google.common.collect.ImmutableMap'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "69",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "156",
+        "severity": "warning",
+        "message": "Distance between variable 'buffer' declaration and its first usage is 5, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "195",
+        "severity": "warning",
+        "message": "Distance between variable 'buffer2' declaration and its first usage is 5, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    }
+]

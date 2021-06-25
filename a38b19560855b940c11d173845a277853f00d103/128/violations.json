@@ -1,0 +1,32 @@
+[
+    {
+        "line": "29",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.google.api.gax.paging.Page' import. Should be before 'com.google.cloud.Identity'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "37",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.google.cloud.resourcemanager.spi.ResourceManagerRpcFactory' import. Should be before 'com.google.cloud.resourcemanager.spi.v1beta1.ResourceManagerRpc'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "164",
+        "severity": "warning",
+        "message": "Distance between variable 'originalProject' declaration and its first usage is 4, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "414",
+        "severity": "warning",
+        "message": "Distance between variable 'resourceManagerMock' declaration and its first usage is 5, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "435",
+        "severity": "warning",
+        "message": "Distance between variable 'resourceManagerMock' declaration and its first usage is 5, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    }
+]
