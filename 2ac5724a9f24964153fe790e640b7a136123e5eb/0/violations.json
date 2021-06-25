@@ -1,0 +1,72 @@
+[
+    {
+        "line": "5",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - com.github.swissquote.carnotzet.core.runtime.DefaultCommandRunner.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "11",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'get_registry_entrypoint' must match pattern '^[a-z0-9]+[a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "16",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'no_entrypoint_no_cmd' must match pattern '^[a-z0-9]+[a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "21",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'no_entrypoint_exec_cmd' must match pattern '^[a-z0-9]+[a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "26",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'no_entrypoint_shell_cmd' must match pattern '^[a-z0-9]+[a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "31",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'shell_entrypoint_no_cmd' must match pattern '^[a-z0-9]+[a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "36",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'shell_entrypoint_shell_cmd' must match pattern '^[a-z0-9]+[a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "41",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'shell_entrypoint_exec_cmd' must match pattern '^[a-z0-9]+[a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "46",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'exec_entrypoint_shell_cmd' must match pattern '^[a-z0-9]+[a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "62",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'exec_entrypoint_exec_cmd' must match pattern '^[a-z0-9]+[a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]
