@@ -1,0 +1,291 @@
+[
+    {
+        "line": "6",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 81).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "16",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 81).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "45",
+        "severity": "error",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "51",
+        "column": "1",
+        "severity": "error",
+        "message": "Class Data Abstraction Coupling is 11 (max allowed is 7) classes [AccessKeyId.Fake, AmazonEsSearch, EsEndPoint.Fake, File, FileInputStream, MkAnswer.Simple, MkGrizzlyContainer, Region.Fake, SearchQuery, SecretKey.Fake, ServerSocket].",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassDataAbstractionCouplingCheck"
+    },
+    {
+        "line": "54",
+        "severity": "error",
+        "message": "Block comment has incorrect indentation level 4, expected is 1, indentation should be the same level as line 58.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"
+    },
+    {
+        "line": "58",
+        "severity": "error",
+        "message": "'method def modifier' has incorrect indentation level 8, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "58",
+        "column": "1",
+        "severity": "error",
+        "message": "Line contains a tab character.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    },
+    {
+        "line": "60",
+        "column": "13",
+        "severity": "error",
+        "message": "Variable 'port' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "61",
+        "column": "21",
+        "severity": "error",
+        "message": "Variable 'awsEs' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "66",
+        "column": "28",
+        "severity": "error",
+        "message": "Name 'es' must match pattern '^(id|[A-Za-z]{3,20})$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "66",
+        "column": "28",
+        "severity": "error",
+        "message": "Variable 'es' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "67",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 83).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "71",
+        "column": "52",
+        "severity": "error",
+        "message": "'10' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "74",
+        "column": "31",
+        "severity": "error",
+        "message": "Variable 'srp' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "75",
+        "column": "46",
+        "severity": "error",
+        "message": "'27' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "76",
+        "column": "51",
+        "severity": "error",
+        "message": "'10' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "77",
+        "column": "26",
+        "severity": "error",
+        "message": "Variable 'third' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "78",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 98).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "81",
+        "column": "26",
+        "severity": "error",
+        "message": "Variable 'last' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "81",
+        "column": "54",
+        "severity": "error",
+        "message": "'9' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "82",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 92).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "95",
+        "column": "13",
+        "severity": "error",
+        "message": "Variable 'port' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "96",
+        "column": "21",
+        "severity": "error",
+        "message": "Variable 'awsEs' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "97",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 84).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "100",
+        "column": "28",
+        "severity": "error",
+        "message": "Name 'es' must match pattern '^(id|[A-Za-z]{3,20})$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "100",
+        "column": "28",
+        "severity": "error",
+        "message": "Variable 'es' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "101",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 91).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "101",
+        "column": "9",
+        "severity": "error",
+        "message": "Line contains a tab character.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    },
+    {
+        "line": "105",
+        "column": "52",
+        "severity": "error",
+        "message": "'10' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "108",
+        "column": "31",
+        "severity": "error",
+        "message": "Variable 'srp' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "127",
+        "column": "24",
+        "severity": "error",
+        "message": "Name 'es' must match pattern '^(id|[A-Za-z]{3,20})$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "127",
+        "column": "24",
+        "severity": "error",
+        "message": "Variable 'es' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "128",
+        "column": "5",
+        "severity": "error",
+        "message": "Line contains a tab character.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    },
+    {
+        "line": "132",
+        "column": "5",
+        "severity": "error",
+        "message": "Line contains a tab character.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    },
+    {
+        "line": "133",
+        "column": "5",
+        "severity": "error",
+        "message": "Line contains a tab character.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    },
+    {
+        "line": "138",
+        "column": "18",
+        "severity": "error",
+        "message": "Parameter ex should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "139",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 96).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "144",
+        "column": "18",
+        "severity": "error",
+        "message": "Parameter ex should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "145",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 96).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "155",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter resourceName should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "155",
+        "column": "40",
+        "severity": "error",
+        "message": "Expected @param tag for 'resourceName'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "156",
+        "column": "21",
+        "severity": "error",
+        "message": "Name 'is' must match pattern '^(id|[A-Za-z]{3,20})$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "156",
+        "column": "21",
+        "severity": "error",
+        "message": "Variable 'is' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    }
+]

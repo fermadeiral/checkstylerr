@@ -1,0 +1,123 @@
+[
+    {
+        "line": "6",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 81).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "16",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 81).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "53",
+        "severity": "error",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "60",
+        "column": "1",
+        "severity": "error",
+        "message": "Class Data Abstraction Coupling is 11 (max allowed is 7) classes [AccessKeyId.Fake, CharlesResource, EsEndPoint.Fake, File, FileInputStream, MkAnswer.Simple, MkGrizzlyContainer, Region.Fake, SecretKey.Fake, ServerSocket, StringReader].",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassDataAbstractionCouplingCheck"
+    },
+    {
+        "line": "69",
+        "column": "13",
+        "severity": "error",
+        "message": "Variable 'port' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "70",
+        "column": "21",
+        "severity": "error",
+        "message": "Variable 'awsEs' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "73",
+        "column": "28",
+        "severity": "error",
+        "message": "Variable 'request' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "77",
+        "column": "25",
+        "severity": "error",
+        "message": "Variable 'resource' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "85",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 96).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "85",
+        "column": "22",
+        "severity": "error",
+        "message": "Variable 'resp' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "86",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "86",
+        "column": "24",
+        "severity": "error",
+        "message": "Variable 'page' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "97",
+        "column": "64",
+        "severity": "error",
+        "message": "'9' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "106",
+        "column": "54",
+        "severity": "error",
+        "message": "'8' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "122",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter resourceName should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "122",
+        "column": "40",
+        "severity": "error",
+        "message": "Expected @param tag for 'resourceName'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "123",
+        "column": "21",
+        "severity": "error",
+        "message": "Name 'is' must match pattern '^(id|[A-Za-z]{3,20})$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "123",
+        "column": "21",
+        "severity": "error",
+        "message": "Variable 'is' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    }
+]
