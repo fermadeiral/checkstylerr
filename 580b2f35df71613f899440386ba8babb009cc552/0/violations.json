@@ -1,0 +1,36 @@
+[
+    {
+        "line": "33",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - java.util.Date.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "34",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - java.util.List.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "50",
+        "severity": "error",
+        "message": "Abbreviation in name 'ARRANGED_JSON' must contain no more than '4' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "50",
+        "column": "18",
+        "severity": "error",
+        "message": "Variable 'ARRANGED_JSON' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "104",
+        "column": "59",
+        "severity": "error",
+        "message": "Expected @throws tag for 'JSONException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    }
+]
