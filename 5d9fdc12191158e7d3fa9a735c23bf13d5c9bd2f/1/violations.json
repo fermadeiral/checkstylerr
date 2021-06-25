@@ -1,0 +1,28 @@
+[
+    {
+        "line": "1",
+        "severity": "warning",
+        "message": "Line does not match expected header line of '/**'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.header.HeaderCheck"
+    },
+    {
+        "line": "29",
+        "severity": "warning",
+        "message": "Class should define a constructor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"
+    },
+    {
+        "line": "69",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testExecute_\u5206\u5272\u6210\u529f' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "69",
+        "column": "43",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    }
+]
