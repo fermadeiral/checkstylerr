@@ -1,0 +1,36 @@
+[
+    {
+        "line": "4",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - com.github.vbauer.jconditions.checker.RunningOnOSChecker.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "26",
+        "column": "26",
+        "severity": "error",
+        "message": "Variable 'isSatisfiedInnerCheck' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "61",
+        "severity": "error",
+        "message": "Annotation style must be 'COMPACT_NO_ARRAY'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.annotation.AnnotationUseStyleCheck"
+    },
+    {
+        "line": "85",
+        "column": "48",
+        "severity": "error",
+        "message": "'80' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "245",
+        "column": "32",
+        "severity": "error",
+        "message": "Parameter filePath should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]
