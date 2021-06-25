@@ -1,0 +1,301 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.apache.usergrid.rest.applications.queries;
+
+
+import org.apache.usergrid.persistence.geo.model.Point;
+import org.apache.usergrid.persistence.index.utils.UUIDUtils;
+import org.apache.usergrid.rest.test.resource2point0.AbstractRestIT;
+import org.apache.usergrid.rest.test.resource2point0.model.Collection;
+import org.apache.usergrid.rest.test.resource2point0.model.Entity;
+import org.apache.usergrid.rest.test.resource2point0.model.QueryParameters;
+import org.apache.usergrid.utils.MapUtils;
+import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.util.*;
+
+import static org.junit.Assert.*;
+
+
+/**
+ * // TODO: Document this
+ *
+ * @author ApigeeCorporation
+ * @since 4.0
+ */
+public class GeoPagingTest extends AbstractRestIT {
+  private static Logger log = LoggerFactory.getLogger(GeoPagingTest.class);
+
+  /**
+   * Tests the ability to query groups by location
+   * 1. Create several groups
+   * 2. Query the groups from a nearby location, restricting the search
+   * by creation time to a single entity where created[i-1] < created[i] < created[i+1]
+   * 3. Verify that the desired entity i, and only the desired entity, is returned
+   *
+   * @throws IOException
+   */
+  @Test //("Test uses up to many resources to run reliably") // USERGRID-1403
+  public void groupQueriesWithGeoPaging() throws IOException {
+
+    int maxRangeLimit = 2000;
+    long[] index = new long[maxRangeLimit];
+    Double lat = 37.0;
+    Double lon = -75.0;
+
+    //Create our base entity template
+    Entity actor = new Entity();
+    actor.put("displayName", "Erin");
+    actor.put("location", new MapUtils.HashMapBuilder<String, Double>()
+        .map("latitude", lat)
+        .map("longitude", lon));
+    Entity props = new Entity();
+    props.put("actor", actor);
+    props.put("verb", "go");
+    props.put("content", "bragh");
+    // 1. Create several groups
+    // Modifying the path will cause a new group to be created
+    for (int i = 0; i < 5; i++) {
+      String newPath = String.format("/kero" + i);
+      props.put("path", newPath);
+      props.put("ordinal", i);
+      //save the entity
+      Entity activity = this.app().collection("groups").post(props);
+      //retrieve it again from the database
+      activity = this.app().collection("groups").entity(activity).get();
+      index[i] = (Long) activity.get("created");
+      log.debug("Activity {} created at {}", i, index[i]);
+
+    }
+    this.refreshIndex();
+    // 2. Query the groups from a nearby location, restricting the search
+    //    by creation time to a single entity where created[i-1] < created[i] < created[i+1]
+    String query = "select * where location within 20000 of 37.0,-75.0 "
+        + " and created > " + (index[0])
+        + " and created < " + (index[2])
+        + " order by created";
+    QueryParameters params = new QueryParameters();
+    params.setQuery(query);
+    Collection collection = this.app().collection("groups").get(params);
+    assertEquals("Query should have returned 1 entity", 1, collection.response.getEntityCount());
+    Entity entity = collection.next();
+    // 3. Verify that the desired entity i, and only the desired entity, is returned
+    assertNotNull("Query should have returned 1 entity", entity);
+    assertEquals(index[1], Long.parseLong(entity.get("created").toString()));
+    assertFalse("Query should have returned only 1 entity", collection.hasNext());
+    try {
+      entity = collection.next();
+      fail("Query should have returned only 1 entity");
+    } catch (NoSuchElementException nse) {
+      //We're expecting a NoSuchElementException. This is good news, so no need to do
+      //anything with the exception
+    }
+
+  }
+
+
+  /**
+   * Creates a store then queries to check ability to find different store from up to 40 mil meters away
+   * 1. Create 2 entities
+   * 2. Query from a short distance of the center point to ensure that none are returned
+   * 3. Query within a huge distance of the center point to ensure that both are returned
+   */
+  @Test
+  public void testFarAwayLocationFromCenter() throws IOException {
+    String collectionType = "testFarAwayLocation" + UUIDUtils.newTimeUUID();
+    Point center = new Point(37.776753, -122.407846);
+    QueryParameters queryClose = new QueryParameters();
+    queryClose.setQuery("select * where location within 20000 of " + String.valueOf(center.getLat()) + ", " + String.valueOf(center.getLon()) + "");
+    QueryParameters queryFar = new QueryParameters();
+    queryFar.setQuery("select * where location within " + Integer.MAX_VALUE + " of " + String.valueOf(center.getLat()) + ", " + String.valueOf(center.getLon()) + "");
+    // 1. Create 2 entities
+    Entity props = new Entity();
+    props.put("name", "usergrid");
+    props.put("location", new MapUtils.HashMapBuilder<String, Double>()
+        .map("latitude", -33.746369)
+        .map("longitude", 150.952183));
+    this.app().collection(collectionType).post(props);
+
+    Entity props2 = new Entity();
+    props2.put("name", "usergrid2");
+    props2.put("location", new MapUtils.HashMapBuilder<String, Double>()
+        .map("latitude", -33.889058)
+        .map("longitude", 151.124024));
+    this.app().collection(collectionType).post(props2);
+    this.refreshIndex();
+
+    Collection collection = this.app().collection(collectionType).get();
+    assertEquals("Should return both entities", 2, collection.response.getEntityCount());
+    // 2. Query within a short distance of the center point to ensure that none are returned
+    collection = this.app().collection(collectionType).get(queryClose);
+    assertEquals("Results from nearby, should return nothing", 0, collection.response.getEntityCount());
+    // 3. Query within a huge distance of the center point to ensure that both are returned
+    collection = this.app().collection(collectionType).get(queryFar);
+    assertEquals("Results from center point to ridiculously far", 2, collection.response.getEntityCount());
+  }
+
+  /**
+   * Test that geolocation returns entities with consistent ordering
+   * 1. Create several entities
+   * 2. Query a subset of the entities
+   * 3. Test that the entities were returned in the order expected
+   *
+   * @throws IOException
+   */
+  @Test // USERGRID-1401
+  public void groupQueriesWithConsistentResults() throws IOException {
+
+    int maxRangeLimit = 20;
+    Entity[] saved = new Entity[maxRangeLimit];
+    //Our base entity that the others will derive from
+    Entity actor = new Entity();
+    actor.put("displayName", "Erin");
+    actor.put("location", new MapUtils.HashMapBuilder<String, Double>()
+        .map("latitude", 37.0)
+        .map("longitude", -75.0));
+    Entity props = new Entity();
+
+    props.put("actor", actor);
+    props.put("verb", "go");
+    props.put("content", "bragh");
+    // 1. Create several entities
+    for (int i = 0; i < 20; i++) {
+      String newPath = String.format("/kero" + i);
+      props.put("path", newPath);
+      props.put("ordinal", i);
+      saved[i] = this.app().collection("groups").post(props);
+    }
+    this.refreshIndex();
+
+    QueryParameters params = new QueryParameters();
+    for (int consistent = 0; consistent < 20; consistent++) {
+      // 2. Query a subset of the entities
+      String query = String.format(
+          "select * where location within 100 of 37, -75 and ordinal >= %d and ordinal < %d",
+          saved[7].get("ordinal"), saved[10].get("ordinal"));
+      params.setQuery(query);
+      Collection collection = this.app().collection("groups").get(params);
+
+      assertEquals(3, collection.response.getEntityCount());
+      List entities = collection.response.getEntities();
+      // 3. Test that the entities were returned in the order expected
+      for (int i = 0; i < 3; i++) {
+        // shouldn't start at 10 since you're excluding it above in the query, it should return 9,8,7
+        LinkedHashMap<String, Object> entity = (LinkedHashMap<String, Object>) entities.get(i);
+        Entity savedEntity = saved[7 + i];
+        assertEquals(savedEntity.get("uuid"), entity.get("uuid"));
+      }
+    }
+  }
+
+
+  /**
+   * Creates a store right on top of the center store and checks to see if we can find that store, then find both
+   * stores.
+   * 1. Create 2 entities
+   * 2. Query from the center point to ensure that one is returned
+   * 3. Query within a huge distance of the center point to ensure that both are returned
+   */
+  @Test
+  public void testFarAwayLocationWithOneResultCloser() throws IOException {
+    String collectionType = "testFarAwayLocationWithOneResultCloser" + UUIDUtils.newTimeUUID();
+    Point center = new Point(-33.746369, 150.952183);
+
+    QueryParameters queryClose = new QueryParameters();
+    queryClose.setQuery("select * where location within 10000 of " + String.valueOf(center.getLat()) + ", " + String.valueOf(center.getLon()) + "");
+    QueryParameters queryFar = new QueryParameters();
+    queryFar.setQuery("select * where location within " + Integer.MAX_VALUE + " of " + String.valueOf(center.getLat()) + ", " + String.valueOf(center.getLon()) + "");
+    // 1. Create 2 entities
+    Entity props = new Entity();
+    props.put("name", "usergrid");
+    props.put("location", new MapUtils.HashMapBuilder<String, Double>()
+        .map("latitude", -33.746369)
+        .map("longitude", 150.952183));
+    this.app().collection(collectionType).post(props);
+
+    Entity props2 = new Entity();
+    props2.put("name", "usergrid2");
+    props2.put("location", new MapUtils.HashMapBuilder<String, Double>()
+        .map("latitude", -33.889058)
+        .map("longitude", 151.124024));
+    this.app().collection(collectionType).post(props2);
+    this.refreshIndex();
+
+    // 2. Query from the center point to ensure that one is returned
+    Collection collection = this.app().collection(collectionType).get(queryClose);
+    assertEquals("Results from nearby, should return 1 store", 1, collection.response.getEntityCount());
+
+    // 3. Query within a huge distance of the center point to ensure that both are returned
+    collection = this.app().collection(collectionType).get(queryFar);
+    assertEquals("Results from center point to ridiculously far", 2, collection.response.getEntityCount());
+  }
+
+
+  /**
+   * Creates two users, then a matrix of coordinates, then checks to see if any of the coordinates are near our users
+   * <p/>
+   * 1. Create 2 users
+   * 2. Create a list of geo points
+   * 3. Test each to ensure it is not within 10000 meters of our users
+   *
+   * @throws IOException
+   */
+  @Test
+  public void createHugeMatrixOfCoordinates() throws IOException {
+
+    //1. Create 2 users
+    Entity props = new Entity();
+    props.put("username", "norwest");
+    props.put("displayName", "norwest");
+    props.put("email", "norwest@usergrid.com");
+    props.put("location", new MapUtils.HashMapBuilder<String, Double>()
+        .map("latitude", -33.746369)
+        .map("longitude", 150.952183));
+    this.app().collection("users").post(props);
+    props.put("username", "ashfield");
+    props.put("displayName", "ashfield");
+    props.put("email", "ashfield@usergrid.com");
+    props.put("location", new MapUtils.HashMapBuilder<String, Double>()
+        .map("latitude", -33.746369)
+        .map("longitude", 150.952183));
+    this.app().collection("users").post(props);
+
+    this.refreshIndex();
+    // 2. Create a list of geo points
+    List<Point> points = new ArrayList<Point>();
+    points.add(new Point(33.746369, -89));//Woodland, MS
+    points.add(new Point(33.746369, -91));//Beulah, MS
+    points.add(new Point(-1.000000, 102.000000));//Somewhere in Indonesia
+    points.add(new Point(-90.000000, 90.000000));//Antarctica
+    points.add(new Point(90, 90));//Santa's house
+
+    // 3. Test each to ensure it is not within 10000 meters of our users
+    Iterator<Point> pointIterator = points.iterator();
+    for (Point p = pointIterator.next(); pointIterator.hasNext(); p = pointIterator.next()) {
+
+      Point center = new Point(p.getLat(), p.getLon());
+      String query = "select * where location within 10000 of " + center.getLat() + ", " + center.getLon();//locationQuery( 10000 ,center );
+      QueryParameters params = new QueryParameters();
+      params.setQuery(query);
+      Collection collection = this.app().collection("users").get(params);
+      assertEquals("Expected 0 results", 0, collection.response.getEntityCount());
+    }
+  }
+}

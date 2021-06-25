@@ -1,0 +1,76 @@
+[
+    {
+        "line": "27",
+        "severity": "warning",
+        "message": "Wrong order for 'org.apache.shiro.SecurityUtils' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "37",
+        "severity": "warning",
+        "message": "'org.junit.runner.Description' should be separated from previous imports.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "37",
+        "column": "1",
+        "severity": "warning",
+        "message": "Duplicate import to line 22 - org.junit.runner.Description.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "38",
+        "column": "1",
+        "severity": "warning",
+        "message": "Duplicate import to line 23 - org.junit.runners.model.Statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "39",
+        "column": "1",
+        "severity": "warning",
+        "message": "Duplicate import to line 24 - org.slf4j.Logger.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "40",
+        "column": "1",
+        "severity": "warning",
+        "message": "Duplicate import to line 25 - org.slf4j.LoggerFactory.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "41",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - org.springframework.beans.factory.config.PropertiesFactoryBean.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "43",
+        "severity": "warning",
+        "message": "Wrong order for 'java.util.Properties' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "43",
+        "column": "1",
+        "severity": "warning",
+        "message": "Duplicate import to line 20 - java.util.Properties.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "117",
+        "column": "45",
+        "severity": "warning",
+        "message": "'{' at column 45 should have line break after.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"
+    },
+    {
+        "line": "120",
+        "column": "45",
+        "severity": "warning",
+        "message": "'{' at column 45 should have line break after.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"
+    }
+]

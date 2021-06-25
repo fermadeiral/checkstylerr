@@ -1,0 +1,1440 @@
+package org.apache.usergrid.management.cassandra;
+
+
+import java.io.File;
+import java.io.FileReader;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.UUID;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.junit.BeforeClass;
+import org.junit.ClassRule;
+import org.junit.Ignore;
+import org.junit.Rule;
+import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import org.apache.usergrid.ServiceITSetup;
+import org.apache.usergrid.ServiceITSetupImpl;
+import org.apache.usergrid.ServiceITSuite;
+import org.apache.usergrid.batch.JobExecution;
+import org.apache.usergrid.cassandra.CassandraResource;
+import org.apache.usergrid.cassandra.ClearShiroSubject;
+import org.apache.usergrid.cassandra.Concurrent;
+import org.apache.usergrid.count.SimpleBatcher;
+import org.apache.usergrid.management.ExportInfo;
+import org.apache.usergrid.management.OrganizationInfo;
+import org.apache.usergrid.management.UserInfo;
+import org.apache.usergrid.management.export.ExportJob;
+import org.apache.usergrid.management.export.ExportService;
+import org.apache.usergrid.management.export.S3Export;
+import org.apache.usergrid.management.export.S3ExportImpl;
+import org.apache.usergrid.persistence.CredentialsInfo;
+import org.apache.usergrid.persistence.Entity;
+import org.apache.usergrid.persistence.EntityManager;
+import org.apache.usergrid.persistence.EntityManagerFactory;
+import org.apache.usergrid.persistence.entities.Export;
+import org.apache.usergrid.persistence.entities.JobData;
+import org.apache.usergrid.persistence.entities.User;
+import org.apache.usergrid.security.AuthPrincipalType;
+import org.apache.usergrid.security.crypto.command.Md5HashCommand;
+import org.apache.usergrid.security.crypto.command.Sha1HashCommand;
+import org.apache.usergrid.security.tokens.TokenCategory;
+import org.apache.usergrid.security.tokens.exceptions.InvalidTokenException;
+import org.apache.usergrid.utils.JsonUtils;
+import org.apache.usergrid.utils.UUIDUtils;
+
+import static org.apache.commons.codec.binary.Base64.encodeBase64URLSafeString;
+import static org.apache.usergrid.persistence.Schema.DICTIONARY_CREDENTIALS;
+import static org.apache.usergrid.persistence.cassandra.CassandraService.MANAGEMENT_APPLICATION_ID;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
+
+/** @author zznate */
+@Concurrent()
+public class ManagementServiceIT {
+    private static final Logger LOG = LoggerFactory.getLogger( ManagementServiceIT.class );
+
+    private static CassandraResource cassandraResource = ServiceITSuite.cassandraResource;
+
+    // app-level data generated only once
+    private static UserInfo adminUser;
+    private static OrganizationInfo organization;
+    private static UUID applicationId;
+
+    @Rule
+    public ClearShiroSubject clearShiroSubject = new ClearShiroSubject();
+
+    @ClassRule
+    public static final ServiceITSetup setup = new ServiceITSetupImpl( cassandraResource );
+
+
+    @BeforeClass
+    public static void setup() throws Exception {
+        LOG.info( "in setup" );
+        adminUser = setup.getMgmtSvc().createAdminUser( "edanuff", "Ed Anuff", "ed@anuff.com", "test", false, false );
+        organization = setup.getMgmtSvc().createOrganization( "ed-organization", adminUser, true );
+        applicationId = setup.getMgmtSvc().createApplication( organization.getUuid(), "ed-application" ).getId();
+    }
+
+
+    @Test
+    public void testGetTokenForPrincipalAdmin() throws Exception {
+        String token = ( ( ManagementServiceImpl ) setup.getMgmtSvc() )
+                .getTokenForPrincipal( TokenCategory.ACCESS, null, MANAGEMENT_APPLICATION_ID,
+                        AuthPrincipalType.ADMIN_USER, adminUser.getUuid(), 0 );
+        // ^ same as:
+        // managementService.getAccessTokenForAdminUser(user.getUuid());
+        assertNotNull( token );
+        token = ( ( ManagementServiceImpl ) setup.getMgmtSvc() )
+                .getTokenForPrincipal( TokenCategory.ACCESS, null, MANAGEMENT_APPLICATION_ID,
+                        AuthPrincipalType.APPLICATION_USER, adminUser.getUuid(), 0 );
+        // This works because ManagementService#getSecret takes the same code
+        // path
+        // on an OR for APP._USER as for ADMIN_USER
+        // is ok technically as ADMIN_USER is a APP_USER to the admin app, but
+        // should still
+        // be stricter checking
+        assertNotNull( token );
+        // managementService.getTokenForPrincipal(appUuid, authPrincipal, pUuid,
+        // salt, true);
+    }
+
+
+    @Test
+    public void testGetTokenForPrincipalUser() throws Exception {
+        // create a user
+        Map<String, Object> properties = new LinkedHashMap<String, Object>();
+        properties.put( "username", "edanuff" );
+        properties.put( "email", "ed@anuff.com" );
+
+        Entity user = setup.getEmf().getEntityManager( applicationId ).create( "user", properties );
+
+        assertNotNull( user );
+        String token = ( ( ManagementServiceImpl ) setup.getMgmtSvc() )
+                .getTokenForPrincipal( TokenCategory.ACCESS, null, MANAGEMENT_APPLICATION_ID,
+                        AuthPrincipalType.APPLICATION_USER, user.getUuid(), 0 );
+        assertNotNull( token );
+    }
+
+
+    @Test
+    public void testCountAdminUserAction() throws Exception {
+        SimpleBatcher batcher = cassandraResource.getBean( SimpleBatcher.class );
+
+        batcher.setBlockingSubmit( true );
+        batcher.setBatchSize( 1 );
+
+        setup.getMgmtSvc().countAdminUserAction( adminUser, "login" );
+
+        EntityManager em = setup.getEmf().getEntityManager( MANAGEMENT_APPLICATION_ID );
+
+        Map<String, Long> counts = em.getApplicationCounters();
+        LOG.info( JsonUtils.mapToJsonString( counts ) );
+        LOG.info( JsonUtils.mapToJsonString( em.getCounterNames() ) );
+        assertNotNull( counts.get( "admin_logins" ) );
+        assertEquals( 1, counts.get( "admin_logins" ).intValue() );
+    }
+
+
+    @Test
+    public void deactivateUser() throws Exception {
+
+        UUID uuid = UUIDUtils.newTimeUUID();
+        Map<String, Object> properties = new LinkedHashMap<String, Object>();
+        properties.put( "username", "test" + uuid );
+        properties.put( "email", String.format( "test%s@anuff.com", uuid ) );
+
+        EntityManager em = setup.getEmf().getEntityManager( applicationId );
+
+        Entity entity = em.create( "user", properties );
+
+        assertNotNull( entity );
+
+        User user = em.get( entity.getUuid(), User.class );
+
+        assertFalse( user.activated() );
+        assertNull( user.getDeactivated() );
+
+        setup.getMgmtSvc().activateAppUser( applicationId, user.getUuid() );
+
+        user = em.get( entity.getUuid(), User.class );
+
+        assertTrue( user.activated() );
+        assertNull( user.getDeactivated() );
+
+        // get a couple of tokens. These shouldn't work after we deactive the user
+        String token1 = setup.getMgmtSvc().getAccessTokenForAppUser( applicationId, user.getUuid(), 0 );
+        String token2 = setup.getMgmtSvc().getAccessTokenForAppUser( applicationId, user.getUuid(), 0 );
+
+        assertNotNull( setup.getTokenSvc().getTokenInfo( token1 ) );
+        assertNotNull( setup.getTokenSvc().getTokenInfo( token2 ) );
+
+        long startTime = System.currentTimeMillis();
+
+        setup.getMgmtSvc().deactivateUser( applicationId, user.getUuid() );
+
+        long endTime = System.currentTimeMillis();
+
+        user = em.get( entity.getUuid(), User.class );
+
+        assertFalse( user.activated() );
+        assertNotNull( user.getDeactivated() );
+
+        assertTrue( startTime <= user.getDeactivated() && user.getDeactivated() <= endTime );
+
+        boolean invalidTokenExcpetion = false;
+
+        try {
+            setup.getTokenSvc().getTokenInfo( token1 );
+        }
+        catch ( InvalidTokenException ite ) {
+            invalidTokenExcpetion = true;
+        }
+
+        assertTrue( invalidTokenExcpetion );
+
+        invalidTokenExcpetion = false;
+
+        try {
+            setup.getTokenSvc().getTokenInfo( token2 );
+        }
+        catch ( InvalidTokenException ite ) {
+            invalidTokenExcpetion = true;
+        }
+
+        assertTrue( invalidTokenExcpetion );
+    }
+
+
+    @Test
+    public void disableAdminUser() throws Exception {
+
+        UUID uuid = UUIDUtils.newTimeUUID();
+        Map<String, Object> properties = new LinkedHashMap<String, Object>();
+        properties.put( "username", "test" + uuid );
+        properties.put( "email", String.format( "test%s@anuff.com", uuid ) );
+
+        EntityManager em = setup.getEmf().getEntityManager( MANAGEMENT_APPLICATION_ID );
+
+        Entity entity = em.create( "user", properties );
+
+        assertNotNull( entity );
+
+        User user = em.get( entity.getUuid(), User.class );
+
+        assertFalse( user.activated() );
+        assertNull( user.getDeactivated() );
+
+        setup.getMgmtSvc().activateAdminUser( user.getUuid() );
+
+        user = em.get( entity.getUuid(), User.class );
+
+        assertTrue( user.activated() );
+        assertNull( user.getDeactivated() );
+
+        // get a couple of tokens. These shouldn't work after we deactive the user
+        String token1 = setup.getMgmtSvc().getAccessTokenForAdminUser( user.getUuid(), 0 );
+        String token2 = setup.getMgmtSvc().getAccessTokenForAdminUser( user.getUuid(), 0 );
+
+        assertNotNull( setup.getTokenSvc().getTokenInfo( token1 ) );
+        assertNotNull( setup.getTokenSvc().getTokenInfo( token2 ) );
+
+        setup.getMgmtSvc().disableAdminUser( user.getUuid() );
+
+        user = em.get( entity.getUuid(), User.class );
+
+        assertTrue( user.disabled() );
+
+        boolean invalidTokenExcpetion = false;
+
+        try {
+            setup.getTokenSvc().getTokenInfo( token1 );
+        }
+        catch ( InvalidTokenException ite ) {
+            invalidTokenExcpetion = true;
+        }
+
+        assertTrue( invalidTokenExcpetion );
+
+        invalidTokenExcpetion = false;
+
+        try {
+            setup.getTokenSvc().getTokenInfo( token2 );
+        }
+        catch ( InvalidTokenException ite ) {
+            invalidTokenExcpetion = true;
+        }
+
+        assertTrue( invalidTokenExcpetion );
+    }
+
+
+    @Test
+    public void userTokensRevoke() throws Exception {
+        UUID userId = UUIDUtils.newTimeUUID();
+
+        String token1 = setup.getMgmtSvc().getAccessTokenForAppUser( applicationId, userId, 0 );
+        String token2 = setup.getMgmtSvc().getAccessTokenForAppUser( applicationId, userId, 0 );
+
+        assertNotNull( setup.getTokenSvc().getTokenInfo( token1 ) );
+        assertNotNull( setup.getTokenSvc().getTokenInfo( token2 ) );
+
+        setup.getMgmtSvc().revokeAccessTokensForAppUser( applicationId, userId );
+
+        boolean invalidTokenExcpetion = false;
+
+        try {
+            setup.getTokenSvc().getTokenInfo( token1 );
+        }
+        catch ( InvalidTokenException ite ) {
+            invalidTokenExcpetion = true;
+        }
+
+        assertTrue( invalidTokenExcpetion );
+
+        invalidTokenExcpetion = false;
+
+        try {
+            setup.getTokenSvc().getTokenInfo( token2 );
+        }
+        catch ( InvalidTokenException ite ) {
+            invalidTokenExcpetion = true;
+        }
+
+        assertTrue( invalidTokenExcpetion );
+    }
+
+
+    @Test
+    public void userTokenRevoke() throws Exception {
+        EntityManager em = setup.getEmf().getEntityManager( applicationId );
+
+        Map<String, Object> properties = new LinkedHashMap<String, Object>();
+        properties.put( "username", "realbeast" );
+        properties.put( "email", "sungju@softwaregeeks.org" );
+
+        Entity user = em.create( "user", properties );
+        assertNotNull( user );
+
+        UUID userId = user.getUuid();
+
+        String token1 = setup.getMgmtSvc().getAccessTokenForAppUser( applicationId, userId, 0 );
+        String token2 = setup.getMgmtSvc().getAccessTokenForAppUser( applicationId, userId, 0 );
+
+        assertNotNull( setup.getTokenSvc().getTokenInfo( token1 ) );
+        assertNotNull( setup.getTokenSvc().getTokenInfo( token2 ) );
+
+        setup.getMgmtSvc().revokeAccessTokenForAppUser( token1 );
+
+        boolean invalidToken1Excpetion = false;
+
+        try {
+            setup.getTokenSvc().getTokenInfo( token1 );
+        }
+        catch ( InvalidTokenException ite ) {
+            invalidToken1Excpetion = true;
+        }
+
+        assertTrue( invalidToken1Excpetion );
+
+        boolean invalidToken2Excpetion = true;
+
+        try {
+            setup.getTokenSvc().getTokenInfo( token2 );
+        }
+        catch ( InvalidTokenException ite ) {
+            invalidToken2Excpetion = false;
+        }
+
+        assertTrue( invalidToken2Excpetion );
+    }
+
+
+    @Test
+    public void adminTokensRevoke() throws Exception {
+        UUID userId = UUIDUtils.newTimeUUID();
+
+        String token1 = setup.getMgmtSvc().getAccessTokenForAdminUser( userId, 0 );
+        String token2 = setup.getMgmtSvc().getAccessTokenForAdminUser( userId, 0 );
+
+        assertNotNull( setup.getTokenSvc().getTokenInfo( token1 ) );
+        assertNotNull( setup.getTokenSvc().getTokenInfo( token2 ) );
+
+        setup.getMgmtSvc().revokeAccessTokensForAdminUser( userId );
+
+        boolean invalidTokenException = false;
+
+        try {
+            setup.getTokenSvc().getTokenInfo( token1 );
+        }
+        catch ( InvalidTokenException ite ) {
+            invalidTokenException = true;
+        }
+
+        assertTrue( invalidTokenException );
+
+        invalidTokenException = false;
+
+        try {
+            setup.getTokenSvc().getTokenInfo( token2 );
+        }
+        catch ( InvalidTokenException ite ) {
+            invalidTokenException = true;
+        }
+
+        assertTrue( invalidTokenException );
+    }
+
+
+    @Test
+    public void adminTokenRevoke() throws Exception {
+        UUID userId = adminUser.getUuid();
+
+        String token1 = setup.getMgmtSvc().getAccessTokenForAdminUser( userId, 0 );
+        String token2 = setup.getMgmtSvc().getAccessTokenForAdminUser( userId, 0 );
+
+        assertNotNull( setup.getTokenSvc().getTokenInfo( token1 ) );
+        assertNotNull( setup.getTokenSvc().getTokenInfo( token2 ) );
+
+        setup.getMgmtSvc().revokeAccessTokenForAdminUser( userId, token1 );
+
+        boolean invalidToken1Excpetion = false;
+
+        try {
+            setup.getTokenSvc().getTokenInfo( token1 );
+        }
+        catch ( InvalidTokenException ite ) {
+            invalidToken1Excpetion = true;
+        }
+
+        assertTrue( invalidToken1Excpetion );
+
+        boolean invalidToken2Excpetion = true;
+
+        try {
+            setup.getTokenSvc().getTokenInfo( token2 );
+        }
+        catch ( InvalidTokenException ite ) {
+            invalidToken2Excpetion = false;
+        }
+
+        assertTrue( invalidToken2Excpetion );
+    }
+
+
+    @Test
+    public void superUserGetOrganizationsPage() throws Exception {
+        int beforeSize = setup.getMgmtSvc().getOrganizations().size() - 1;
+        // create 15 orgs
+        for ( int x = 0; x < 15; x++ ) {
+            setup.getMgmtSvc().createOrganization( "super-user-org-" + x, adminUser, true );
+        }
+        // should be 17 total
+        assertEquals( 16 + beforeSize, setup.getMgmtSvc().getOrganizations().size() );
+        List<OrganizationInfo> orgs = setup.getMgmtSvc().getOrganizations( null, 10 );
+        assertEquals( 10, orgs.size() );
+        UUID val = orgs.get( 9 ).getUuid();
+        orgs = setup.getMgmtSvc().getOrganizations( val, 10 );
+        assertEquals( 7 + beforeSize, orgs.size() );
+        assertEquals( val, orgs.get( 0 ).getUuid() );
+    }
+
+
+    @Test
+    public void authenticateAdmin() throws Exception {
+
+        String username = "tnine";
+        String password = "test";
+
+        UserInfo adminUser = setup.getMgmtSvc()
+                                  .createAdminUser( username, "Todd Nine", UUID.randomUUID() + "@apigee.com", password,
+                                          false, false );
+
+        UserInfo authedUser = setup.getMgmtSvc().verifyAdminUserPasswordCredentials( username, password );
+
+        assertEquals( adminUser.getUuid(), authedUser.getUuid() );
+
+        authedUser = setup.getMgmtSvc().verifyAdminUserPasswordCredentials( adminUser.getEmail(), password );
+
+        assertEquals( adminUser.getUuid(), authedUser.getUuid() );
+
+        authedUser = setup.getMgmtSvc().verifyAdminUserPasswordCredentials( adminUser.getUuid().toString(), password );
+
+        assertEquals( adminUser.getUuid(), authedUser.getUuid() );
+    }
+
+
+    /** Test we can change the password if it's hashed with sha1 */
+    @Test
+    public void testAdminPasswordChangeShaType() throws Exception {
+        String username = "testAdminPasswordChangeShaType";
+        String password = "test";
+
+
+        User user = new User();
+        user.setActivated( true );
+        user.setUsername( username );
+
+        EntityManager em = setup.getEmf().getEntityManager( MANAGEMENT_APPLICATION_ID );
+
+        User storedUser = em.create( user );
+
+
+        UUID userId = storedUser.getUuid();
+
+        //set the password in the sha1 format
+        CredentialsInfo info = new CredentialsInfo();
+        info.setRecoverable( false );
+        info.setEncrypted( true );
+
+
+        Sha1HashCommand command = new Sha1HashCommand();
+        byte[] hashed = command.hash( password.getBytes( "UTF-8" ), info, userId, MANAGEMENT_APPLICATION_ID );
+
+        info.setSecret( encodeBase64URLSafeString( hashed ) );
+        info.setCipher( command.getName() );
+
+
+        em.addToDictionary( storedUser, DICTIONARY_CREDENTIALS, "password", info );
+
+
+        //verify authorization works
+        User authedUser =
+                setup.getMgmtSvc().verifyAppUserPasswordCredentials( MANAGEMENT_APPLICATION_ID, username, password );
+
+        assertEquals( userId, authedUser.getUuid() );
+
+        //test we can change the password
+        String newPassword = "test2";
+
+        setup.getMgmtSvc().setAppUserPassword( MANAGEMENT_APPLICATION_ID, userId, password, newPassword );
+
+        //verify authorization works
+        authedUser =
+                setup.getMgmtSvc().verifyAppUserPasswordCredentials( MANAGEMENT_APPLICATION_ID, username, newPassword );
+
+        assertEquals( userId, authedUser.getUuid() );
+    }
+
+
+    /** Test we can change the password if it's hashed with md5 then sha1 */
+    @Test
+    public void testAdminPasswordChangeMd5ShaType() throws Exception {
+        String username = "testAdminPasswordChangeMd5ShaType";
+        String password = "test";
+
+
+        User user = new User();
+        user.setActivated( true );
+        user.setUsername( username );
+
+        EntityManager em = setup.getEmf().getEntityManager( MANAGEMENT_APPLICATION_ID );
+
+        User storedUser = em.create( user );
+
+
+        UUID userId = storedUser.getUuid();
+
+        //set the password in the sha1 format
+
+        //set the password in the sha1 format
+        CredentialsInfo info = new CredentialsInfo();
+        info.setRecoverable( false );
+        info.setEncrypted( true );
+
+
+        Md5HashCommand md5 = new Md5HashCommand();
+
+        Sha1HashCommand sha1 = new Sha1HashCommand();
+
+        byte[] hashed = md5.hash( password.getBytes( "UTF-8" ), info, userId, MANAGEMENT_APPLICATION_ID );
+        hashed = sha1.hash( hashed, info, userId, MANAGEMENT_APPLICATION_ID );
+
+        info.setSecret( encodeBase64URLSafeString( hashed ) );
+        //set the final cipher to sha1
+        info.setCipher( sha1.getName() );
+        //set the next hash type to md5
+        info.setHashType( md5.getName() );
+
+
+        em.addToDictionary( storedUser, DICTIONARY_CREDENTIALS, "password", info );
+
+
+        //verify authorization works
+        User authedUser =
+                setup.getMgmtSvc().verifyAppUserPasswordCredentials( MANAGEMENT_APPLICATION_ID, username, password );
+
+        assertEquals( userId, authedUser.getUuid() );
+
+        //test we can change the password
+        String newPassword = "test2";
+
+        setup.getMgmtSvc().setAppUserPassword( MANAGEMENT_APPLICATION_ID, userId, password, newPassword );
+
+        //verify authorization works
+        authedUser =
+                setup.getMgmtSvc().verifyAppUserPasswordCredentials( MANAGEMENT_APPLICATION_ID, username, newPassword );
+
+        assertEquals( userId, authedUser.getUuid() );
+    }
+
+
+    @Test
+    public void authenticateUser() throws Exception {
+
+        String username = "tnine";
+        String password = "test";
+        String orgName = "autneticateUser";
+        String appName = "authenticateUser";
+
+        UUID appId = setup.getEmf().createApplication( orgName, appName );
+
+        User user = new User();
+        user.setActivated( true );
+        user.setUsername( username );
+
+        EntityManager em = setup.getEmf().getEntityManager( appId );
+
+        User storedUser = em.create( user );
+
+
+        UUID userId = storedUser.getUuid();
+
+        //set the password
+        setup.getMgmtSvc().setAppUserPassword( appId, userId, password );
+
+        //verify authorization works
+        User authedUser = setup.getMgmtSvc().verifyAppUserPasswordCredentials( appId, username, password );
+
+        assertEquals( userId, authedUser.getUuid() );
+
+        //test we can change the password
+        String newPassword = "test2";
+
+        setup.getMgmtSvc().setAppUserPassword( appId, userId, password, newPassword );
+
+        //verify authorization works
+        authedUser = setup.getMgmtSvc().verifyAppUserPasswordCredentials( appId, username, newPassword );
+    }
+
+
+    /** Test we can change the password if it's hashed with sha1 */
+    @Test
+    public void testAppUserPasswordChangeShaType() throws Exception {
+        String username = "tnine";
+        String password = "test";
+        String orgName = "testAppUserPasswordChangeShaType";
+        String appName = "testAppUserPasswordChangeShaType";
+
+        UUID appId = setup.getEmf().createApplication( orgName, appName );
+
+        User user = new User();
+        user.setActivated( true );
+        user.setUsername( username );
+
+        EntityManager em = setup.getEmf().getEntityManager( appId );
+
+        User storedUser = em.create( user );
+
+
+        UUID userId = storedUser.getUuid();
+
+        //set the password in the sha1 format
+        CredentialsInfo info = new CredentialsInfo();
+        info.setRecoverable( false );
+        info.setEncrypted( true );
+
+
+        Sha1HashCommand command = new Sha1HashCommand();
+        byte[] hashed = command.hash( password.getBytes( "UTF-8" ), info, userId, appId );
+
+        info.setSecret( encodeBase64URLSafeString( hashed ) );
+        info.setCipher( command.getName() );
+
+
+        em.addToDictionary( storedUser, DICTIONARY_CREDENTIALS, "password", info );
+
+
+        //verify authorization works
+        User authedUser = setup.getMgmtSvc().verifyAppUserPasswordCredentials( appId, username, password );
+
+        assertEquals( userId, authedUser.getUuid() );
+
+        //test we can change the password
+        String newPassword = "test2";
+
+        setup.getMgmtSvc().setAppUserPassword( appId, userId, password, newPassword );
+
+        //verify authorization works
+        authedUser = setup.getMgmtSvc().verifyAppUserPasswordCredentials( appId, username, newPassword );
+
+        assertEquals( userId, authedUser.getUuid() );
+    }
+
+
+    /** Test we can change the password if it's hashed with md5 then sha1 */
+    @Test
+    public void testAppUserPasswordChangeMd5ShaType() throws Exception {
+        String username = "tnine";
+        String password = "test";
+        String orgName = "testAppUserPasswordChangeMd5ShaType";
+        String appName = "testAppUserPasswordChangeMd5ShaType";
+
+        UUID appId = setup.getEmf().createApplication( orgName, appName );
+
+        User user = new User();
+        user.setActivated( true );
+        user.setUsername( username );
+
+        EntityManager em = setup.getEmf().getEntityManager( appId );
+
+        User storedUser = em.create( user );
+
+
+        UUID userId = storedUser.getUuid();
+
+        //set the password in the sha1 format
+        CredentialsInfo info = new CredentialsInfo();
+        info.setRecoverable( false );
+        info.setEncrypted( true );
+
+
+        Md5HashCommand md5 = new Md5HashCommand();
+
+        Sha1HashCommand sha1 = new Sha1HashCommand();
+
+        byte[] hashed = md5.hash( password.getBytes( "UTF-8" ), info, userId, appId );
+        hashed = sha1.hash( hashed, info, userId, appId );
+
+        info.setSecret( encodeBase64URLSafeString( hashed ) );
+        //set the final cipher to sha1
+        info.setCipher( sha1.getName() );
+        //set the next hash type to md5
+        info.setHashType( md5.getName() );
+
+
+        em.addToDictionary( storedUser, DICTIONARY_CREDENTIALS, "password", info );
+
+
+        //verify authorization works
+        User authedUser = setup.getMgmtSvc().verifyAppUserPasswordCredentials( appId, username, password );
+
+        assertEquals( userId, authedUser.getUuid() );
+
+        //test we can change the password
+        String newPassword = "test2";
+
+        setup.getMgmtSvc().setAppUserPassword( appId, userId, password, newPassword );
+
+        //verify authorization works
+        authedUser = setup.getMgmtSvc().verifyAppUserPasswordCredentials( appId, username, newPassword );
+
+        assertEquals( userId, authedUser.getUuid() );
+    }
+
+
+    //Tests to make sure we can call the job with mock data and it runs.
+    @Test //Connections won't save when run with maven, but on local builds it will.
+    public void testConnectionsOnCollectionExport() throws Exception {
+
+        File f = null;
+        int index = 0;
+
+
+        try {
+            f = new File( "testFileConnections.json" );
+            f.delete();
+        }
+        catch ( Exception e ) {
+            //consumed because this checks to see if the file exists. If it doesn't then don't do anything and carry on.
+        }
+
+
+        S3Export s3Export = new MockS3ExportImpl();
+        s3Export.setFilename( "testFileConnections.json" );
+
+        ExportService exportService = setup.getExportService();
+        HashMap<String, Object> payload = payloadBuilder();
+
+        ExportInfo exportInfo = new ExportInfo( payload );
+        exportInfo.setOrganizationId( organization.getUuid() );
+        exportInfo.setApplicationId( applicationId );
+        exportInfo.setCollection( "users" );
+
+        EntityManager em = setup.getEmf().getEntityManager( applicationId );
+        //intialize user object to be posted
+        Map<String, Object> userProperties = null;
+        Entity[] entity;
+        entity = new Entity[2];
+        //creates entities
+        for ( int i = 0; i < 2; i++ ) {
+            userProperties = new LinkedHashMap<String, Object>();
+            userProperties.put( "username", "meatIsGreat" + i );
+            userProperties.put( "email", "grey" + i + "@anuff.com" );//String.format( "test%i@anuff.com", i ) );
+
+            entity[i] = em.create( "users", userProperties );
+        }
+        //creates connections
+        em.createConnection( em.getRef( entity[0].getUuid() ), "Vibrations", em.getRef( entity[1].getUuid() ) );
+        em.createConnection( em.getRef( entity[1].getUuid() ), "Vibrations", em.getRef( entity[0].getUuid() ) );
+
+        UUID exportUUID = exportService.schedule( exportInfo );
+        exportService.setS3Export( s3Export );
+
+        //create and initialize jobData returned in JobExecution.
+        JobData jobData = new JobData();
+        jobData.setProperty( "jobName", "exportJob" );
+        jobData.setProperty( "exportInfo", exportInfo );
+        jobData.setProperty( "exportId", exportUUID );
+
+        JobExecution jobExecution = mock( JobExecution.class );
+        when( jobExecution.getJobData() ).thenReturn( jobData );
+
+        exportService.doExport( exportInfo, jobExecution );
+
+        JSONParser parser = new JSONParser();
+
+        org.json.simple.JSONArray a = ( org.json.simple.JSONArray ) parser.parse( new FileReader( f ) );
+        //assertEquals(2, a.size() );
+
+        for(index  = 0; index < a.size(); index++) {
+            JSONObject jObj = ( JSONObject ) a.get( index );
+            JSONObject data = ( JSONObject ) jObj.get( "Metadata" );
+            String uuid = (String) data.get( "uuid" );
+            if ( entity[0].getUuid().toString().equals( uuid )) {
+                break;
+            }
+
+        }
+
+        org.json.simple.JSONObject objEnt = ( org.json.simple.JSONObject ) a.get( index );
+        org.json.simple.JSONObject objConnections = ( org.json.simple.JSONObject ) objEnt.get( "connections" );
+
+        assertNotNull( objConnections );
+
+        org.json.simple.JSONArray objVibrations = ( org.json.simple.JSONArray ) objConnections.get( "Vibrations" );
+
+        assertNotNull( objVibrations );
+
+        f.delete();
+    }
+
+    @Test //Connections won't save when run with maven, but on local builds it will.
+    public void testConnectionsOnApplicationEndpoint() throws Exception {
+
+        File f = null;
+        int index = 0;
+
+
+        try {
+            f = new File( "testConnectionsOnApplicationEndpoint.json" );
+            f.delete();
+        }
+        catch ( Exception e ) {
+            //consumed because this checks to see if the file exists. If it doesn't then don't do anything and carry on.
+        }
+
+
+        S3Export s3Export = new MockS3ExportImpl();
+        s3Export.setFilename( "testConnectionsOnApplicationEndpoint.json" );
+
+        ExportService exportService = setup.getExportService();
+        HashMap<String, Object> payload = payloadBuilder();
+
+        ExportInfo exportInfo = new ExportInfo( payload );
+        exportInfo.setOrganizationId( organization.getUuid() );
+        exportInfo.setApplicationId( applicationId );
+
+        EntityManager em = setup.getEmf().getEntityManager( applicationId );
+        //intialize user object to be posted
+        Map<String, Object> userProperties = null;
+        Entity[] entity;
+        entity = new Entity[2];
+        //creates entities
+        for ( int i = 0; i < 2; i++ ) {
+            userProperties = new LinkedHashMap<String, Object>();
+            userProperties.put( "username", "billybob" + i );
+            userProperties.put( "email", "test" + i + "@anuff.com" );//String.format( "test%i@anuff.com", i ) );
+
+            entity[i] = em.create( "users", userProperties );
+        }
+        //creates connections
+        em.createConnection( em.getRef( entity[0].getUuid() ), "Vibrations", em.getRef( entity[1].getUuid() ) );
+        em.createConnection( em.getRef( entity[1].getUuid() ), "Vibrations", em.getRef( entity[0].getUuid() ) );
+
+        UUID exportUUID = exportService.schedule( exportInfo );
+        exportService.setS3Export( s3Export );
+
+        //create and initialize jobData returned in JobExecution.
+        JobData jobData = new JobData();
+        jobData.setProperty( "jobName", "exportJob" );
+        jobData.setProperty( "exportInfo", exportInfo );
+        jobData.setProperty( "exportId", exportUUID );
+
+        JobExecution jobExecution = mock( JobExecution.class );
+        when( jobExecution.getJobData() ).thenReturn( jobData );
+
+        exportService.doExport( exportInfo, jobExecution );
+
+        JSONParser parser = new JSONParser();
+
+        org.json.simple.JSONArray a = ( org.json.simple.JSONArray ) parser.parse( new FileReader( f ) );
+
+        for(index  = 0; index < a.size(); index++) {
+            JSONObject jObj = ( JSONObject ) a.get( index );
+            JSONObject data = ( JSONObject ) jObj.get( "Metadata" );
+            String uuid = (String) data.get( "uuid" );
+            if ( entity[0].getUuid().toString().equals( uuid )) {
+                break;
+            }
+
+        }
+
+        org.json.simple.JSONObject objEnt = ( org.json.simple.JSONObject ) a.get( index );
+        org.json.simple.JSONObject objConnections = ( org.json.simple.JSONObject ) objEnt.get( "connections" );
+
+        assertNotNull( objConnections );
+
+        org.json.simple.JSONArray objVibrations = ( org.json.simple.JSONArray ) objConnections.get( "Vibrations" );
+
+        assertNotNull( objVibrations );
+
+        f.delete();
+    }
+
+//need to add tests for the other endpoint as well.
+    @Test
+    public void testValidityOfCollectionExport() throws Exception {
+
+        File f = null;
+
+        try {
+            f = new File( "fileValidity.json" );
+            f.delete();
+        }
+        catch ( Exception e ) {
+            //consumed because this checks to see if the file exists. If it doesn't then don't do anything and carry on.
+        }
+
+        S3Export s3Export = new MockS3ExportImpl();
+        s3Export.setFilename( "fileValidity.json" );
+        ExportService exportService = setup.getExportService();
+        HashMap<String, Object> payload = payloadBuilder();
+
+        ExportInfo exportInfo = new ExportInfo( payload );
+        exportInfo.setOrganizationId( organization.getUuid() );
+        exportInfo.setApplicationId( applicationId );
+        exportInfo.setCollection( "users" );
+
+        UUID exportUUID = exportService.schedule( exportInfo );
+        exportService.setS3Export( s3Export );
+
+        JobData jobData = new JobData();
+        jobData.setProperty( "jobName", "exportJob" );
+        jobData.setProperty( "exportInfo", exportInfo );
+        jobData.setProperty( "exportId", exportUUID );
+
+        JobExecution jobExecution = mock( JobExecution.class );
+        when( jobExecution.getJobData() ).thenReturn( jobData );
+
+        exportService.doExport( exportInfo, jobExecution );
+
+        JSONParser parser = new JSONParser();
+
+        org.json.simple.JSONArray a = ( org.json.simple.JSONArray ) parser.parse( new FileReader( f ) );
+
+        for ( int i = 0; i < a.size(); i++ ) {
+            org.json.simple.JSONObject entity = ( org.json.simple.JSONObject ) a.get( i );
+            org.json.simple.JSONObject entityData = ( JSONObject ) entity.get( "Metadata" );
+            assertNotNull( entityData );
+        }
+        f.delete();
+    }
+
+    @Test
+    public void testValidityOfApplicationExport() throws Exception {
+
+        File f = null;
+
+        try {
+            f = new File( "testValidityOfApplicationExport.json" );
+            f.delete();
+        }
+        catch ( Exception e ) {
+            //consumed because this checks to see if the file exists. If it doesn't then don't do anything and carry on.
+        }
+
+        S3Export s3Export = new MockS3ExportImpl();
+        s3Export.setFilename( "testValidityOfApplicationExport.json" );
+        ExportService exportService = setup.getExportService();
+        HashMap<String, Object> payload = payloadBuilder();
+
+        ExportInfo exportInfo = new ExportInfo( payload );
+        exportInfo.setOrganizationId( organization.getUuid() );
+        exportInfo.setApplicationId( applicationId );
+
+        UUID exportUUID = exportService.schedule( exportInfo );
+        exportService.setS3Export( s3Export );
+
+        JobData jobData = new JobData();
+        jobData.setProperty( "jobName", "exportJob" );
+        jobData.setProperty( "exportInfo", exportInfo );
+        jobData.setProperty( "exportId", exportUUID );
+
+        JobExecution jobExecution = mock( JobExecution.class );
+        when( jobExecution.getJobData() ).thenReturn( jobData );
+
+        exportService.doExport( exportInfo, jobExecution );
+
+        JSONParser parser = new JSONParser();
+
+        org.json.simple.JSONArray a = ( org.json.simple.JSONArray ) parser.parse( new FileReader( f ) );
+
+        for ( int i = 0; i < a.size(); i++ ) {
+            org.json.simple.JSONObject entity = ( org.json.simple.JSONObject ) a.get( i );
+            org.json.simple.JSONObject entityData = ( JSONObject ) entity.get( "Metadata" );
+            assertNotNull( entityData );
+        }
+        f.delete();
+    }
+
+    @Test
+    public void testExportOneOrgCollectionEndpoint() throws Exception {
+
+        File f = null;
+
+
+        try {
+            f = new File( "exportOneOrg.json" );
+            f.delete();
+        }
+        catch ( Exception e ) {
+            //consumed because this checks to see if the file exists. If it doesn't then don't do anything and carry on.
+        }
+        setup.getMgmtSvc()
+             .createOwnerAndOrganization( "noExport", "junkUserName", "junkRealName", "ugExport@usergrid.com",
+                     "123456789" );
+
+        S3Export s3Export = new MockS3ExportImpl();
+        s3Export.setFilename("exportOneOrg.json");
+        ExportService exportService = setup.getExportService();
+        HashMap<String, Object> payload = payloadBuilder();
+
+        ExportInfo exportInfo = new ExportInfo( payload );
+        exportInfo.setOrganizationId( organization.getUuid() );
+        exportInfo.setApplicationId( applicationId );
+        exportInfo.setCollection( "roles" );
+
+        UUID exportUUID = exportService.schedule( exportInfo );
+        exportService.setS3Export( s3Export );
+
+        JobData jobData = new JobData();
+        jobData.setProperty( "jobName", "exportJob" );
+        jobData.setProperty( "exportInfo", exportInfo );
+        jobData.setProperty( "exportId", exportUUID );
+
+        JobExecution jobExecution = mock( JobExecution.class );
+        when( jobExecution.getJobData() ).thenReturn( jobData );
+
+        exportService.doExport( exportInfo, jobExecution );
+
+        JSONParser parser = new JSONParser();
+
+        org.json.simple.JSONArray a = ( org.json.simple.JSONArray ) parser.parse( new FileReader( f ) );
+
+        assertEquals( 3 , a.size() );
+        for ( int i = 0; i < a.size(); i++ ) {
+            org.json.simple.JSONObject entity = ( org.json.simple.JSONObject ) a.get( i );
+            org.json.simple.JSONObject entityData = ( JSONObject ) entity.get( "Metadata" );
+            String entityName = ( String ) entityData.get( "name" );
+            // assertNotEquals( "NotEqual","junkRealName",entityName );
+            assertFalse( "junkRealName".equals( entityName ) );
+        }
+        f.delete();
+    }
+
+
+    @Test
+    public void testExportOneAppOnCollectionEndpoint() throws Exception {
+
+        File f = null;
+        String orgName = "ed-organization";
+        String appName = "testAppCollectionTestNotExported";
+
+        try {
+            f = new File( "exportOneApp.json" );
+            f.delete();
+        }
+        catch ( Exception e ) {
+            //consumed because this checks to see if the file exists. If it doesn't, don't do anything and carry on.
+        }
+
+        UUID appId = setup.getEmf().createApplication( orgName, appName );
+
+
+        EntityManager em = setup.getEmf().getEntityManager( appId );
+        //intialize user object to be posted
+        Map<String, Object> userProperties = null;
+        Entity[] entity;
+        entity = new Entity[1];
+        //creates entities
+        for ( int i = 0; i < 1; i++ ) {
+            userProperties = new LinkedHashMap<String, Object>();
+            userProperties.put( "username", "junkRealName");
+            userProperties.put( "email", "test" + i + "@anuff.com" );//String.format( "test%i@anuff.com", i ) );
+            entity[i] = em.create( "user", userProperties );
+        }
+
+        S3Export s3Export = new MockS3ExportImpl();
+        s3Export.setFilename( "exportOneApp.json" );
+        ExportService exportService = setup.getExportService();
+        HashMap<String, Object> payload = payloadBuilder();
+
+        ExportInfo exportInfo = new ExportInfo( payload );
+        exportInfo.setOrganizationId( organization.getUuid() );
+        exportInfo.setApplicationId( applicationId );
+        exportInfo.setCollection( "roles" ); // <- this line determines if it is a collection back up or a application backup.
+
+        UUID exportUUID = exportService.schedule( exportInfo );
+        exportService.setS3Export( s3Export );
+
+        JobData jobData = new JobData();
+        jobData.setProperty( "jobName", "exportJob" );
+        jobData.setProperty( "exportInfo", exportInfo );
+        jobData.setProperty( "exportId", exportUUID );
+
+        JobExecution jobExecution = mock( JobExecution.class );
+        when( jobExecution.getJobData() ).thenReturn( jobData );
+
+        exportService.doExport( exportInfo, jobExecution );
+
+        JSONParser parser = new JSONParser();
+
+        org.json.simple.JSONArray a = ( org.json.simple.JSONArray ) parser.parse( new FileReader( f ) );
+
+        assertEquals( 3 , a.size() );
+        for ( int i = 0; i < a.size(); i++ ) {
+            org.json.simple.JSONObject data = ( org.json.simple.JSONObject ) a.get( i );
+            org.json.simple.JSONObject entityData = ( JSONObject ) data.get( "Metadata" );
+            String entityName = ( String ) entityData.get( "name" );
+            assertFalse( "junkRealName".equals( entityName ) );
+        }
+        f.delete();
+    }
+
+    @Test
+    public void testExportOneAppOnApplicationEndpoint() throws Exception {
+
+        File f = null;
+        String orgName = "ed-organization";
+        String appName = "testAppNotExported";
+
+        try {
+            f = new File( "exportOneApp.json" );
+            f.delete();
+        }
+        catch ( Exception e ) {
+            //consumed because this checks to see if the file exists. If it doesn't, don't do anything and carry on.
+        }
+
+        UUID appId = setup.getEmf().createApplication( orgName, appName );
+
+
+        EntityManager em = setup.getEmf().getEntityManager( appId );
+        //intialize user object to be posted
+        Map<String, Object> userProperties = null;
+        Entity[] entity;
+        entity = new Entity[1];
+        //creates entities
+        for ( int i = 0; i < 1; i++ ) {
+            userProperties = new LinkedHashMap<String, Object>();
+            userProperties.put( "username", "junkRealName");
+            userProperties.put( "email", "test" + i + "@anuff.com" );//String.format( "test%i@anuff.com", i ) );
+            entity[i] = em.create( "users", userProperties );
+        }
+
+        S3Export s3Export = new MockS3ExportImpl();
+        s3Export.setFilename( "exportOneApp.json" );
+        ExportService exportService = setup.getExportService();
+        HashMap<String, Object> payload = payloadBuilder();
+
+        ExportInfo exportInfo = new ExportInfo( payload );
+        exportInfo.setOrganizationId( organization.getUuid() );
+        exportInfo.setApplicationId( applicationId );
+
+        UUID exportUUID = exportService.schedule( exportInfo );
+        exportService.setS3Export( s3Export );
+
+        JobData jobData = new JobData();
+        jobData.setProperty( "jobName", "exportJob" );
+        jobData.setProperty( "exportInfo", exportInfo );
+        jobData.setProperty( "exportId", exportUUID );
+
+        JobExecution jobExecution = mock( JobExecution.class );
+        when( jobExecution.getJobData() ).thenReturn( jobData );
+
+        exportService.doExport( exportInfo, jobExecution );
+
+        JSONParser parser = new JSONParser();
+
+        org.json.simple.JSONArray a = ( org.json.simple.JSONArray ) parser.parse( new FileReader( f ) );
+
+        //assertEquals( 3 , a.size() );
+        for ( int i = 0; i < a.size(); i++ ) {
+            org.json.simple.JSONObject data = ( org.json.simple.JSONObject ) a.get( i );
+            org.json.simple.JSONObject entityData = ( JSONObject ) data.get( "Metadata" );
+            String entityName = ( String ) entityData.get( "name" );
+            assertFalse( "junkRealName".equals( entityName ) );
+        }
+        f.delete();
+    }
+
+    @Test
+    public void testExportOneCollection() throws Exception {
+
+        File f = null;
+        int entitiesToCreate = 10000;
+
+        try {
+            f = new File( "exportOneCollection.json" );
+            f.delete();
+        }
+        catch ( Exception e ) {
+            //consumed because this checks to see if the file exists. If it doesn't, don't do anything and carry on.
+        }
+
+        EntityManager em = setup.getEmf().getEntityManager( applicationId);
+        em.createApplicationCollection( "baconators" );
+        //intialize user object to be posted
+        Map<String, Object> userProperties = null;
+        Entity[] entity;
+        entity = new Entity[entitiesToCreate];
+        //creates entities
+        for ( int i = 0; i < entitiesToCreate; i++ ) {
+            userProperties = new LinkedHashMap<String, Object>();
+            userProperties.put( "username", "billybob" + i );
+            userProperties.put( "email", "test" + i + "@anuff.com" );//String.format( "test%i@anuff.com", i ) );
+            entity[i] = em.create( "baconators", userProperties );
+        }
+
+        S3Export s3Export = new MockS3ExportImpl();
+        s3Export.setFilename( "exportOneCollection.json" );
+        ExportService exportService = setup.getExportService();
+        HashMap<String, Object> payload = payloadBuilder();
+
+        ExportInfo exportInfo = new ExportInfo( payload );
+        exportInfo.setOrganizationId( organization.getUuid() );
+        exportInfo.setApplicationId( applicationId );
+        exportInfo.setCollection( "baconators" );
+
+        UUID exportUUID = exportService.schedule( exportInfo );
+        exportService.setS3Export( s3Export );
+
+        JobData jobData = new JobData();
+        jobData.setProperty( "jobName", "exportJob" );
+        jobData.setProperty( "exportInfo", exportInfo );
+        jobData.setProperty( "exportId", exportUUID );
+
+        JobExecution jobExecution = mock( JobExecution.class );
+        when( jobExecution.getJobData() ).thenReturn( jobData );
+
+        exportService.doExport( exportInfo, jobExecution );
+
+        JSONParser parser = new JSONParser();
+
+        org.json.simple.JSONArray a = ( org.json.simple.JSONArray ) parser.parse( new FileReader( f ) );
+
+        assertEquals( entitiesToCreate , a.size() );
+        f.delete();
+    }
+
+
+    //only handles the DoJob Code , different tests for DoExport
+    @Test
+    public void testExportDoJob() throws Exception {
+
+        HashMap<String, Object> payload = payloadBuilder();
+
+        ExportInfo exportInfo = new ExportInfo( payload );
+        exportInfo.setOrganizationId( organization.getUuid() );
+        exportInfo.setApplicationId( applicationId );
+
+
+        JobData jobData = new JobData();
+        jobData.setProperty( "jobName", "exportJob" );
+        jobData.setProperty( "exportInfo", exportInfo ); //this needs to be populated with properties of export info
+
+        JobExecution jobExecution = mock( JobExecution.class );
+
+        when( jobExecution.getJobData() ).thenReturn( jobData );
+
+        ExportJob job = new ExportJob();
+        ExportService eS = mock( ExportService.class );
+        job.setExportService( eS );
+        try {
+            job.doJob( jobExecution );
+        }
+        catch ( Exception e ) {
+            assert ( false );
+        }
+        assert ( true );
+    }
+
+    @Test
+    public void testExportDoExportOnApplicationEndpoint() throws Exception {
+
+        EntityManagerFactory emf = setup.getEmf();
+        EntityManager em = emf.getEntityManager( applicationId );
+        HashMap<String, Object> payload = payloadBuilder();
+        ExportService eS = setup.getExportService();
+
+        JobExecution jobExecution = mock( JobExecution.class );
+
+        ExportInfo exportInfo = new ExportInfo( payload );
+        exportInfo.setOrganizationId( organization.getUuid() );
+        exportInfo.setApplicationId( applicationId );
+
+        UUID entityExportUUID = eS.schedule( exportInfo );
+
+
+        JobData jobData = new JobData();
+        jobData.setProperty( "jobName", "exportJob" );
+        jobData.setProperty( "exportInfo", exportInfo );
+        jobData.setProperty( "exportId", entityExportUUID );
+
+        when( jobExecution.getJobData() ).thenReturn( jobData );
+
+        //Exportem.get(entityExport);
+        Export exportEntity = ( Export ) em.get( entityExportUUID );
+        assertNotNull( exportEntity );
+        String derp = exportEntity.getState().name();
+        assertEquals( "SCHEDULED", exportEntity.getState().name() );
+        try {
+            eS.doExport( exportInfo, jobExecution );
+        }
+        catch ( Exception e ) {
+            //throw e;
+            assert(false);
+        }
+        exportEntity = ( Export ) em.get( entityExportUUID );
+        assertNotNull( exportEntity );
+        assertEquals( "FINISHED", exportEntity.getState().name() );
+    }
+
+    //tests that with empty job data, the export still runs.
+    @Test
+    public void testExportEmptyJobData() throws Exception {
+
+        JobData jobData = new JobData();
+
+        JobExecution jobExecution = mock( JobExecution.class );
+
+        when( jobExecution.getJobData() ).thenReturn( jobData );
+
+        ExportJob job = new ExportJob();
+        S3Export s3Export = mock( S3Export.class );
+        setup.getExportService().setS3Export( s3Export );
+        job.setExportService( setup.getExportService() );
+        try {
+            job.doJob( jobExecution );
+        }
+        catch ( Exception e ) {
+            assert ( false );
+        }
+        assert ( true );
+    }
+
+
+    @Test
+    public void testNullJobExecution() {
+
+        JobData jobData = new JobData();
+
+        JobExecution jobExecution = mock( JobExecution.class );
+
+        when( jobExecution.getJobData() ).thenReturn( jobData );
+
+        ExportJob job = new ExportJob();
+        S3Export s3Export = mock( S3Export.class );
+        setup.getExportService().setS3Export( s3Export );
+        job.setExportService( setup.getExportService() );
+        try {
+            job.doJob( jobExecution );
+        }
+        catch ( Exception e ) {
+            assert ( false );
+        }
+        assert ( true );
+    }
+
+
+    @Ignore //For this test please input your s3 credentials into payload builder.
+    public void testIntegration100EntitiesOn() throws Exception {
+
+        S3Export s3Export = new S3ExportImpl();
+        ExportService exportService = setup.getExportService();
+        HashMap<String, Object> payload = payloadBuilder();
+
+        ExportInfo exportInfo = new ExportInfo( payload );
+        exportInfo.setApplicationId( applicationId );
+
+        EntityManager em = setup.getEmf().getEntityManager( applicationId );
+        //intialize user object to be posted
+        Map<String, Object> userProperties = null;
+        Entity[] entity;
+        entity = new Entity[100];
+        //creates entities
+        for ( int i = 0; i < 100; i++ ) {
+            userProperties = new LinkedHashMap<String, Object>();
+            userProperties.put( "username", "billybob" + i );
+            userProperties.put( "email", "test" + i + "@anuff.com" );//String.format( "test%i@anuff.com", i ) );
+
+            entity[i] = em.create( "user", userProperties );
+        }
+
+        UUID exportUUID = exportService.schedule( exportInfo );
+        exportService.setS3Export( s3Export );
+
+        //create and initialize jobData returned in JobExecution.
+        JobData jobData = new JobData();
+        jobData.setProperty( "jobName", "exportJob" );
+        jobData.setProperty( "exportInfo", exportInfo );
+        jobData.setProperty( "exportId", exportUUID );
+
+        JobExecution jobExecution = mock( JobExecution.class );
+        when( jobExecution.getJobData() ).thenReturn( jobData );
+
+        exportService.doExport( exportInfo, jobExecution );
+    }
+
+
+    /*Creates fake payload for testing purposes.*/
+    public HashMap<String, Object> payloadBuilder() {
+        HashMap<String, Object> payload = new HashMap<String, Object>();
+        Map<String, Object> properties = new HashMap<String, Object>();
+        Map<String, Object> storage_info = new HashMap<String, Object>();
+        //        TODO: always put dummy values here and ignore this test.
+        storage_info.put( "s3_key", "insert key here" );
+        storage_info.put( "s3_accessId", "insert access id here" );
+        storage_info.put( "bucket_location", "insert bucket name here" );
+
+        properties.put( "storage_provider", "s3" );
+        properties.put( "storage_info", storage_info );
+
+        payload.put( "path", "test-organization/test-app" );
+        payload.put( "properties", properties );
+        return payload;
+    }
+}
