@@ -1,0 +1,69 @@
+[
+    {
+        "line": "1",
+        "severity": "error",
+        "message": "Block comment has incorrect indentation level 0, expected is 3, indentation should be the same level as line 25.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"
+    },
+    {
+        "line": "17",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 81).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "34",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - org.openqa.selenium.phantomjs.PhantomJSDriver.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "35",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - org.openqa.selenium.phantomjs.PhantomJSDriverService.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "48",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "65",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 83).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "68",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "73",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "78",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "81",
+        "column": "35",
+        "severity": "error",
+        "message": "Name 'dc' must match pattern '^(id|[A-Za-z]{3,20})$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalFinalVariableNameCheck"
+    }
+]
