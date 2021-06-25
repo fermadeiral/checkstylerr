@@ -1,0 +1,57 @@
+[
+    {
+        "line": "57",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'scbEngine' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "136",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'syncInvoke_normal' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "161",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'syncInvoke_failed' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "181",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'completableFutureInvoke_normal' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "209",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'completableFutureInvoke_failed' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "230",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'createInvokerMeta_schemaNotInContract' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "250",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 139).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "256",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'invoke_methodNotInContract' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

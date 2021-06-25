@@ -1,0 +1,113 @@
+[
+    {
+        "line": "0",
+        "severity": "warning",
+        "message": "File does not end with a newline.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"
+    },
+    {
+        "line": "51",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'THREAD_NAME' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"
+    },
+    {
+        "line": "51",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'THREAD_NAME' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "54",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'invocation' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "57",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'operationMeta' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "60",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'operationConfig' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "62",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'msg' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "64",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'recordThreadFilter' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "73",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'scheduler' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "75",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'exceptionFilter' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "104",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_switch_thread_after_schedule' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "115",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_stop_chain_when_first_filter_throw_exception' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "128",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_stop_chain_when_middle_filter_throw_exception' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "141",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_support_retry_logic' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "145",
+        "column": "73",
+        "severity": "warning",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "158",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_build_chain_with_TransportFilters' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

@@ -1,0 +1,92 @@
+[
+    {
+        "line": "0",
+        "severity": "warning",
+        "message": "File does not end with a newline.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"
+    },
+    {
+        "line": "39",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'encoder' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "46",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_encode_header_parameter' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "56",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_encode_servicecomb_headers' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "68",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_not_encode_servicecomb_headers_when_invoke_3rd_service_and_filter_servicecomb_headers' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "80",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_encode_servicecomb_headers_when_invoke_3rd_service_and_not_filter_servicecomb_headers' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "94",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_encode_cookie_parameter' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "104",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_encode_body_parameter' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "114",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_encode_form_attribute_parameter' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "126",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_not_encode_null_form_attribute' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "141",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_encode_form_with_upload_parameter' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "159",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_encode_form_with_upload_list' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "168",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_encode_form_with_upload_array' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

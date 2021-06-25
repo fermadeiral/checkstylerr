@@ -1,0 +1,36 @@
+[
+    {
+        "line": "71",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'loadFromResource_sameApp_dirWithoutApp' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "85",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'loadFromResource_sameApp_dirWithApp' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "99",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'loadFromResource_diffApp_dirWithoutApp' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "108",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 161).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "113",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'loadFromResource_diffApp_dirWithApp' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

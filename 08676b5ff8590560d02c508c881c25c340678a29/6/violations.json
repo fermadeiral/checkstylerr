@@ -1,0 +1,218 @@
+[
+    {
+        "line": "31",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'target' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "34",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'serviceId' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "35",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'instanceId' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "36",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'instanceId1' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "37",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'otherServiceId' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "38",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'appId' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "39",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'serviceName' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "40",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'otherServiceName' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "41",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'version' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "42",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'status' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "43",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'host' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "44",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'schemaId1' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "45",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'endpoint1' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "55",
+        "column": "23",
+        "severity": "warning",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "98",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'test_registerMicroserviceInstance_whenServiceIdIsNull_shouldThrowIllegalArgumentException' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "103",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'test_registerMicroserviceInstance_whenInstanceNotExist_shouldRegisterSuccessfully' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "113",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'test_registerMicroserviceInstance_whenInstanceExist_shouldRegisterSuccessfully' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "124",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'test_unregisterMicroserviceInstance_whenServiceIdIsNull_shouldThrowIllegalArgumentException' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "129",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 122).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "129",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'test_unregisterMicroserviceInstance_withServiceIdAndInstanceId_and_multipleInstance_shouldRemoveInstance' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "140",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'test_unregisterMicroserviceInstance_withServiceIdAndInstanceId_and_singleInstance_shouldRemoveService' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "149",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'test_findServiceInstance_whenInstanceExist_shouldSucceed' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "158",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'test_findServiceInstance_whenInstanceNotExist_shouldReturnEmptyOptionalObject' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "167",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'test_getMicroserviceInstance_whenServiceHasNoInstance_shouldThrowIllegalArgumentException' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "174",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'test_getMicroserviceInstance_whenServiceHasInstance_shouldReturnAllInstances' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "185",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'test_heartbeat_whenInstanceExist_shouldReturnTrue' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "194",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'test_heartbeat_whenInstanceNotExist_shouldReturnFalse' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "203",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'test_getMicroservice_whenServiceExist_shouldReturnService' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "213",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'test_getMicroservice_whenServiceNotExist_shouldReturnNull' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "222",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'test_findServiceInstances_whenInstanceExist_shouldReturnInstanceList' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "233",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'test_findServiceInstances_whenNoInstanceExist_shouldReturnEmptyInstanceList' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

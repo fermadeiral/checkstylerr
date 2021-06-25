@@ -1,0 +1,92 @@
+[
+    {
+        "line": "37",
+        "column": "34",
+        "severity": "warning",
+        "message": "Variable 'registryClient' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "39",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'appId' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "41",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'microserviceName' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "79",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'getMicroserviceId_appNotMatch' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "86",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'getMicroserviceId_nameNotMatch' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "93",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'getMicroserviceId_versionNotMatch' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "99",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'getMicroserviceId_latest' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "103",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 122).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "108",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'getMicroserviceId_fixVersion' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "117",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'findServiceInstance_noInstances' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "131",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'findServiceInstance_twoSelectOne' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "152",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'registerSchema_microserviceNotExist' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "162",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'registerSchema_normal' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

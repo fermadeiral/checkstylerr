@@ -1,0 +1,30 @@
+[
+    {
+        "line": "19",
+        "column": "1",
+        "severity": "warning",
+        "message": "Redundant import from the same package - org.apache.servicecomb.core.CseApplicationListener.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "20",
+        "column": "1",
+        "severity": "warning",
+        "message": "Redundant import from the same package - org.apache.servicecomb.core.SCBEngine.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "21",
+        "column": "1",
+        "severity": "warning",
+        "message": "Redundant import from the same package - org.apache.servicecomb.core.SCBStatus.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "31",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'onApplicationEvent_close' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "line": "42",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'taskPool' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "46",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'eventBus' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "48",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'task' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "50",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'result' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "93",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'autoTask_normal' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "112",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'autoTask_clearOldTask' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "131",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'autoTask_invalidIntervalZero' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "139",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'autoTask_invalidIntervalLessThanZero' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

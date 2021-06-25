@@ -1,0 +1,86 @@
+[
+    {
+        "line": "40",
+        "column": "9",
+        "severity": "warning",
+        "message": "Variable 'vertx' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "43",
+        "column": "44",
+        "severity": "warning",
+        "message": "Variable 'factory' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "45",
+        "column": "44",
+        "severity": "warning",
+        "message": "Variable 'poolMgr' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "47",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'id' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "49",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'pools' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "51",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'contextMap' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "53",
+        "column": "11",
+        "severity": "warning",
+        "message": "Variable 'context' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "101",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'findClientPool_sync' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "126",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'findByContext_reactive' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "146",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'findByContext_normalThread' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "161",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'findByContext_otherVertx' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "178",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'findByContext_woker' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

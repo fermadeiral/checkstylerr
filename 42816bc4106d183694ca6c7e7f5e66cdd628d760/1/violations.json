@@ -1,0 +1,106 @@
+[
+    {
+        "line": "0",
+        "severity": "warning",
+        "message": "File does not end with a newline.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"
+    },
+    {
+        "line": "38",
+        "column": "5",
+        "severity": "warning",
+        "message": "Redundant 'public' modifier.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"
+    },
+    {
+        "line": "59",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'filterNode' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "61",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'sendException' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "63",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'sendInvocation' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "66",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_send_exception_response_when_failed_to_create_invocation' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "78",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_start_invocation_when_succeed_to_create_invocation' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "93",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_send_response_when_invocation_success' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "102",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_finish_invocation_when_invocation_success' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "118",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_send_response_when_invocation_fail' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "120",
+        "column": "34",
+        "severity": "warning",
+        "message": "Name '_invocation' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "120",
+        "column": "47",
+        "severity": "warning",
+        "message": "Name '_node' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "130",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_finish_invocation_when_invocation_fail' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "132",
+        "column": "34",
+        "severity": "warning",
+        "message": "Name '_invocation' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "132",
+        "column": "47",
+        "severity": "warning",
+        "message": "Name '_node' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    }
+]

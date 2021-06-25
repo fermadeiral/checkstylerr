@@ -1,0 +1,48 @@
+[
+    {
+        "line": "0",
+        "severity": "warning",
+        "message": "File does not end with a newline.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"
+    },
+    {
+        "line": "41",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_not_convert_invocation_exception' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "49",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_convert_unknown_client_exception_to_invocation_exception' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "62",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_convert_unknown_server_exception_to_invocation_exception' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "87",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_protect_when_converter_throw_exception' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "100",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 157).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "101",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 165).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

@@ -1,0 +1,92 @@
+[
+    {
+        "line": "0",
+        "severity": "warning",
+        "message": "File does not end with a newline.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"
+    },
+    {
+        "line": "45",
+        "column": "27",
+        "severity": "warning",
+        "message": "Variable 'filter' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "48",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'invocation' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "51",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'producerOperation' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "53",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'threadInvocationContext' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "75",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_record_invocation_trace_time' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "116",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_provide_thread_local_invocation_context_for_sync_method' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "125",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_clear_thread_local_invocation_context_after_sync_method' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "134",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_catch_sync_business_exception' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "145",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_provide_thread_local_invocation_context_for_async_method' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "154",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_clear_thread_local_invocation_context_after_async_method' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "163",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_catch_async_business_exception' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "174",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_unify_IllegalArgumentException_message_when_convert_exception' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

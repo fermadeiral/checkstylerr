@@ -1,0 +1,65 @@
+[
+    {
+        "line": "45",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'appManager' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "47",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'taskPool' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "51",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'eventBus' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "53",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'task' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "55",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'result' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "99",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'autoTask_normal' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "118",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'autoTask_clearOldTask' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "137",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'autoTask_invalidIntervalZero' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "145",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'autoTask_invalidIntervalLessThanZero' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

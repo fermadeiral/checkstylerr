@@ -1,0 +1,64 @@
+[
+    {
+        "line": "90",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'loadFromResource_sameApp_dirWithoutApp' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "104",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'loadFromResource_sameApp_dirWithApp' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "118",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'loadFromResource_diffApp_dirWithoutApp' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "127",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 154).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "132",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'loadFromResource_diffApp_dirWithApp' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "195",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_ignore_not_exist_location_when_register_swagger_in_location' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "203",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_ignore_non_yaml_file_when_register_swagger_in_location' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "209",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_throw_exception_when_register_invalid_swagger_in_location' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "254",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'should_correct_register_swagger_in_location' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

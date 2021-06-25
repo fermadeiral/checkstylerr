@@ -1,0 +1,92 @@
+[
+    {
+        "line": "0",
+        "severity": "warning",
+        "message": "File does not end with a newline.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"
+    },
+    {
+        "line": "42",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'eventBus' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "44",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'ticker' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "46",
+        "column": "9",
+        "severity": "warning",
+        "message": "Variable 'store' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "48",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'discoveryClient' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "50",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'service' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "61",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_register_microservice_and_instance_when_both_not_exist' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "72",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_register_instance_when_microservice_exist' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "86",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_reject_when_schema_changed_and_has_existing_instance' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "99",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'schemaChangedEvent' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "107",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_register_and_notify_when_schema_changed_and_has_not_existing_instance' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "127",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_allow_update_instance_status' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "140",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_process_as_heartbeat_when_nothing_changed' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

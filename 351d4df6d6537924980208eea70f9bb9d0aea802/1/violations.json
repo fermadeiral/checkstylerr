@@ -1,0 +1,36 @@
+[
+    {
+        "line": "0",
+        "severity": "warning",
+        "message": "File does not end with a newline.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"
+    },
+    {
+        "line": "29",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_not_include_code_in_json_when_code_is_null' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "36",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_include_code_in_json_when_code_is_not_null' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "43",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_include_dynamic_field_in_json' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "51",
+        "column": "8",
+        "severity": "warning",
+        "message": "Name 'should_decode_dynamic_field_from_json' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

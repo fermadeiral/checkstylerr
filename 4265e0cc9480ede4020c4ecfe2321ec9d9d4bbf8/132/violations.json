@@ -1,0 +1,37 @@
+[
+    {
+        "line": "32",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'listener' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "34",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'bootEvent' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "48",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'onBootEvent_ignore' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "59",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'onBootEvent_accept_notChange' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "70",
+        "column": "15",
+        "severity": "warning",
+        "message": "Name 'onBootEvent_change' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]
