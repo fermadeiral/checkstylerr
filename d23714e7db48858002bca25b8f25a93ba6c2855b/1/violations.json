@@ -1,0 +1,41 @@
+[
+    {
+        "line": "0",
+        "severity": "error",
+        "message": "Missing package-info.java file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"
+    },
+    {
+        "line": "29",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"
+    },
+    {
+        "line": "30",
+        "column": "3",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "54",
+        "severity": "error",
+        "message": "Line matches the illegal pattern 'System\\.out\\.println'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpCheck"
+    },
+    {
+        "line": "63",
+        "column": "3",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "67",
+        "column": "28",
+        "severity": "error",
+        "message": "The String \"times\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    }
+]
