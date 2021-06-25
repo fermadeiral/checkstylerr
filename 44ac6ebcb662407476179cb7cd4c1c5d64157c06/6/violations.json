@@ -1,0 +1,139 @@
+[
+    {
+        "line": "27",
+        "severity": "error",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "32",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'gov.hhs.fha.nhinc.common.nhinccommon.AssertionType' import. Should be before 'org.junit.Assert.assertNotNull'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "33",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'gov.hhs.fha.nhinc.common.nhinccommon.NhinTargetCommunitiesType' import. Should be before 'org.junit.Assert.assertNotNull'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "34",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'gov.hhs.fha.nhinc.common.nhinccommon.NhinTargetSystemType' import. Should be before 'org.junit.Assert.assertNotNull'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "35",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'gov.hhs.fha.nhinc.docsubmission.audit.DocSubmissionAuditLogger' import. Should be before 'org.junit.Assert.assertNotNull'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "36",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'gov.hhs.fha.nhinc.docsubmission.entity.OutboundDocSubmissionDelegate' import. Should be before 'org.junit.Assert.assertNotNull'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "37",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'gov.hhs.fha.nhinc.docsubmission.entity.OutboundDocSubmissionOrchestratable' import. Should be before 'org.junit.Assert.assertNotNull'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "38",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'gov.hhs.fha.nhinc.document.DocumentConstants' import. Should be before 'org.junit.Assert.assertNotNull'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "39",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'ihe.iti.xds_b._2007.ProvideAndRegisterDocumentSetRequestType' import. Should be before 'org.junit.Assert.assertNotNull'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "40",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'java.util.Properties' import. Should be before 'org.junit.Assert.assertNotNull'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "41",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'oasis.names.tc.ebxml_regrep.xsd.rs._3.RegistryResponseType' import. Should be before 'org.junit.Assert.assertNotNull'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "43",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'org.jmock.Expectations' import. Should be before 'org.junit.Assert.assertNotNull'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "44",
+        "severity": "error",
+        "message": "'import' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "44",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'org.jmock.Expectations.any' import. Should be before 'org.junit.Assert.assertNotNull'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "45",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'org.jmock.Mockery' import. Should be before 'org.junit.Assert.assertNotNull'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "46",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'org.jmock.integration.junit4.JUnit4Mockery' import. Should be before 'org.junit.Assert.assertNotNull'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "47",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'org.jmock.lib.legacy.ClassImposteriser' import. Should be before 'org.junit.Assert.assertNotNull'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "56",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "56",
+        "column": "23",
+        "severity": "error",
+        "message": "Variable 'context' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "61",
+        "column": "36",
+        "severity": "error",
+        "message": "Variable 'mockDocSubmissionLog' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "62",
+        "column": "41",
+        "severity": "error",
+        "message": "Variable 'mockDelegate' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "64",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    }
+]

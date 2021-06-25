@@ -1,0 +1,33 @@
+[
+    {
+        "line": "4",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "15",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "27",
+        "severity": "error",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "34",
+        "severity": "error",
+        "message": "Javadoc comment at column 106 has parse error. It is forbidden to close singleton HTML tags. Tag: br.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.AtclauseOrderCheck"
+    },
+    {
+        "line": "34",
+        "column": "105",
+        "severity": "error",
+        "message": "Extra HTML tag found: </br>",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    }
+]
