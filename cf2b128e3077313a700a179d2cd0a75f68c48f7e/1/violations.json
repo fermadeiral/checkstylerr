@@ -1,0 +1,55 @@
+[
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - org.junit.Assert.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "20",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - org.junit.After.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "21",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - org.junit.AfterClass.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "22",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - org.junit.Before.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "23",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - org.junit.BeforeClass.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "26",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - java.io.UnsupportedEncodingException.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "41",
+        "severity": "warning",
+        "message": "Line is longer than 160 characters (found 677).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

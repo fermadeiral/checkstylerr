@@ -1,0 +1,644 @@
+[
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - org.junit.Assert.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "20",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - org.junit.After.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "21",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - org.junit.AfterClass.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "22",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - org.junit.Before.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "23",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - org.junit.BeforeClass.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "26",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - java.io.UnsupportedEncodingException.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "27",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - java.lang.reflect.Constructor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "28",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - java.lang.reflect.Method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "29",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - java.lang.reflect.Modifier.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "30",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - java.nio.charset.Charset.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "31",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - java.util.Collections.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "32",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - java.util.Iterator.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "33",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - java.util.Locale.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "41",
+        "severity": "warning",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "45",
+        "severity": "warning",
+        "message": "Unicode escape(s) usage should be avoided.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.AvoidEscapedUnicodeCharactersCheck"
+    },
+    {
+        "line": "45",
+        "column": "33",
+        "severity": "warning",
+        "message": "Name 'CharU20000' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "46",
+        "severity": "warning",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "50",
+        "severity": "warning",
+        "message": "'VARIABLE_DEF' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "50",
+        "severity": "warning",
+        "message": "Unicode escape(s) usage should be avoided.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.AvoidEscapedUnicodeCharactersCheck"
+    },
+    {
+        "line": "50",
+        "column": "33",
+        "severity": "warning",
+        "message": "Name 'CharU20001' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "55",
+        "severity": "warning",
+        "message": "'VARIABLE_DEF' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "55",
+        "severity": "warning",
+        "message": "Unicode escape(s) usage should be avoided.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.AvoidEscapedUnicodeCharactersCheck"
+    },
+    {
+        "line": "55",
+        "column": "33",
+        "severity": "warning",
+        "message": "Name 'CharUSuppCharHigh' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "61",
+        "severity": "warning",
+        "message": "Unicode escape(s) usage should be avoided.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.AvoidEscapedUnicodeCharactersCheck"
+    },
+    {
+        "line": "61",
+        "column": "33",
+        "severity": "warning",
+        "message": "Name 'CharUSuppCharLow' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "64",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testContains_Char' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "76",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testContains_String' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "90",
+        "severity": "warning",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "94",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testContains_StringWithBadSupplementaryChars' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "96",
+        "column": "137",
+        "severity": "warning",
+        "message": "Only one statement per line allowed.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck"
+    },
+    {
+        "line": "104",
+        "severity": "warning",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "108",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testContains_StringWithSupplementaryChars' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "115",
+        "column": "5",
+        "severity": "warning",
+        "message": "Static variable definition in wrong order.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheck"
+    },
+    {
+        "line": "116",
+        "severity": "warning",
+        "message": "'VARIABLE_DEF' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "116",
+        "column": "5",
+        "severity": "warning",
+        "message": "Static variable definition in wrong order.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheck"
+    },
+    {
+        "line": "117",
+        "severity": "warning",
+        "message": "'VARIABLE_DEF' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "117",
+        "column": "5",
+        "severity": "warning",
+        "message": "Static variable definition in wrong order.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheck"
+    },
+    {
+        "line": "118",
+        "severity": "warning",
+        "message": "'VARIABLE_DEF' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "118",
+        "column": "5",
+        "severity": "warning",
+        "message": "Static variable definition in wrong order.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheck"
+    },
+    {
+        "line": "119",
+        "severity": "warning",
+        "message": "'VARIABLE_DEF' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "119",
+        "column": "5",
+        "severity": "warning",
+        "message": "Static variable definition in wrong order.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheck"
+    },
+    {
+        "line": "124",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSubstring_StringInt' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "125",
+        "column": "54",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "126",
+        "column": "50",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "127",
+        "column": "50",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "129",
+        "column": "57",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "130",
+        "column": "57",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "131",
+        "column": "58",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "132",
+        "column": "62",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "133",
+        "column": "57",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "134",
+        "column": "57",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "135",
+        "column": "56",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "136",
+        "column": "55",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "137",
+        "column": "56",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "138",
+        "column": "55",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "139",
+        "column": "54",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "140",
+        "column": "53",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "141",
+        "column": "53",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "145",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSubstring_StringIntInt' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "159",
+        "column": "26",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "163",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testLeft_String' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "179",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testRight_String' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "195",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testMid_String' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "218",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSubstringBefore_StringString' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "238",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSubstringAfter_StringString' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "258",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSubstringBeforeLast_StringString' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "282",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSubstringAfterLast_StringString' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "305",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSubstringBetween_StringStringString' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "314",
+        "column": "90",
+        "severity": "warning",
+        "message": "')' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "321",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testCountMatches_String' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "338",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testCountMatches_char' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "346",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testStrip_StringString' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "378",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testStripStart_StringString' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "410",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testStripEnd_StringString' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "445",
+        "column": "49",
+        "severity": "warning",
+        "message": "'{' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheck"
+    },
+    {
+        "line": "445",
+        "column": "54",
+        "severity": "warning",
+        "message": "'+' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "445",
+        "column": "55",
+        "severity": "warning",
+        "message": "'+' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "445",
+        "column": "58",
+        "severity": "warning",
+        "message": "'+' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "445",
+        "column": "59",
+        "severity": "warning",
+        "message": "'+' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "445",
+        "column": "69",
+        "severity": "warning",
+        "message": "'+' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "445",
+        "column": "70",
+        "severity": "warning",
+        "message": "'+' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "445",
+        "column": "78",
+        "severity": "warning",
+        "message": "'+' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "445",
+        "column": "79",
+        "severity": "warning",
+        "message": "'+' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "446",
+        "column": "48",
+        "severity": "warning",
+        "message": "'{' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheck"
+    },
+    {
+        "line": "446",
+        "column": "53",
+        "severity": "warning",
+        "message": "'+' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "446",
+        "column": "54",
+        "severity": "warning",
+        "message": "'+' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "446",
+        "column": "57",
+        "severity": "warning",
+        "message": "'+' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "446",
+        "column": "58",
+        "severity": "warning",
+        "message": "'+' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "446",
+        "column": "68",
+        "severity": "warning",
+        "message": "'+' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "446",
+        "column": "69",
+        "severity": "warning",
+        "message": "'+' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "446",
+        "column": "77",
+        "severity": "warning",
+        "message": "'+' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "446",
+        "column": "78",
+        "severity": "warning",
+        "message": "'+' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "447",
+        "column": "44",
+        "severity": "warning",
+        "message": "'{' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheck"
+    }
+]

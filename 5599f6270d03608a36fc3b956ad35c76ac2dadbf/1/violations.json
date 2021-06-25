@@ -1,0 +1,131 @@
+[
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "34",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'count' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "35",
+        "severity": "warning",
+        "message": "'VARIABLE_DEF' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "35",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'threads' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "36",
+        "severity": "warning",
+        "message": "'VARIABLE_DEF' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "36",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'error' explicitly initialized to 'false' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "36",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'error' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "64",
+        "column": "23",
+        "severity": "warning",
+        "message": "Catching 'Throwable' is not allowed.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"
+    },
+    {
+        "line": "64",
+        "column": "30",
+        "severity": "warning",
+        "message": "Parameter t should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "79",
+        "column": "22",
+        "severity": "warning",
+        "message": "Parameter e should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "95",
+        "column": "5",
+        "severity": "warning",
+        "message": "Executable statement count is 64 (max allowed is 50).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.ExecutableStatementCountCheck"
+    },
+    {
+        "line": "95",
+        "column": "5",
+        "severity": "warning",
+        "message": "NCSS for this method is 68 (max allowed is 50).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.JavaNCSSCheck"
+    },
+    {
+        "line": "96",
+        "severity": "warning",
+        "message": "Distance between variable 'uniqueId' declaration and its first usage is 7, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "183",
+        "column": "29",
+        "severity": "warning",
+        "message": "'=' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "183",
+        "column": "30",
+        "severity": "warning",
+        "message": "'=' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "186",
+        "column": "54",
+        "severity": "warning",
+        "message": "'!=' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "186",
+        "column": "56",
+        "severity": "warning",
+        "message": "'!=' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "193",
+        "column": "61",
+        "severity": "warning",
+        "message": "'!=' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "193",
+        "column": "63",
+        "severity": "warning",
+        "message": "'!=' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    }
+]

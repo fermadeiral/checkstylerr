@@ -1,0 +1,34 @@
+[
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - org.junit.Assert.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "31",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - java.util.Arrays.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "121",
+        "column": "32",
+        "severity": "warning",
+        "message": "Literal Strings should be compared using equals(), not '=='.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.StringLiteralEqualityCheck"
+    },
+    {
+        "line": "191",
+        "severity": "warning",
+        "message": "Distance between variable 'textPoJo3' declaration and its first usage is 5, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    }
+]
